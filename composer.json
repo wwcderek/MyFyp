@@ -1,0 +1,21 @@
+{
+    "name": "wongwaichun/come-and-watch",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wongwaichun",
+            "email": "derek@yedpay.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "simplesoftwareio/simple-qrcode": "^1.5",
+        "endroid/qrcode": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CAW\\": "src/"
+        }
+    }
+}

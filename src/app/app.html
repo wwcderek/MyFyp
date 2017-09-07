@@ -1,0 +1,26 @@
+<ion-menu id="authenticated" side="left" [content]="content">
+    <!--<ion-header *ngIf="testing" class="menu-css">-->
+      <!--<ion-title class="menu-css">-->
+        <!--&lt;!&ndash;<ion-title *ngIf="testing"  class="menu-css">Menu</ion-title>&ndash;&gt;-->
+          <!--<ion-title class="menu-css"></ion-title><button ion-button (click)="login()" class="menu-css" full>Login</button></ion-title>-->
+    <!--</ion-header>-->
+    <ion-content padding class="menu-css">
+        <ion-list class="menu-css">
+            <button menuClose ion-item *ngFor="let p of loginPages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" class="menu-css">
+        <ion-icon name={{p.icon}}></ion-icon>&nbsp;&nbsp;  
+            {{p.title}}   
+        </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-menu id="unauthenticated" side="left" [content]="content"><ion-content padding class="menu-css">
+    <ion-list class="menu-css">
+        <button menuClose ion-item *ngFor="let p of logoutPages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" class="menu-css">
+            <ion-icon name={{p.icon}}></ion-icon>&nbsp;&nbsp;
+            {{p.title}}
+        </button>
+    </ion-list>
+</ion-content></ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,50 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+<ion-header no-border>
+  <ion-navbar transparent>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <form #form="ngForm" (ngSubmit)="loginClick(form)" novalidate>
+    <ion-card>
+      <ion-card-header>
+        Come And Watch
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list no-line>
+          <ion-item>
+            <ion-input type="text" name="username" [(ngModel)]="username" placeholder="Username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <a>Forget your login detail? <b>Get help signing in</b></a>
+          <button ion-button type="submit" block outline color="light">Log in</button>
+          <p>OR</p>
+          <button type="button" ion-button block color="facebook" (click)="facebookLogin()">
+  <ion-icon name="logo-facebook"></ion-icon> Login with facebook
+</button>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <div>
+      <button type="button" class="bottom" ion-button clear full color="light" (click)="registration()">Dont't have an account? Sign up</button>
+    </div>
+  </form>
+</ion-content>
