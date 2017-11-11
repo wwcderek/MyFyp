@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController, AlertController } from 'ionic-angular';
+import { IonicPage, Nav, NavParams, ModalController, AlertController } from 'ionic-angular';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import 'rxjs/Rx';
 
 @Injectable()
 export class BarcodeService {
     http: any;
-    constructor(http: Http, public navCtrl: NavController) {
+    public navCtrl: Nav;
+    constructor(http: Http) {
         this.http = http;
         var headers = new Headers();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');

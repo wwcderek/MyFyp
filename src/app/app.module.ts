@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { Component, ViewChild } from '@angular/core';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, Nav } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
@@ -9,13 +10,15 @@ import { LoginPage } from '../pages/login/login';
 import { DetailPage } from '../pages/detail/detail';
 import { BarcodePage } from "../pages/barcode/barcode";
 import { SettingPage } from "../pages/setting/setting";
+import { UploadPage } from '../pages/upload/upload';
 import { RegistrationPage } from '../pages/registration/registration';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
-import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 import firebase from 'firebase';
 import { Facebook } from '@ionic-native/facebook';
 import { IonicStorageModule } from '@ionic/storage';
+import { AccountService } from './services/account.service';
+import { UserService } from './services/user.service';
 
 
 firebase.initializeApp({
@@ -35,7 +38,8 @@ firebase.initializeApp({
     RegistrationPage,
     DetailPage,
       BarcodePage,
-      SettingPage
+      SettingPage,
+      UploadPage
   ],
   imports: [
     BrowserModule,
@@ -52,14 +56,26 @@ firebase.initializeApp({
     RegistrationPage,
     DetailPage,
       BarcodePage,
-      SettingPage
+      SettingPage,
+      UploadPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-      BarcodeScanner,
-      Facebook
+      Facebook,
+      AccountService,
+      UserService,
+      Nav
   ]
 })
-export class AppModule {}
+@Component({
+  templateUrl: 'app.html'
+})
+@Component({
+  //templateUrl: 'app.html',
+   template: '<ion-nav #myNav [root]="rootPage"></ion-nav>',
+})
+export class AppModule {
+  @ViewChild('content') nav: Nav;
+}

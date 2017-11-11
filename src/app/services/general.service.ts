@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { Nav, AlertController } from 'ionic-angular';
 import 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import { Http, Headers,Response, RequestOptions } from '@angular/http';
@@ -8,8 +8,8 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class GeneralService {
     http: any;
-
-    constructor(public navCtrl: NavController, public alertCtrl: AlertController, http: Http) {
+public navCtrl: Nav;
+    constructor(public alertCtrl: AlertController, http: Http) {
         this.http = http;
         var headers = new Headers();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');

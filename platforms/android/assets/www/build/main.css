@@ -35172,6 +35172,10 @@ page-login .marginTop {
   margin-bottom: 50px;
 }
 
+page-login .no-scroll .scroll-content {
+  overflow: hidden;
+}
+
 page-login .scroll-content {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;

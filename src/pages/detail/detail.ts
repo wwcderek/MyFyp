@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, Nav, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the DetailPage page.
@@ -14,7 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailPage {
   film: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public navCtrl: Nav;
+  constructor(public navParams: NavParams) {
     this.film = navParams.get('film');
   }
 

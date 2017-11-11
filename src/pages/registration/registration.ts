@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
+import { IonicPage, Nav, NavParams, ViewController, AlertController } from 'ionic-angular';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UsernameValidator } from '../../validators/username';
@@ -29,9 +29,9 @@ export class RegistrationPage {
   slideOneForm: FormGroup;
   slideTwoForm: FormGroup;
   submitAttempt: boolean = false;
+  public navCtrl: Nav;
 
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public formBuilder: FormBuilder, public viewCtrl: ViewController, public alertCtrl: AlertController, http: Http, public accountService: AccountService, public generalService: GeneralService) {
+  constructor(public navParams: NavParams, public formBuilder: FormBuilder, public viewCtrl: ViewController, public alertCtrl: AlertController, http: Http, public accountService: AccountService, public generalService: GeneralService) {
     this.http = http;
     this.status = 0;
     this.slideOneForm = formBuilder.group({
@@ -110,8 +110,7 @@ export class RegistrationPage {
       this.accountService.register(form.value.username, form.value.password)
           .map(res => res.json())
           .subscribe(data => {
-              console.log(data);
-              if(data!==1) {
+              if(data) {
                   this.generalService.alertMessage("Message", "Your account created successfully");
                   this.closeModal();
               } else {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { BarcodeScanner } from "@ionic-native/barcode-scanner";
+import { IonicPage, Nav, NavParams } from 'ionic-angular';
+// import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 import { BarcodeService } from "../../app/services/barcode.service";
 import { Storage } from '@ionic/storage';
 /**
@@ -21,7 +21,8 @@ export class BarcodePage
  createdCode: any;
  scannedCode = null;
  paths:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner, public barcodeService: BarcodeService, private storage: Storage) {
+ public navCtrl: Nav;
+  constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage) {
   }
 
   ionViewDidLoad()
@@ -64,10 +65,10 @@ export class BarcodePage
      })
   }
 
-  scanCode()
-  {
-    this.barcodeScanner.scan().then(barcodeData => {
-      this.scannedCode = barcodeData.text;
-    })
-  }
+//   scanCode()
+//   {
+//     this.barcodeScanner.scan().then(barcodeData => {
+//       this.scannedCode = barcodeData.text;
+//     })
+//   }
 }

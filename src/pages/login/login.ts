@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, AlertController, Platform, MenuController} from 'ionic-angular';
+import { IonicPage, Nav, ModalController, AlertController, Platform, MenuController, NavController} from 'ionic-angular';
 import { RegistrationPage } from '../registration/registration';
 import { HomePage } from '../home/home';
 import { AccountService } from '../../app/services/account.service';
@@ -22,10 +22,11 @@ import { Storage } from '@ionic/storage';
   providers: [AccountService, GeneralService, PermissionService]
 })
 export class LoginPage {
+  public username: any;
   http: any;
   data: any;
   result: any;
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController, public modalCtrl: ModalController, public accountService: AccountService, public generalService: GeneralService, public permissionService: PermissionService, public facebook: Facebook, private storage: Storage, public menuCtrl: MenuController) {
+  constructor(public alertCtrl: AlertController, public modalCtrl: ModalController, public accountService: AccountService, public generalService: GeneralService, public permissionService: PermissionService, public facebook: Facebook, private storage: Storage, public menuCtrl: MenuController, public navCtrl: NavController) {
   }
 
   ionViewDidLoad() {
@@ -41,18 +42,25 @@ export class LoginPage {
     if (form.value !== undefined) {
       this.accountService.login(form.value.username, form.value.password).map(res => res.json())
           .subscribe(response => {
-         if (response) {
-           // this.permissionService.attachPermission(response);
+         if (response!=false) {
+           //console.log(response[0].username);
+            this.storeUserInfo(response);
             this.disableAuthenticatedMenu();
             this.navCtrl.push(HomePage);
             this.navCtrl.setRoot(HomePage);
-        } else if (form.value && !response) {
-          this.generalService.alertMessage("Error","Username or password is incorrated");
+        } else if (form.value || !response) {
+          this.generalService.alertMessage("Error","Username or password is incorrected");
         }
       })
     } else {
       this.generalService.alertMessage("Try Again","Please fill in all necessary information");
     }
+  }
+
+  storeUserInfo(info) {
+    this.storage.set('username', info[0].username);
+    this.storage.set('email', info[0].email);
+    this.storage.set('role', info[0].role);
   }
 
   /**
@@ -78,19 +86,20 @@ export class LoginPage {
     /**
      * For website
      */
-  fbLogin() {
-    let provider = new firebase.auth.FacebookAuthProvider();
-    firebase.auth().signInWithRedirect(provider).then(() => {
-      firebase.auth().getRedirectResult().then((result) => {
-         this.generalService.alertMessage("User Info",JSON.stringify(result));
-         //console.log('success login');
-         //console.log(JSON.stringify(result));
-      }).catch(function (error) {
-        alert(JSON.stringify(error))
+  // fbLogin() {
+  //   let provider = new firebase.auth.FacebookAuthProvider();
+  //   firebase.auth().signInWithRedirect(provider).then(() => {
+  //     firebase.auth().getRedirectResult().then((result) => {
+  //        this.generalService.alertMessage("User Info",JSON.stringify(result));
+  //        //console.log('success login');
+  //        //console.log(JSON.stringify(result));
+  //     }).catch(function (error) {
+  //       alert(JSON.stringify(error))
 
-      });
-    })
-  }
+  //     });
+  //   })
+  // }
+
    //get user information, after user use fb login
   getInfo() {
       var user = firebase.auth().currentUser;

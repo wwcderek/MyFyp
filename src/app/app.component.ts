@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, Platform, MenuController } from 'ionic-angular';
+import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { SettingPage } from "../pages/setting/setting";
 import { BarcodePage } from '../pages/barcode/barcode';
+import { UploadPage } from '../pages/upload/upload';
 import { AccountService } from './services/account.service';
 import { Storage } from '@ionic/storage';
 @Component({
@@ -17,7 +18,7 @@ import { Storage } from '@ionic/storage';
    providers: [AccountService]
 })
 export class MyApp {
-  @ViewChild('content') nav: NavController;
+    @ViewChild(Nav) nav: Nav;
   //@ViewChild('myNav') nav: NavController
   loginPages: Array<{title: string, icon: string, component: any}>;
   logoutPages: Array<{title: string, icon: string, component: any}>;
@@ -26,17 +27,13 @@ export class MyApp {
   rootPage: any = HomePage;
   loader = true;
 
-
-
-
-
-
     constructor(public platform:Platform, public storage: Storage, public menuCtrl: MenuController, public accountService: AccountService) {
     this.initializeApp();
               this.loginPages = [
                   {title:'Home', icon:'home', component: HomePage},
                   {title:'Login', icon:'contact', component: LoginPage},
-                  {title:'Setting', icon:'settings', component: SettingPage}
+                  {title:'Setting', icon:'settings', component: SettingPage},
+                  {title:'Upload', icon:'settings', component: UploadPage}
               ];
                 this.logoutPages = [
                     {title:'Home', icon:'home', component: HomePage},
@@ -71,6 +68,7 @@ export class MyApp {
 
    openPage(page){
        if(page.title==="Logout"){
+           this.deleteUserInfo();
            this.enableAuthenticatedMenu();
            this.accountService.logout();
            this.storage.clear().then((val) => {
@@ -81,6 +79,12 @@ export class MyApp {
            this.nav.setRoot(page.component);
            this.activePage = page;
        }
+   }
+
+   deleteUserInfo(){
+    this.storage.remove('username');
+    this.storage.remove('email');
+    this.storage.remove('role');
    }
 
    login() {

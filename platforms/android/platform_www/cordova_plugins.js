@@ -67,14 +67,6 @@ module.exports = [
         "runs": true
     },
     {
-        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-        "pluginId": "phonegap-plugin-barcodescanner",
-        "clobbers": [
-            "cordova.plugins.barcodeScanner"
-        ]
-    },
-    {
         "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
         "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
         "pluginId": "cordova-plugin-facebook4",
@@ -103,6 +95,38 @@ module.exports = [
         "clobbers": [
             "SQLitePlugin"
         ]
+    },
+    {
+        "id": "cordova-plugin-camera.Camera",
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.camera",
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -119,10 +143,10 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-universal-links-plugin": "1.2.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "phonegap-plugin-barcodescanner": "6.0.8",
     "cordova-plugin-facebook4": "1.9.1",
     "cordova-plugin-secure-storage": "2.6.8",
-    "cordova-sqlite-storage": "2.0.4"
+    "cordova-sqlite-storage": "2.0.4",
+    "cordova-plugin-camera": "2.4.1"
 };
 // BOTTOM OF METADATA
 });

@@ -16,6 +16,14 @@
 <ion-content padding>
   <ion-list>
     <ion-item>
+    <button ion-button outline block (click)="takepic()">
+      Take Picture
+    </button>
+  </ion-item>
+  <ion-item>
+    <img src="{{ picurl }}" />
+  </ion-item>
+    <ion-item>
       <button type="button" ion-button (click)="setKey()">Set</button>
     </ion-item>
     <ion-item>

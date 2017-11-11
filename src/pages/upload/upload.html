@@ -1,0 +1,42 @@
+<!--
+  Generated template for the UploadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>upload</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div *ngIf="currentUpload">
+    <div class="progress">
+         <div class="progress-bar progress-bar-animated" [ngStyle]="{ 'width': currentUpload?.progress + '%' }"></div>
+    </div>
+
+    Progress: {{currentUpload?.name}} | {{currentUpload?.progress}}% Complete
+</div>
+
+<div class="card card-outline-primary">
+  <div class="card-block">
+      <label>
+        <input type="file" (change)="detectFiles($event)">
+      </label>
+
+      <button class="btn btn-primary"
+              [disabled]="!selectedFiles"
+              (click)="uploadSingle()">
+            Upload Single
+            </button>
+  </div>
+
+
+</div>
+
+
+</ion-content>

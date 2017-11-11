@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, Nav, NavParams } from 'ionic-angular';
 import { AccountService } from '../../app/services/account.service';
 import { FilmService } from '../../app/services/film.service';
 import { DetailPage } from '../detail/detail';
@@ -20,8 +20,8 @@ export class HomePage {
   films: any;
   category: any;
   name: any;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public accountService: AccountService, public filmService: FilmService, private storage: Storage) {
+public navCtrl: Nav;
+  constructor( public navParams: NavParams, public accountService: AccountService, public filmService: FilmService, private storage: Storage) {
       this.getDefault();
   }
 

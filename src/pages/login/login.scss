@@ -12,6 +12,10 @@ page-login {
      margin-bottom:50px;
   }
 
+  .no-scroll .scroll-content{
+    overflow: hidden;
+}
+
 
 .scroll-content{
     align-content: center;
