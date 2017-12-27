@@ -1,0 +1,34 @@
+<!--
+  Generated template for the PlaylistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+    <ion-title class="bg-style" style="color:white">playlist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-style card-playlist">
+<ion-card *ngFor="let data of datas" class="bg-style">
+  <iframe class="bg-style" allowfullscreen frameborder="0" height="200" width="100%" [src]="playVideo(data.snippet.resourceId.videoId)">
+  </iframe>
+  <ion-card-content class="bg-style">
+    <ion-card-title class="bg-style title">
+{{data.snippet.title}}
+</ion-card-title>
+<p class="bg-style description">
+  {{data.snippet.description}}
+</p>
+  </ion-card-content>
+</ion-card>
+<ion-infinite-scroll (ionInfinite)="infiniteScroll($event)">
+    <ion-infinite-scroll-content>
+  
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

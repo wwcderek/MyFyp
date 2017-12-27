@@ -6,6 +6,7 @@ import { UsernameValidator } from '../../validators/username';
 import { AccountService } from '../../app/services/account.service';
 import { GeneralService } from "../../app/services/general.service";
 import { PasswordValidator } from  '../../validators/password';
+import {StatusBar, Keyboard} from 'ionic-native';
 /**
  * Generated class for the RegistrationPage page.
  *
@@ -20,23 +21,24 @@ import { PasswordValidator } from  '../../validators/password';
 })
 export class RegistrationPage {
   @ViewChild('signupSlider') signupSlider: any;
-  name: string;
-  accountName
-  email: string;
-  pass: string;
+ username: string = '';
+ password: string = '';
+ confirm: string = '';  
   http: any;
   status: any;
   slideOneForm: FormGroup;
-  slideTwoForm: FormGroup;
   submitAttempt: boolean = false;
   public navCtrl: Nav;
+  public keyboard: Keyboard;
 
   constructor(public navParams: NavParams, public formBuilder: FormBuilder, public viewCtrl: ViewController, public alertCtrl: AlertController, http: Http, public accountService: AccountService, public generalService: GeneralService) {
+    Keyboard.disableScroll(true);
     this.http = http;
     this.status = 0;
     this.slideOneForm = formBuilder.group({
       username: ['', Validators.compose([Validators.maxLength(15), Validators.minLength(3), Validators.required, Validators.pattern('[0-9]*[a-zA-Z]*[0-9]*')])],
-      password: ['', Validators.compose([Validators.maxLength(15), Validators.minLength(6), Validators.required, Validators.pattern('((?=.*\\d)(?=.*[a-zA-Z]).{6,20})')])]
+      password: ['', Validators.compose([Validators.maxLength(15), Validators.minLength(6), Validators.required, Validators.pattern('((?=.*\\d)(?=.*[a-zA-Z]).{6,20})')])],
+      confirm: ['', Validators.compose([Validators.maxLength(15), Validators.minLength(6), Validators.required, Validators.pattern('((?=.*\\d)(?=.*[a-zA-Z]).{6,20})')])]
     });
 
   }
@@ -49,26 +51,8 @@ export class RegistrationPage {
     this.viewCtrl.dismiss();
   }
 
-//For blur()
-  // checkAccount() {
-  //   this.status = 0;
-  //   this.accountService.checkAccount(this.slideOneForm.value.username).subscribe(response => {
-  //     this.accountName = JSON.parse(response['_body']);
-  //     for (var i = 0; i < this.accountName.length; i++) {
-  //       if (this.slideOneForm.value.username === this.accountName[i].accountName) {
-  //         this.status = 1;
-  //         this.generalService.alertMessage("Error","Account already existed");
-  //       }
-  //     }
-  //   }, error => {
-  //     console.log(error);// Error getting the data
-  //   });
-  // }
-
-
-
     validate(): boolean {
-        if (this.slideOneForm.valid) {
+        if (this.slideOneForm.valid && (this.slideOneForm.controls['password'].value===this.slideOneForm.controls['confirm'].value)) {
             return true;
         }
 
@@ -78,6 +62,7 @@ export class RegistrationPage {
         // validate each field
         let control = this.slideOneForm.controls['username'];
         let control2 = this.slideOneForm.controls['password'];
+        let control3 = this.slideOneForm.controls['confirm'];
         if (!control.valid) {
             if (control.errors['required']) {
                 errorMsg = 'Provide a username please';
@@ -86,7 +71,7 @@ export class RegistrationPage {
             } else if (control.errors['maxlength']) {
                 errorMsg = 'The username must less than 15 characters';
             }
-        } else if (!control2.valid){
+        } else if (!control2.valid) {
             if (control2.errors['required']) {
                 errorMsg = 'Provide a password please';
             } else if (control2.errors['minlength']) {
@@ -96,6 +81,8 @@ export class RegistrationPage {
             } else if (control2.errors['pattern']) {
                 errorMsg = 'A character should be included in the password';
             }
+        } else if (control2.value!==control3.value) {
+            errorMsg = 'Confirmed password not matched';
         }
         this.generalService.alertMessage("errorMsg",errorMsg);
         return false;
@@ -104,9 +91,9 @@ export class RegistrationPage {
   register(form) {
     let status = this.validate();
     this.submitAttempt = true;
-    if (!this.slideOneForm.valid || !status) {
-      this.signupSlider.slideTo(0);
-    } else if (this.slideOneForm.valid && this.validate() && status) {
+
+    //   this.signupSlider.slideTo(0);
+   if (this.slideOneForm.valid && status) {
       this.accountService.register(form.value.username, form.value.password)
           .map(res => res.json())
           .subscribe(data => {
@@ -121,4 +108,13 @@ export class RegistrationPage {
           });
     }
   }
+
+
+  resetForm() {
+    this.username = '';
+    this.password = '';
+    this.confirm = '';
+  }
+
+
 }

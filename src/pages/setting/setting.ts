@@ -49,6 +49,7 @@ export class SettingPage {
   }
 
   upload() {
+      
     this.date = new Date().toISOString();
     this.imageName = this.date+'.png';
       this.mypicref.child("image").child(this.imageName)
@@ -92,7 +93,6 @@ export class SettingPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingPage');
   }
 
     public setKey() {

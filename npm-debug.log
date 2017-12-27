@@ -1,0 +1,1142 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node/bin/node',
+1 verbose cli   '/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/.bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'cordova-plugin-facebook4',
+1 verbose cli   '--production',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.12
+3 info using node@v9.1.0
+4 verbose install initial load of /Users/wongwaichun/Desktop/MYFYP/MyFyp/package.json
+5 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/JSONStream/package.json
+6 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/abbrev/package.json
+7 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/abstract-leveldown/package.json
+8 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/accepts/package.json
+9 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/acorn/package.json
+10 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/acorn-dynamic-import/package.json
+11 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ajv/package.json
+12 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ajv-keywords/package.json
+13 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/aliasify/package.json
+14 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/align-text/package.json
+15 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/amdefine/package.json
+16 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ansi/package.json
+17 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ansi-escapes/package.json
+18 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ansi-regex/package.json
+19 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ansi-styles/package.json
+20 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/anymatch/package.json
+21 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/aproba/package.json
+22 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/archiver/package.json
+23 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/archiver-utils/package.json
+24 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/are-we-there-yet/package.json
+25 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/arr-diff/package.json
+26 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/arr-flatten/package.json
+27 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-filter/package.json
+28 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-find-index/package.json
+29 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-flatten/package.json
+30 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-map/package.json
+31 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-reduce/package.json
+32 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/array-unique/package.json
+33 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/arrify/package.json
+34 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/asn1/package.json
+35 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/asn1.js/package.json
+36 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/assert/package.json
+37 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/assert-plus/package.json
+38 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ast-types/package.json
+39 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/astw/package.json
+40 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/async/package.json
+41 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/async-each/package.json
+42 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/async-foreach/package.json
+43 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/asynckit/package.json
+44 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/autoprefixer/package.json
+45 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/aws-sign2/package.json
+46 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/aws4/package.json
+47 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-cli/package.json
+48 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-code-frame/package.json
+49 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-core/package.json
+50 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-generator/package.json
+51 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-evaluate-path/package.json
+52 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-flip-expressions/package.json
+53 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-is-nodes-equiv/package.json
+54 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-is-void-0/package.json
+55 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-mark-eval-scopes/package.json
+56 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-remove-or-void/package.json
+57 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helper-to-multiple-sequence-expressions/package.json
+58 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-helpers/package.json
+59 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-messages/package.json
+60 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-constant-folding/package.json
+61 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-dead-code-elimination/package.json
+62 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-flip-comparisons/package.json
+63 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-guarded-expressions/package.json
+64 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-infinity/package.json
+65 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-mangle-names/package.json
+66 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-numeric-literals/package.json
+67 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-replace/package.json
+68 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-simplify/package.json
+69 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-minify-type-constructors/package.json
+70 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-inline-consecutive-adds/package.json
+71 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-member-expression-literals/package.json
+72 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-merge-sibling-variables/package.json
+73 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-minify-booleans/package.json
+74 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-property-literals/package.json
+75 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-regexp-constructors/package.json
+76 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-remove-console/package.json
+77 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-remove-debugger/package.json
+78 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-remove-undefined/package.json
+79 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-simplify-comparison-operators/package.json
+80 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-plugin-transform-undefined-to-void/package.json
+81 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-polyfill/package.json
+82 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-preset-babili/package.json
+83 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-register/package.json
+84 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-runtime/package.json
+85 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-template/package.json
+86 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-traverse/package.json
+87 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babel-types/package.json
+88 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babili/package.json
+89 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/babylon/package.json
+90 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/balanced-match/package.json
+91 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/base62/package.json
+92 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/base64-js/package.json
+93 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bcrypt-pbkdf/package.json
+94 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/big-integer/package.json
+95 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/big.js/package.json
+96 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/binary-extensions/package.json
+97 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bl/package.json
+98 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/block-stream/package.json
+99 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bn.js/package.json
+100 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/body/package.json
+101 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bonjour/package.json
+102 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/boom/package.json
+103 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bplist-creator/package.json
+104 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bplist-parser/package.json
+105 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/brace-expansion/package.json
+106 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/braces/package.json
+107 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/brorand/package.json
+108 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browser-pack/package.json
+109 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browser-resolve/package.json
+110 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify/package.json
+111 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-aes/package.json
+112 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-cipher/package.json
+113 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-des/package.json
+114 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-fs/package.json
+115 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-rsa/package.json
+116 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-sign/package.json
+117 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-transform-tools/package.json
+118 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserify-zlib/package.json
+119 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/browserslist/package.json
+120 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/buffer/package.json
+121 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/buffer-crc32/package.json
+122 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/buffer-es6/package.json
+123 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/buffer-indexof/package.json
+124 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/buffer-xor/package.json
+125 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/builtin-modules/package.json
+126 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/builtin-status-codes/package.json
+127 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/builtins/package.json
+128 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/bytes/package.json
+129 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cached-path-relative/package.json
+130 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/camelcase/package.json
+131 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/camelcase-keys/package.json
+132 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/caniuse-db/package.json
+133 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/caseless/package.json
+134 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/center-align/package.json
+135 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/chalk/package.json
+136 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/chokidar/package.json
+137 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/chownr/package.json
+138 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ci-info/package.json
+139 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cipher-base/package.json
+140 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/clean-css/package.json
+141 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cli-cursor/package.json
+142 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cli-width/package.json
+143 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cliui/package.json
+144 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/clone/package.json
+145 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/co/package.json
+146 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/code-point-at/package.json
+147 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/color-convert/package.json
+148 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/color-name/package.json
+149 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/colors/package.json
+150 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/combine-source-map/package.json
+151 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/combined-stream/package.json
+152 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/commander/package.json
+153 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/component-emitter/package.json
+154 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/compress-commons/package.json
+155 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/compressible/package.json
+156 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/compression/package.json
+157 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/concat-map/package.json
+158 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/concat-stream/package.json
+159 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/configstore/package.json
+160 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/console-browserify/package.json
+161 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/console-control-strings/package.json
+162 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/constants-browserify/package.json
+163 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/content-disposition/package.json
+164 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/content-type/package.json
+165 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/continuable-cache/package.json
+166 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/convert-source-map/package.json
+167 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cookie/package.json
+168 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cookie-signature/package.json
+169 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cookiejar/package.json
+170 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova/package.json
+171 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-android/package.json
+172 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-app-hello-world/package.json
+173 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-common/package.json
+174 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-create/package.json
+175 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-fetch/package.json
+176 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-ios/package.json
+177 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-js/package.json
+178 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-lib/package.json
+179 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-browsertab/package.json
+180 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-buildinfo/package.json
+181 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-camera/package.json
+182 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-compat/package.json
+183 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-console/package.json
+184 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-device/package.json
+185 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4/package.json
+186 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-file/package.json
+187 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-inappbrowser/package.json
+188 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-secure-storage/package.json
+189 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-splashscreen/package.json
+190 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-statusbar/package.json
+191 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-whitelist/package.json
+192 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-registry-mapper/package.json
+193 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-serve/package.json
+194 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-sqlite-storage/package.json
+195 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-sqlite-storage-dependencies/package.json
+196 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-universal-links-plugin/package.json
+197 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/core-js/package.json
+198 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/core-util-is/package.json
+199 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/crc/package.json
+200 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/crc32-stream/package.json
+201 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/create-ecdh/package.json
+202 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/create-hash/package.json
+203 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/create-hmac/package.json
+204 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cross-spawn/package.json
+205 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cryptiles/package.json
+206 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/crypto-browserify/package.json
+207 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/currently-unhandled/package.json
+208 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dargs/package.json
+209 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dashdash/package.json
+210 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/date-now/package.json
+211 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/debug/package.json
+212 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/decamelize/package.json
+213 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/deep-equal/package.json
+214 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/deep-extend/package.json
+215 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/deferred-leveldown/package.json
+216 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/defined/package.json
+217 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/delayed-stream/package.json
+218 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/delegates/package.json
+219 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dep-graph/package.json
+220 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/depd/package.json
+221 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dependency-ls/package.json
+222 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/deps-sort/package.json
+223 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/des.js/package.json
+224 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/destroy/package.json
+225 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/detect-indent/package.json
+226 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/detective/package.json
+227 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/diff/package.json
+228 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/diffie-hellman/package.json
+229 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dijkstrajs/package.json
+230 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dns-equal/package.json
+231 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dns-packet/package.json
+232 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dns-txt/package.json
+233 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/doctrine/package.json
+234 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dom-storage/package.json
+235 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/domain-browser/package.json
+236 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/dot-prop/package.json
+237 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/duplexer2/package.json
+238 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/duplexify/package.json
+239 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ecc-jsbn/package.json
+240 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/editor/package.json
+241 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ee-first/package.json
+242 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/electron-to-chromium/package.json
+243 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/elementtree/package.json
+244 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/elliptic/package.json
+245 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/emojis-list/package.json
+246 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/encodeurl/package.json
+247 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/end-of-stream/package.json
+248 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/enhanced-resolve/package.json
+249 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/errno/package.json
+250 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/error/package.json
+251 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/error-ex/package.json
+252 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/es3ify/package.json
+253 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/escape-html/package.json
+254 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/escape-string-regexp/package.json
+255 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/esmangle-evaluator/package.json
+256 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/esprima-fb/package.json
+257 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/estree-walker/package.json
+258 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/esutils/package.json
+259 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/etag/package.json
+260 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/events/package.json
+261 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/evp_bytestokey/package.json
+262 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/exit-hook/package.json
+263 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/expand-brackets/package.json
+264 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/expand-range/package.json
+265 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/express/package.json
+266 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/extend/package.json
+267 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/external-editor/package.json
+268 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/extglob/package.json
+269 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/extsprintf/package.json
+270 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/falafel/package.json
+271 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/faye-websocket/package.json
+272 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/figures/package.json
+273 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/filename-regex/package.json
+274 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fill-range/package.json
+275 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/finalhandler/package.json
+276 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/find-up/package.json
+277 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/findup-sync/package.json
+278 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/firebase/package.json
+279 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/for-in/package.json
+280 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/for-own/package.json
+281 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/foreach/package.json
+282 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/forever-agent/package.json
+283 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/form-data/package.json
+284 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/formidable/package.json
+285 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/forwarded/package.json
+286 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fresh/package.json
+287 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fs-extra/package.json
+288 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fs-readdir-recursive/package.json
+289 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fs.realpath/package.json
+290 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fsevents/package.json
+291 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fstream/package.json
+292 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/function-bind/package.json
+293 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/fwd-stream/package.json
+294 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/gauge/package.json
+295 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/gaze/package.json
+296 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/generate-function/package.json
+297 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/generate-object-property/package.json
+298 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/get-caller-file/package.json
+299 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/get-stdin/package.json
+300 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/getpass/package.json
+301 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/glob/package.json
+302 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/glob-base/package.json
+303 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/glob-parent/package.json
+304 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/globals/package.json
+305 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/globule/package.json
+306 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/got/package.json
+307 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/graceful-fs/package.json
+308 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/graceful-readlink/package.json
+309 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/har-schema/package.json
+310 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/har-validator/package.json
+311 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/has/package.json
+312 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/has-ansi/package.json
+313 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/has-flag/package.json
+314 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/has-unicode/package.json
+315 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hash-base/package.json
+316 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hash.js/package.json
+317 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hawk/package.json
+318 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hmac-drbg/package.json
+319 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hoek/package.json
+320 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/home-or-tmp/package.json
+321 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/hosted-git-info/package.json
+322 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/htmlescape/package.json
+323 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/http-errors/package.json
+324 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/http-signature/package.json
+325 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/https-browserify/package.json
+326 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/iconv-lite/package.json
+327 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/idb-wrapper/package.json
+328 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ieee754/package.json
+329 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/immediate/package.json
+330 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/imurmurhash/package.json
+331 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/in-publish/package.json
+332 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/indent-string/package.json
+333 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/indexof/package.json
+334 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/infinity-agent/package.json
+335 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/inflight/package.json
+336 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/inherits/package.json
+337 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ini/package.json
+338 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/init-package-json/package.json
+339 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/inline-process-browser/package.json
+340 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/inline-source-map/package.json
+341 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/inquirer/package.json
+342 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/insert-module-globals/package.json
+343 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/insight/package.json
+344 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/interpret/package.json
+345 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/invariant/package.json
+346 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/invert-kv/package.json
+347 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ionic-angular/package.json
+348 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ionic-native/package.json
+349 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ionic-plugin-keyboard/package.json
+350 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ionicons/package.json
+351 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ip/package.json
+352 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ipaddr.js/package.json
+353 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is/package.json
+354 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-arrayish/package.json
+355 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-binary-path/package.json
+356 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-buffer/package.json
+357 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-builtin-module/package.json
+358 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-dotfile/package.json
+359 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-equal-shallow/package.json
+360 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-extendable/package.json
+361 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-extglob/package.json
+362 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-finite/package.json
+363 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-fullwidth-code-point/package.json
+364 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-glob/package.json
+365 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-module/package.json
+366 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-my-json-valid/package.json
+367 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-npm/package.json
+368 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-number/package.json
+369 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-obj/package.json
+370 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-object/package.json
+371 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-posix-bracket/package.json
+372 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-primitive/package.json
+373 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-promise/package.json
+374 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-property/package.json
+375 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-redirect/package.json
+376 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-stream/package.json
+377 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-typedarray/package.json
+378 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-url/package.json
+379 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/is-utf8/package.json
+380 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/isarray/package.json
+381 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/isbuffer/package.json
+382 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/isexe/package.json
+383 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/isobject/package.json
+384 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/isstream/package.json
+385 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/js-base64/package.json
+386 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/js-tokens/package.json
+387 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsbn/package.json
+388 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jschardet/package.json
+389 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsesc/package.json
+390 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json-loader/package.json
+391 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json-parse-better-errors/package.json
+392 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json-schema/package.json
+393 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json-stable-stringify/package.json
+394 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json-stringify-safe/package.json
+395 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/json5/package.json
+396 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsonfile/package.json
+397 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsonify/package.json
+398 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsonparse/package.json
+399 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsonpointer/package.json
+400 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jsprim/package.json
+401 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/jstransform/package.json
+402 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/kind-of/package.json
+403 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/labeled-stream-splicer/package.json
+404 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/latest-version/package.json
+405 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lazy-cache/package.json
+406 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lazystream/package.json
+407 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lcid/package.json
+408 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/leek/package.json
+409 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-blobs/package.json
+410 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-filesystem/package.json
+411 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-fix-range/package.json
+412 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-hooks/package.json
+413 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-js/package.json
+414 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-peek/package.json
+415 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/level-sublevel/package.json
+416 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/levelup/package.json
+417 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lexical-scope/package.json
+418 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lie/package.json
+419 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/livereload-js/package.json
+420 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/load-json-file/package.json
+421 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/loader-runner/package.json
+422 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/loader-utils/package.json
+423 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/localforage/package.json
+424 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/localforage-cordovasqlitedriver/package.json
+425 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash/package.json
+426 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._baseassign/package.json
+427 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._basecopy/package.json
+428 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._bindcallback/package.json
+429 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._createassigner/package.json
+430 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._getnative/package.json
+431 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash._isiterateecall/package.json
+432 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.assign/package.json
+433 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.clonedeep/package.json
+434 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.debounce/package.json
+435 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.isarguments/package.json
+436 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.isarray/package.json
+437 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.isplainobject/package.json
+438 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.keys/package.json
+439 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.memoize/package.json
+440 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.mergewith/package.json
+441 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.restparam/package.json
+442 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lodash.some/package.json
+443 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/longest/package.json
+444 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/loose-envify/package.json
+445 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/loud-rejection/package.json
+446 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lowercase-keys/package.json
+447 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/lru-cache/package.json
+448 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ltgt/package.json
+449 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/macos-release/package.json
+450 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/magic-string/package.json
+451 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/map-obj/package.json
+452 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/media-typer/package.json
+453 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/memory-fs/package.json
+454 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/meow/package.json
+455 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/merge-descriptors/package.json
+456 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/methods/package.json
+457 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/micromatch/package.json
+458 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/miller-rabin/package.json
+459 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mime/package.json
+460 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mime-db/package.json
+461 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mime-types/package.json
+462 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mimic-fn/package.json
+463 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/minimalistic-assert/package.json
+464 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/minimalistic-crypto-utils/package.json
+465 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/minimatch/package.json
+466 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/minimist/package.json
+467 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mkdirp/package.json
+468 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mkpath/package.json
+469 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/module-deps/package.json
+470 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ms/package.json
+471 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/multicast-dns/package.json
+472 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/multicast-dns-service-types/package.json
+473 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/mute-stream/package.json
+474 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/nan/package.json
+475 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ncp/package.json
+476 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/negotiator/package.json
+477 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/nested-error-stacks/package.json
+478 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ngx-qrcode2/package.json
+479 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node/package.json
+480 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node-bin-setup/package.json
+481 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node-gyp/package.json
+482 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node-libs-browser/package.json
+483 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node-sass/package.json
+484 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node-version-compare/package.json
+485 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/nopt/package.json
+486 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/normalize-package-data/package.json
+487 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/normalize-path/package.json
+488 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/normalize-range/package.json
+489 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/package.json
+490 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm-package-arg/package.json
+491 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npmlog/package.json
+492 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/num2fraction/package.json
+493 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/number-is-nan/package.json
+494 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/oauth-sign/package.json
+495 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/object-assign/package.json
+496 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/object-keys/package.json
+497 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/object.omit/package.json
+498 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/octal/package.json
+499 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/on-finished/package.json
+500 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/on-headers/package.json
+501 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/once/package.json
+502 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/onetime/package.json
+503 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/open/package.json
+504 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/opener/package.json
+505 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/optimist/package.json
+506 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/options/package.json
+507 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/os-browserify/package.json
+508 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/os-homedir/package.json
+509 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/os-locale/package.json
+510 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/os-name/package.json
+511 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/os-tmpdir/package.json
+512 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/osenv/package.json
+513 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/osx-release/package.json
+514 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/output-file-sync/package.json
+515 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/package-json/package.json
+516 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pako/package.json
+517 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/parents/package.json
+518 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/parse-asn1/package.json
+519 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/parse-glob/package.json
+520 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/parse-json/package.json
+521 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/parseurl/package.json
+522 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-browserify/package.json
+523 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-exists/package.json
+524 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-is-absolute/package.json
+525 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-parse/package.json
+526 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-platform/package.json
+527 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-to-regexp/package.json
+528 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/path-type/package.json
+529 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pbkdf2/package.json
+530 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pegjs/package.json
+531 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/performance-now/package.json
+532 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pify/package.json
+533 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pinkie/package.json
+534 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pinkie-promise/package.json
+535 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/plist/package.json
+536 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pngjs/package.json
+537 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/postcss/package.json
+538 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/postcss-value-parser/package.json
+539 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/prepend-http/package.json
+540 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/preserve/package.json
+541 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/private/package.json
+542 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/process/package.json
+543 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/process-es6/package.json
+544 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/process-nextick-args/package.json
+545 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/promise-polyfill/package.json
+546 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/promzard/package.json
+547 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/properties-parser/package.json
+548 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/proxy-addr/package.json
+549 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/proxy-middleware/package.json
+550 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/prr/package.json
+551 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/pseudomap/package.json
+552 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/public-encrypt/package.json
+553 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/punycode/package.json
+554 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/q/package.json
+555 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/qrcode/package.json
+556 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/qs/package.json
+557 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/querystring/package.json
+558 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/querystring-es3/package.json
+559 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/randomatic/package.json
+560 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/randombytes/package.json
+561 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/range-parser/package.json
+562 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/raw-body/package.json
+563 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rc/package.json
+564 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read/package.json
+565 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read-all-stream/package.json
+566 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read-only-stream/package.json
+567 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read-package-json/package.json
+568 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read-pkg/package.json
+569 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/read-pkg-up/package.json
+570 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/readable-stream/package.json
+571 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/readdirp/package.json
+572 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/readline2/package.json
+573 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/recast/package.json
+574 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rechoir/package.json
+575 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/redent/package.json
+576 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/reflect-metadata/package.json
+577 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/regenerator-runtime/package.json
+578 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/regex-cache/package.json
+579 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/registry-url/package.json
+580 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/remove-trailing-separator/package.json
+581 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/repeat-element/package.json
+582 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/repeat-string/package.json
+583 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/repeating/package.json
+584 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/request/package.json
+585 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/require-directory/package.json
+586 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/require-main-filename/package.json
+587 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/resolve/package.json
+588 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/restore-cursor/package.json
+589 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/right-align/package.json
+590 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rimraf/package.json
+591 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ripemd160/package.json
+592 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup/package.json
+593 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-plugin-commonjs/package.json
+594 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-plugin-json/package.json
+595 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-plugin-node-builtins/package.json
+596 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-plugin-node-globals/package.json
+597 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-plugin-node-resolve/package.json
+598 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rollup-pluginutils/package.json
+599 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rsvp/package.json
+600 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/run-async/package.json
+601 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rx-lite/package.json
+602 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rx-lite-aggregates/package.json
+603 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/rxjs/package.json
+604 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/safe-buffer/package.json
+605 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/safe-json-parse/package.json
+606 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sass-graph/package.json
+607 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sax/package.json
+608 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/scss-tokenizer/package.json
+609 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/semver/package.json
+610 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/semver-diff/package.json
+611 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/send/package.json
+612 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/serve-static/package.json
+613 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/serviceworker-cache-polyfill/package.json
+614 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/set-blocking/package.json
+615 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/set-immediate-shim/package.json
+616 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/setimmediate/package.json
+617 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/setprototypeof/package.json
+618 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sha.js/package.json
+619 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/shasum/package.json
+620 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/shebang-command/package.json
+621 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/shebang-regex/package.json
+622 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/shell-quote/package.json
+623 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/shelljs/package.json
+624 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/signal-exit/package.json
+625 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/simple-plist/package.json
+626 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/slash/package.json
+627 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/slice-ansi/package.json
+628 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/slide/package.json
+629 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sntp/package.json
+630 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/source-list-map/package.json
+631 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/source-map/package.json
+632 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/source-map-support/package.json
+633 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/spdx-correct/package.json
+634 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/spdx-expression-parse/package.json
+635 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/spdx-license-ids/package.json
+636 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sprintf-js/package.json
+637 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sshpk/package.json
+638 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/statuses/package.json
+639 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stdout-stream/package.json
+640 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-browserify/package.json
+641 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-buffers/package.json
+642 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-combiner2/package.json
+643 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-http/package.json
+644 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-shift/package.json
+645 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stream-splicer/package.json
+646 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string-length/package.json
+647 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string-range/package.json
+648 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string-template/package.json
+649 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string-width/package.json
+650 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string.prototype.codepointat/package.json
+651 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/string_decoder/package.json
+652 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/stringstream/package.json
+653 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/strip-ansi/package.json
+654 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/strip-bom/package.json
+655 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/strip-indent/package.json
+656 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/strip-json-comments/package.json
+657 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/subarg/package.json
+658 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/superagent/package.json
+659 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/supports-color/package.json
+660 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/sw-toolbox/package.json
+661 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/symbol-observable/package.json
+662 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/syntax-error/package.json
+663 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tapable/package.json
+664 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tar/package.json
+665 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tar-stream/package.json
+666 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/through/package.json
+667 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/through2/package.json
+668 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/thunky/package.json
+669 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/timed-out/package.json
+670 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/timers-browserify/package.json
+671 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tiny-lr/package.json
+672 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tmp/package.json
+673 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/to-arraybuffer/package.json
+674 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/to-fast-properties/package.json
+675 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tough-cookie/package.json
+676 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/trim-newlines/package.json
+677 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/trim-right/package.json
+678 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tsickle/package.json
+679 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tslint/package.json
+680 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tslint-eslint-rules/package.json
+681 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tty-browserify/package.json
+682 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tunnel-agent/package.json
+683 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/tweetnacl/package.json
+684 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/type-is/package.json
+685 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/typedarray/package.json
+686 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/typedarray-to-buffer/package.json
+687 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/typescript/package.json
+688 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/uglify-js/package.json
+689 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/uglify-to-browserify/package.json
+690 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ultron/package.json
+691 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/umd/package.json
+692 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/underscore/package.json
+693 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/underscore.string/package.json
+694 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/unorm/package.json
+695 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/unpipe/package.json
+696 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/unreachable-branch-transform/package.json
+697 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/update-notifier/package.json
+698 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/url/package.json
+699 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/user-home/package.json
+700 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/util/package.json
+701 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/util-deprecate/package.json
+702 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/utils-merge/package.json
+703 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/uuid/package.json
+704 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/v8flags/package.json
+705 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/valid-identifier/package.json
+706 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/validate-npm-package-license/package.json
+707 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/validate-npm-package-name/package.json
+708 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/vary/package.json
+709 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/verror/package.json
+710 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/vlq/package.json
+711 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/vm-browserify/package.json
+712 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/walkdir/package.json
+713 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/watchpack/package.json
+714 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/webpack/package.json
+715 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/webpack-sources/package.json
+716 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/websocket-driver/package.json
+717 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/websocket-extensions/package.json
+718 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/which/package.json
+719 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/which-module/package.json
+720 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/wide-align/package.json
+721 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/win-release/package.json
+722 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/window-size/package.json
+723 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/wordwrap/package.json
+724 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/wrap-ansi/package.json
+725 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/wrappy/package.json
+726 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/write-file-atomic/package.json
+727 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/ws/package.json
+728 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xcode/package.json
+729 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xdg-basedir/package.json
+730 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xml2js/package.json
+731 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xmlbuilder/package.json
+732 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xmldom/package.json
+733 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xmlhttprequest/package.json
+734 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/xtend/package.json
+735 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/y18n/package.json
+736 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/yallist/package.json
+737 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/yargs/package.json
+738 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/yargs-parser/package.json
+739 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/zip-stream/package.json
+740 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/zone.js/package.json
+741 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic/app-scripts/package.json
+742 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic/cli-plugin-cordova/package.json
+743 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic/cli-plugin-ionic-angular/package.json
+744 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic/cli-utils/package.json
+745 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic/storage/package.json
+746 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/app/package.json
+747 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/auth/package.json
+748 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/database/package.json
+749 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/firestore/package.json
+750 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/messaging/package.json
+751 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/polyfill/package.json
+752 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/storage/package.json
+753 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/util/package.json
+754 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@firebase/webchannel-wrapper/package.json
+755 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@types/localforage/package.json
+756 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic-native/core/package.json
+757 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic-native/facebook/package.json
+758 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic-native/secure-storage/package.json
+759 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic-native/splash-screen/package.json
+760 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@ionic-native/status-bar/package.json
+761 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/common/package.json
+762 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/compiler/package.json
+763 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/compiler-cli/package.json
+764 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/core/package.json
+765 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/forms/package.json
+766 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/http/package.json
+767 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/platform-browser/package.json
+768 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/platform-browser-dynamic/package.json
+769 verbose installManyTop reading scoped package data from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/@angular/tsc-wrapped/package.json
+770 info package.json browser-resolve@1.11.2 No README data
+771 info package.json core-js@2.4.1 No README data
+772 info package.json jsesc@1.3.0 No README data
+773 info package.json node-bin-setup@1.0.6 No description
+774 info package.json node-bin-setup@1.0.6 No repository field.
+775 info package.json node-bin-setup@1.0.6 No README data
+776 info package.json opener@1.4.2 No README data
+777 info package.json output-file-sync@1.1.2 No README data
+778 info package.json pegjs@0.10.0 No README data
+779 info package.json qs@6.2.0 No README data
+780 info package.json setimmediate@1.0.5 No README data
+781 info package.json @angular/tsc-wrapped@4.1.2 No README data
+782 info package.json array-unique@0.2.1 license should be a valid SPDX license expression
+783 info package.json assert@1.4.1 assert is also the name of a node core module.
+784 info package.json async-foreach@0.1.3 No license field.
+785 info package.json base62@0.1.1 No license field.
+786 info package.json bcrypt-pbkdf@1.0.1 No repository field.
+787 info package.json body@5.1.0 No license field.
+788 info package.json browserify-fs@1.0.0 No license field.
+789 info package.json buffer@4.9.1 buffer is also the name of a node core module.
+790 info package.json buffer-indexof@1.1.0 No license field.
+791 info package.json bytes@1.0.0 No license field.
+792 info package.json console-browserify@1.1.0 No license field.
+793 info package.json continuable-cache@0.3.1 No license field.
+794 info package.json cordova-plugin-browsertab@0.2.0 No repository field.
+795 info package.json cordova-registry-mapper@1.1.15 license should be a valid SPDX license expression
+796 info package.json date-now@0.1.4 No license field.
+797 info package.json dep-graph@1.1.0 No license field.
+798 info package.json dependency-ls@1.1.1 license should be a valid SPDX license expression
+799 info package.json doctrine@0.7.2 No license field.
+800 info package.json dom-storage@2.0.2 license should be a valid SPDX license expression
+801 info package.json elementtree@0.1.6 No license field.
+802 info package.json enhanced-resolve@3.1.0 No license field.
+803 info package.json error@7.0.2 No license field.
+804 info package.json esprima-fb@3001.1.0-dev-harmony-fb No license field.
+805 info package.json esutils@2.0.2 No license field.
+806 info package.json events@1.1.1 events is also the name of a node core module.
+807 info package.json extsprintf@1.0.2 No license field.
+808 info package.json findup-sync@0.3.0 No license field.
+809 info package.json fwd-stream@1.0.4 No license field.
+810 info package.json glob-base@0.3.0 license should be a valid SPDX license expression
+811 info package.json has@1.0.1 No license field.
+812 info package.json indexof@0.0.1 No repository field.
+813 info package.json indexof@0.0.1 No license field.
+814 info package.json ionic-plugin-keyboard@2.2.1 license should be a valid SPDX license expression
+815 info package.json is@0.2.7 No license field.
+816 info package.json is-object@0.1.2 No license field.
+817 info package.json is-primitive@2.0.0 license should be a valid SPDX license expression
+818 info package.json js-base64@2.1.9 license should be a valid SPDX license expression
+819 info package.json json-schema@0.2.3 No license field.
+820 info package.json jsonify@0.0.0 license should be a valid SPDX license expression
+821 info package.json jstransform@3.0.0 No license field.
+822 info package.json level-blobs@0.1.7 No license field.
+823 info package.json level-filesystem@1.2.0 No license field.
+824 info package.json level-hooks@4.5.0 No license field.
+825 info package.json localforage-cordovasqlitedriver@1.5.0 No license field.
+826 info package.json longest@1.0.1 license should be a valid SPDX license expression
+827 info package.json mime@1.3.4 No license field.
+828 info package.json optimist@0.6.1 license should be a valid SPDX license expression
+829 info package.json options@0.0.6 No license field.
+830 info package.json preserve@0.2.0 license should be a valid SPDX license expression
+831 info package.json process@0.11.10 process is also the name of a node core module.
+832 info package.json punycode@1.4.1 punycode is also the name of a node core module.
+833 info package.json querystring@0.2.0 querystring is also the name of a node core module.
+834 info package.json querystring@0.2.0 No license field.
+835 info package.json q@1.0.1 license should be a valid SPDX license expression
+836 info package.json querystring-es3@0.2.1 No license field.
+837 info package.json rechoir@0.6.2 No license field.
+838 info package.json repeat-element@1.1.2 license should be a valid SPDX license expression
+839 info package.json rx-lite@3.1.2 No license field.
+840 info package.json rx-lite-aggregates@4.0.8 No license field.
+841 info package.json safe-json-parse@1.0.1 No license field.
+842 info package.json shelljs@0.5.3 license should be a valid SPDX license expression
+843 info package.json sntp@1.0.9 No license field.
+844 info package.json stdout-stream@1.4.0 No license field.
+845 info package.json string-template@0.2.1 No license field.
+846 info package.json string.prototype.codepointat@0.2.0 No license field.
+847 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
+848 info package.json thunky@0.1.0 No license field.
+849 info package.json timers-browserify@2.0.2 No license field.
+850 info package.json unorm@1.4.1 license should be a valid SPDX license expression
+851 info package.json url@0.11.0 url is also the name of a node core module.
+852 info package.json util@0.10.3 util is also the name of a node core module.
+853 info package.json utils-merge@1.0.0 No license field.
+854 info package.json v8flags@2.1.1 No license field.
+855 info package.json valid-identifier@0.0.1 license should be a valid SPDX license expression
+856 info package.json verror@1.3.6 No license field.
+857 info package.json window-size@0.1.0 No license field.
+858 info package.json xmldom@0.1.27 No license field.
+859 info package.json @firebase/auth@0.2.2 No repository field.
+860 verbose readDependencies loading dependencies from /Users/wongwaichun/Desktop/MYFYP/MyFyp/package.json
+861 verbose install cordova-plugin-facebook4 is installed as 1.7.4
+862 silly cache add args [ 'cordova-plugin-facebook4', null ]
+863 verbose cache add spec cordova-plugin-facebook4
+864 silly cache add parsed spec Result {
+864 silly cache add   raw: 'cordova-plugin-facebook4',
+864 silly cache add   scope: null,
+864 silly cache add   name: 'cordova-plugin-facebook4',
+864 silly cache add   rawSpec: '',
+864 silly cache add   spec: 'latest',
+864 silly cache add   type: 'tag' }
+865 silly addNamed cordova-plugin-facebook4@latest
+866 verbose addNamed "latest" is being treated as a dist-tag for cordova-plugin-facebook4
+867 info addNameTag [ 'cordova-plugin-facebook4', 'latest' ]
+868 silly mapToRegistry name cordova-plugin-facebook4
+869 silly mapToRegistry using default registry
+870 silly mapToRegistry registry https://registry.npmjs.org/
+871 silly mapToRegistry data Result {
+871 silly mapToRegistry   raw: 'cordova-plugin-facebook4',
+871 silly mapToRegistry   scope: null,
+871 silly mapToRegistry   name: 'cordova-plugin-facebook4',
+871 silly mapToRegistry   rawSpec: '',
+871 silly mapToRegistry   spec: 'latest',
+871 silly mapToRegistry   type: 'tag' }
+872 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-facebook4
+873 verbose addNameTag registry:https://registry.npmjs.org/cordova-plugin-facebook4 not in flight; fetching
+874 verbose get https://registry.npmjs.org/cordova-plugin-facebook4 not expired, no request
+875 silly addNameTag next cb for cordova-plugin-facebook4 with tag latest
+876 silly addNamed cordova-plugin-facebook4@1.9.1
+877 verbose addNamed "1.9.1" is a plain semver version for cordova-plugin-facebook4
+878 silly mapToRegistry name cordova-plugin-facebook4
+879 silly mapToRegistry using default registry
+880 silly mapToRegistry registry https://registry.npmjs.org/
+881 silly mapToRegistry data Result {
+881 silly mapToRegistry   raw: 'cordova-plugin-facebook4',
+881 silly mapToRegistry   scope: null,
+881 silly mapToRegistry   name: 'cordova-plugin-facebook4',
+881 silly mapToRegistry   rawSpec: '',
+881 silly mapToRegistry   spec: 'latest',
+881 silly mapToRegistry   type: 'tag' }
+882 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-facebook4
+883 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz not in flight; adding
+884 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz',
+884 verbose addRemoteTarball   '60acb3a026b5eaceb1160e97ab28be6c68192e4f' ]
+885 info retry fetch attempt 1 at 12:29:41
+886 info attempt registry request try #1 at 12:29:41
+887 http fetch GET https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz
+888 verbose request id a6eca7a004233276
+889 http fetch 200 https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz
+890 silly fetchAndShaCheck shasum 60acb3a026b5eaceb1160e97ab28be6c68192e4f
+891 verbose addTmpTarball /var/folders/bd/33ndjgpd2xlb23yyqztgqky80000gn/T/npm-5365-2b9b87fb/registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz not in flight; adding
+892 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-facebook4@1.9.1
+893 verbose correctMkdir /Users/wongwaichun/.npm correctMkdir not in flight; initializing
+894 silly cache afterAdd cordova-plugin-facebook4@1.9.1
+895 verbose afterAdd /Users/wongwaichun/.npm/cordova-plugin-facebook4/1.9.1/package/package.json not in flight; writing
+896 verbose correctMkdir /Users/wongwaichun/.npm correctMkdir not in flight; initializing
+897 verbose afterAdd /Users/wongwaichun/.npm/cordova-plugin-facebook4/1.9.1/package/package.json written
+898 silly install resolved [ { name: 'cordova-plugin-facebook4',
+898 silly install resolved     version: '1.9.1',
+898 silly install resolved     description: 'Cordova Facebook SDK 4 Plugin',
+898 silly install resolved     cordova: { id: 'cordova-plugin-facebook4', platforms: [Array] },
+898 silly install resolved     repository:
+898 silly install resolved      { type: 'git',
+898 silly install resolved        url: 'git+https://github.com/jeduan/cordova-plugin-facebook4.git' },
+898 silly install resolved     keywords:
+898 silly install resolved      [ 'cordova',
+898 silly install resolved        'facebook',
+898 silly install resolved        'ecosystem:cordova',
+898 silly install resolved        'cordova-android',
+898 silly install resolved        'cordova-ios',
+898 silly install resolved        'cordova-browser',
+898 silly install resolved        'facebook-sdk',
+898 silly install resolved        'social',
+898 silly install resolved        'sharing' ],
+898 silly install resolved     license: 'Apache-2.0',
+898 silly install resolved     gitHead: '3770c9c910f3627557179af4656214209c47be38',
+898 silly install resolved     bugs:
+898 silly install resolved      { url: 'https://github.com/jeduan/cordova-plugin-facebook4/issues' },
+898 silly install resolved     homepage: 'https://github.com/jeduan/cordova-plugin-facebook4#readme',
+898 silly install resolved     _id: 'cordova-plugin-facebook4@1.9.1',
+898 silly install resolved     _npmVersion: '5.0.0',
+898 silly install resolved     _nodeVersion: '8.0.0',
+898 silly install resolved     _npmUser: { name: 'jeduan', email: 'jeduan@gmail.com' },
+898 silly install resolved     dist:
+898 silly install resolved      { integrity: 'sha512-B45qw+Z+GT2iIQWeF8M9EvmAzoi6Akems0FHq/dum9gRfl0uekgdaFTKiPZNgP1Q8BsC8xJU+VkhtRxsiT9gTw==',
+898 silly install resolved        shasum: '60acb3a026b5eaceb1160e97ab28be6c68192e4f',
+898 silly install resolved        tarball: 'https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz' },
+898 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+898 silly install resolved     _npmOperationalInternal:
+898 silly install resolved      { host: 's3://npm-registry-packages',
+898 silly install resolved        tmp: 'tmp/cordova-plugin-facebook4-1.9.1.tgz_1496540796916_0.1900506243109703' },
+898 silly install resolved     directories: {},
+898 silly install resolved     _shasum: '60acb3a026b5eaceb1160e97ab28be6c68192e4f',
+898 silly install resolved     _resolved: 'https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.1.tgz',
+898 silly install resolved     _from: 'cordova-plugin-facebook4@latest' } ]
+899 info install cordova-plugin-facebook4@1.9.1 into /Users/wongwaichun/Desktop/MYFYP/MyFyp
+900 info installOne cordova-plugin-facebook4@1.9.1
+901 verbose installOne of cordova-plugin-facebook4 to /Users/wongwaichun/Desktop/MYFYP/MyFyp not in flight; installing
+902 verbose correctMkdir /Users/wongwaichun/.npm/_locks correctMkdir not in flight; initializing
+903 verbose lock using /Users/wongwaichun/.npm/_locks/cordova-plugin-facebook4-043a9f75f8829db4.lock for /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+904 silly install write writing cordova-plugin-facebook4 1.9.1 to /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+905 verbose unbuild node_modules/cordova-plugin-facebook4
+906 info preuninstall cordova-plugin-facebook4@1.7.4
+907 info uninstall cordova-plugin-facebook4@1.7.4
+908 verbose unbuild rmStuff cordova-plugin-facebook4@1.7.4 from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules
+909 info postuninstall cordova-plugin-facebook4@1.7.4
+910 silly gentlyRm /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4 is being purged from base /Users/wongwaichun/Desktop/MYFYP/MyFyp
+911 verbose gentlyRm don't care about contents; nuking /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+912 silly vacuum-fs purging /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+913 silly vacuum-fs quitting because other entries in /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules
+914 verbose tar unpack /Users/wongwaichun/.npm/cordova-plugin-facebook4/1.9.1/package.tgz
+915 verbose tar unpacking to /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+916 silly gentlyRm /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4 is being purged
+917 verbose gentlyRm don't care about contents; nuking /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+918 silly gunzTarPerm modes [ '755', '644' ]
+919 silly gunzTarPerm extractEntry package.json
+920 silly gunzTarPerm extractEntry .npmignore
+921 silly gunzTarPerm extractEntry README.md
+922 silly gunzTarPerm extractEntry LICENSE
+923 silly gunzTarPerm extractEntry CONTRIBUTING.md
+924 silly gunzTarPerm extractEntry docs/TROUBLESHOOTING.md
+925 silly gunzTarPerm extractEntry docs/android/README.md
+926 silly gunzTarPerm extractEntry docs/browser/README.md
+927 silly gunzTarPerm extractEntry docs/browser/LOCALHOST_GUIDE.md
+928 silly gunzTarPerm extractEntry docs/browser/app_domain_setup.png
+929 silly gunzTarPerm extractEntry docs/ios/README.md
+930 silly gunzTarPerm extractEntry www/facebook-browser.js
+931 silly gunzTarPerm extractEntry www/facebook-native.js
+932 silly gunzTarPerm extractEntry plugin.xml
+933 silly gunzTarPerm extractEntry scripts/after_prepare.js
+934 silly gunzTarPerm extractEntry src/android/ConnectPlugin.java
+935 silly gunzTarPerm extractEntry src/android/facebookconnect.xml
+936 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Bolts
+937 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFCancellationTokenSource.h
+938 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLink.h
+939 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLinkResolving.h
+940 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h
+941 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h
+942 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLinkTarget.h
+943 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFCancellationToken.h
+944 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFCancellationTokenRegistration.h
+945 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFAppLinkNavigation.h
+946 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFExecutor.h
+947 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFMeasurementEvent.h
+948 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFTask+Exceptions.h
+949 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFTask.h
+950 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFTaskCompletionSource.h
+951 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFURL.h
+952 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/BFWebViewAppLinkResolver.h
+953 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Headers/Bolts.h
+954 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Info.plist
+955 silly gunzTarPerm extractEntry src/ios/Bolts.framework/Modules/module.modulemap
+956 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/FBSDKCoreKit
+957 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h
+958 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h
+959 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h
+960 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h
+961 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h
+962 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKButton.h
+963 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKConstants.h
+964 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKCopying.h
+965 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h
+966 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h
+967 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h
+968 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h
+969 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h
+970 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKMacros.h
+971 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h
+972 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKProfile.h
+973 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h
+974 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKSettings.h
+975 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h
+976 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Headers/FBSDKUtility.h
+977 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Info.plist
+978 silly gunzTarPerm extractEntry src/ios/FBSDKCoreKit.framework/Modules/module.modulemap
+979 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/FBSDKLoginKit
+980 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h
+981 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h
+982 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h
+983 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h
+984 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h
+985 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h
+986 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h
+987 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Info.plist
+988 silly gunzTarPerm extractEntry src/ios/FBSDKLoginKit.framework/Modules/module.modulemap
+989 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/FBSDKMessengerShareKit
+990 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerBroadcastContext.h
+991 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerButton.h
+992 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerContext.h
+993 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerShareKit.h
+994 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerShareOptions.h
+995 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerSharer.h
+996 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandler.h
+997 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerCancelContext.h
+998 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerOpenFromComposerContext.h
+999 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Headers/FBSDKMessengerURLHandlerReplyContext.h
+1000 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Info.plist
+1001 silly gunzTarPerm extractEntry src/ios/FBSDKMessengerShareKit.framework/Modules/module.modulemap
+1002 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/FBSDKShareKit
+1003 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h
+1004 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKAppGroupAddDialog.h
+1005 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKAppGroupJoinDialog.h
+1006 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKAppInviteContent.h
+1007 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKAppInviteDialog.h
+1008 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKGameRequestContent.h
+1009 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKGameRequestDialog.h
+1010 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKHashtag.h
+1011 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKLikeButton.h
+1012 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKLikeControl.h
+1013 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKLikeObjectType.h
+1014 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKLiking.h
+1015 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKMessageDialog.h
+1016 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSendButton.h
+1017 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareAPI.h
+1018 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareButton.h
+1019 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKAppGroupContent.h
+1020 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareDialog.h
+1021 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareDialogMode.h
+1022 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareKit.h
+1023 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h
+1024 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h
+1025 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphAction.h
+1026 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphContent.h
+1027 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphObject.h
+1028 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphValueContainer.h
+1029 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h
+1030 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h
+1031 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h
+1032 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h
+1033 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSharing.h
+1034 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSharingButton.h
+1035 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h
+1036 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Info.plist
+1037 silly gunzTarPerm extractEntry src/ios/FBSDKShareKit.framework/Modules/module.modulemap
+1038 silly gunzTarPerm extractEntry src/ios/FacebookConnectPlugin.h
+1039 silly gunzTarPerm extractEntry src/ios/FacebookConnectPlugin.m
+1040 silly gunzTarPerm extractEntry tests/tests.js
+1041 silly gunzTarPerm extractEntry tests/plugin.xml
+1042 verbose write writing to /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4/package.json
+1043 info preinstall cordova-plugin-facebook4@1.9.1
+1044 verbose readDependencies loading dependencies from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4/package.json
+1045 verbose readDependencies loading dependencies from /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4/package.json
+1046 silly install resolved []
+1047 verbose about to build /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+1048 info build /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+1049 info linkStuff cordova-plugin-facebook4@1.9.1
+1050 silly linkStuff cordova-plugin-facebook4@1.9.1 has /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules as its parent node_modules
+1051 verbose linkBins cordova-plugin-facebook4@1.9.1
+1052 verbose linkMans cordova-plugin-facebook4@1.9.1
+1053 verbose rebuildBundles cordova-plugin-facebook4@1.9.1
+1054 info install cordova-plugin-facebook4@1.9.1
+1055 info postinstall cordova-plugin-facebook4@1.9.1
+1056 verbose unlock done using /Users/wongwaichun/.npm/_locks/cordova-plugin-facebook4-043a9f75f8829db4.lock for /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/cordova-plugin-facebook4
+1057 verbose validateInstall loading /Users/wongwaichun/Desktop/MYFYP/MyFyp/package.json for validation
+1058 verbose stack Error: The package @ionic-native/core@4.3.3 does not satisfy its siblings' peerDependencies requirements!
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/lib/install.js:125:32
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/lib/install.js:268:7
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1058 verbose stack     at cb (/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1058 verbose stack     at cb (/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1058 verbose stack     at cb (/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1058 verbose stack     at /Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1059 verbose cwd /Users/wongwaichun/Desktop/MYFYP/MyFyp
+1060 error Darwin 15.6.0
+1061 error argv "/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/node/bin/node" "/Users/wongwaichun/Desktop/MYFYP/MyFyp/node_modules/.bin/npm" "install" "cordova-plugin-facebook4" "--production" "--save"
+1062 error node v9.1.0
+1063 error npm  v2.15.12
+1064 error code EPEERINVALID
+1065 error peerinvalid The package @ionic-native/core@4.3.3 does not satisfy its siblings' peerDependencies requirements!
+1065 error peerinvalid Peer @ionic-native/facebook@4.3.3 wants @ionic-native/core@^4.2.0
+1065 error peerinvalid Peer @ionic-native/secure-storage@4.3.3 wants @ionic-native/core@^4.2.0
+1065 error peerinvalid Peer @ionic-native/splash-screen@3.14.0 wants @ionic-native/core@^3.6.0
+1065 error peerinvalid Peer @ionic-native/status-bar@3.10.2 wants @ionic-native/core@^3.6.0
+1066 verbose exit [ 1, true ]

@@ -13,6 +13,12 @@
     "cordova-plugin-buildinfo": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
@@ -22,6 +28,9 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
+    "cordova-plugin-secure-storage": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
@@ -29,6 +38,9 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-sqlite-storage": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-universal-links-plugin": {
@@ -41,20 +53,7 @@
       "APP_ID": "1920863824834000",
       "APP_NAME": "ionicfbapp",
       "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-secure-storage": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    }
-  }
+  "dependent_plugins": {}
 }

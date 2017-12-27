@@ -24,6 +24,14 @@ export class AccountService {
         return this.http.post('http://101.78.175.101:6780/login', JSON.stringify(body), {headers:this.headers})
     }
 
+    fbLogin(username, iconPath) {
+        let body = {
+            name: username,
+            iconPath: iconPath
+        };
+        return this.http.post('http://101.78.175.101:6780/fbLogin', JSON.stringify(body), {headers:this.headers})
+    }
+
     logout() {
         this.http.post('http://127.0.0.1:8000/logout');
     }

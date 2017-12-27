@@ -16,13 +16,6 @@ export class UserService {
         this.headers.append('Content-Type', 'application/json');
     }
 
-    uploadIcon(path, Iconname, username) {
-        let body = {
-            path: path,
-            iconname: Iconname,
-            username: username,
-        };
-        return this.http.post('http://101.78.175.101:6780/uploadIcon', JSON.stringify(body), {headers:this.headers})
-    }
+  
 
 }

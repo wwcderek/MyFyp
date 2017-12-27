@@ -73,14 +73,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-    "pluginId": "cordova-plugin-facebook4",
-    "clobbers": [
-      "facebookConnectPlugin"
-    ]
-  },
-  {
     "id": "cordova-plugin-inappbrowser.inappbrowser",
     "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
     "pluginId": "cordova-plugin-inappbrowser",
@@ -143,6 +135,14 @@ module.exports = [
       "cordova.plugins.Keyboard"
     ],
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+    "pluginId": "cordova-plugin-facebook4",
+    "clobbers": [
+      "facebookConnectPlugin"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -154,7 +154,6 @@ module.exports.metadata =
   "cordova-plugin-camera": "2.4.1",
   "cordova-plugin-console": "1.0.5",
   "cordova-plugin-device": "1.1.4",
-  "cordova-plugin-facebook4": "1.9.1",
   "cordova-plugin-inappbrowser": "1.7.1",
   "cordova-plugin-secure-storage": "2.6.8",
   "cordova-plugin-splashscreen": "4.0.3",
@@ -162,7 +161,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.1",
   "cordova-sqlite-storage": "2.0.4",
   "cordova-universal-links-plugin": "1.2.1",
-  "ionic-plugin-keyboard": "2.2.1"
+  "ionic-plugin-keyboard": "2.2.1",
+  "cordova-plugin-facebook4": "1.7.4"
 };
 // BOTTOM OF METADATA
 });

@@ -18,9 +18,9 @@
   "cordova-plugin-compat": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-compat@^1.0.0"
+      "id": "cordova-plugin-compat@1.2"
     },
-    "is_top_level": false,
+    "is_top_level": true,
     "variables": {}
   },
   "cordova-plugin-console": {
@@ -87,17 +87,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-facebook4": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-facebook4"
-    },
-    "is_top_level": true,
-    "variables": {
-      "APP_ID": "1920863824834000",
-      "APP_NAME": "ionicfbapp"
-    }
-  },
   "cordova-plugin-secure-storage": {
     "source": {
       "type": "registry",
@@ -121,5 +110,16 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@1.7.4"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "1920863824834000",
+      "APP_NAME": "ionicfbapp"
+    }
   }
 }

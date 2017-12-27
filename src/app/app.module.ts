@@ -11,7 +11,9 @@ import { DetailPage } from '../pages/detail/detail';
 import { BarcodePage } from "../pages/barcode/barcode";
 import { SettingPage } from "../pages/setting/setting";
 import { UploadPage } from '../pages/upload/upload';
+import { DiscountPage } from '../pages/discount/discount';
 import { RegistrationPage } from '../pages/registration/registration';
+import { PlaylistPage } from '../pages/playlist/playlist';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
 import firebase from 'firebase';
@@ -19,6 +21,9 @@ import { Facebook } from '@ionic-native/facebook';
 import { IonicStorageModule } from '@ionic/storage';
 import { AccountService } from './services/account.service';
 import { UserService } from './services/user.service';
+import { GeneralService } from './services/general.service';
+import { UserComponent } from '../components/user/user';
+import { YoutubeProvider } from '../providers/youtube/youtube';
 
 
 firebase.initializeApp({
@@ -39,7 +44,10 @@ firebase.initializeApp({
     DetailPage,
       BarcodePage,
       SettingPage,
-      UploadPage
+      UploadPage,
+      DiscountPage,
+      PlaylistPage,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +65,9 @@ firebase.initializeApp({
     DetailPage,
       BarcodePage,
       SettingPage,
-      UploadPage
+      UploadPage,
+      DiscountPage,
+      PlaylistPage
   ],
   providers: [
     StatusBar,
@@ -66,7 +76,9 @@ firebase.initializeApp({
       Facebook,
       AccountService,
       UserService,
-      Nav
+      GeneralService,
+      Nav,
+    YoutubeProvider
   ]
 })
 @Component({

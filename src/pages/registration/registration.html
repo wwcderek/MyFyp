@@ -6,44 +6,46 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
-    <ion-title>registration</ion-title>
+  <ion-navbar transparent>
+    
     <ion-buttons end>
       <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
     </ion-buttons>
+    <ion-title>SIGN UP</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="registration">
-  <ion-slides #signupSlider>
-    <ion-slide>
-      <div padding>
-      </div>
-      <ion-card style="box-shadow:none">
-        <img src="assets/registration.jpg" style="width:70%; height:70%; margin:0 auto" />
-      </ion-card>
-      <ion-list no-lines>
-        <form [formGroup]="slideOneForm" #form="ngForm" (ngSubmit)="register(form)" novalidate>
-          <ion-item>
-            <ion-label floating style="font-size: 1.5em">Username</ion-label>
-            <ion-input type="text" name="username" [(ngModel)]="username"  formControlName="username" [class.invalid]="!slideOneForm.controls.username.valid && (slideOneForm.controls.username.dirty || submitAttempt)"></ion-input>
-          </ion-item>
-          <ion-item *ngIf="!slideOneForm.controls.username.valid  && (slideOneForm.controls.username.dirty || submitAttempt)">
-            <p>Please enter a valid name.</p>
-          </ion-item>
+<ion-content class="scroll-content bg-style">
+    <form [formGroup]="slideOneForm" #form="ngForm" (ngSubmit)="register(form)" novalidate> 
+      <ion-card style="box-shadow: none">
+        <ion-card-content>
+          <ion-list no-line>
+              <ion-item>
+                  <ion-label floating class="label__placeholder" style="font-family: 'Roboto';color:#525058;">Username</ion-label>
+                  <ion-input type="text"  name="username" [(ngModel)]="username"  formControlName="username" [class.invalid]="!slideOneForm.controls.username.valid && (slideOneForm.controls.username.dirty || submitAttempt)"></ion-input>
+              </ion-item>     
+              <ion-item *ngIf="!slideOneForm.controls.username.valid  && (slideOneForm.controls.username.dirty || submitAttempt)">
+                  <p>Please enter a valid name.</p>
+                </ion-item> 
+                <ion-item>
+                    <ion-label floating style="font-size: 1.5em" style="font-family: 'Roboto';color:#525058">Password</ion-label>
+                    <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" [class.invalid]="!slideOneForm.controls.password.valid && (slideOneForm.controls.password.dirty || submitAttempt)"></ion-input>
+                  </ion-item>
+                  <ion-item *ngIf="!slideOneForm.controls.password.valid  && (slideOneForm.controls.password.dirty || submitAttempt)">
+                    <p>Please enter a valid password.</p>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label floating style="font-size: 1.5em" style="font-family: 'Roboto';color:#525058">Confirmed Password</ion-label>
+                      <ion-input type="password"  name="confirm" [(ngModel)]="confirm" formControlName="confirm" [class.invalid]="!slideOneForm.controls.confirm.valid && (slideOneForm.controls.confirm.dirty || submitAttempt)"></ion-input>
+                    </ion-item>
+                    <ion-item *ngIf="!slideOneForm.controls.confirm.valid  && (slideOneForm.controls.confirm.dirty || submitAttempt)">
+                      <p>Please enter a valid password.</p>
+                    </ion-item>    
 
-          <ion-item>
-            <ion-label floating style="font-size: 1.5em">Password</ion-label>
-            <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" [class.invalid]="!slideOneForm.controls.password.valid && (slideOneForm.controls.password.dirty || submitAttempt)"></ion-input>
-          </ion-item>
-          <ion-item *ngIf="!slideOneForm.controls.password.valid  && (slideOneForm.controls.password.dirty || submitAttempt)">
-            <p>Please enter a valid password.</p>
-          </ion-item>
-          <p>
-            <button ion-button type="submit" round full>Register</button>
-          </p>
-        </form>
-      </ion-list>
-    </ion-slide>
-  </ion-slides>
-</ion-content>
+                    <button ion-button type="submit" style="background-color:#65BFA6;margin-top:30px">REGISTER</button>     
+                    <button ion-button  (click)="resetForm()" style="background-color: red;margin-top:30px">RESET</button>               
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </ion-content>

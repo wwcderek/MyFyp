@@ -67,14 +67,6 @@ module.exports = [
         "runs": true
     },
     {
-        "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-        "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-        "pluginId": "cordova-plugin-facebook4",
-        "clobbers": [
-            "facebookConnectPlugin"
-        ]
-    },
-    {
         "id": "cordova-plugin-secure-storage.SecureStorage",
         "file": "plugins/cordova-plugin-secure-storage/www/securestorage.js",
         "pluginId": "cordova-plugin-secure-storage",
@@ -127,12 +119,19 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
+    },
+    {
+        "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+        "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+        "pluginId": "cordova-plugin-facebook4",
+        "clobbers": [
+            "facebookConnectPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-plugin-buildinfo": "1.1.0",
     "cordova-plugin-console": "1.0.5",
@@ -143,10 +142,11 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-universal-links-plugin": "1.2.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-facebook4": "1.9.1",
     "cordova-plugin-secure-storage": "2.6.8",
     "cordova-sqlite-storage": "2.0.4",
-    "cordova-plugin-camera": "2.4.1"
+    "cordova-plugin-camera": "2.4.1",
+    "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-facebook4": "1.7.4"
 };
 // BOTTOM OF METADATA
 });

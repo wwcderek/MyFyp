@@ -5,40 +5,56 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar color="gray">
-    <button ion-button icon-only menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{name}}</ion-title>
-  </ion-navbar>
+    <ion-navbar transparent>
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu" style="color:white"></ion-icon>
+        </button>
+        <ion-title class="bg-style" style="color:white">TRAILER</ion-title>
+        <!-- <ion-searchbar style="color:white"  
+              [(ngModel)]="myInput"
+              [showCancelButton]="shouldShowCancel"
+              (ionCancel)="onCancel($event)">
+      </ion-searchbar> -->
+    </ion-navbar>
 </ion-header>
 
 
-<ion-content padding class="bg-style">
-  <ion-list class="bg-style">
-    <img src="assets/back2.gif" alt="Description"  full/>
-    <ion-item class="bg-style">
-      <ion-label fixed style="color: lightcyan">Category</ion-label>
-      <ion-select (ionChange)="changeCategory()" [(ngModel)]="category" name="category" class="bg-style" style="color: lightcyan">
+<ion-content padding class="bg-style card-background">
+        <ion-card *ngFor="let data of datas">
+            <img style="width: 100% !important; max-width:100% !important;" src="{{data.snippet.thumbnails.medium.url}}"/>
+                <div class="card-title" (click)="openPlaylist(data.id)">
+                <h1 style="font-family: Times New Roman, Times, serif;">{{data.snippet.title}}</h1>
+            </div>
+        </ion-card>
+        <ion-infinite-scroll (ionInfinite)="infiniteScroll($event)">
+            <ion-infinite-scroll-content>
+            </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+  <!-- <ion-list class="bg-style"> -->
+    <!-- <img src="assets/back2.gif" alt="Description"  full/> -->
+    <!-- <ion-item class="bg-style">
+      <ion-label fixed style="color: lightcyan">Category</ion-label> -->
+      <!-- <ion-select (ionChange)="changeCategory()" [(ngModel)]="category" name="category" class="bg-style" style="color: lightcyan">
         <ion-option value="action">Action</ion-option>
         <ion-option value="music">Music</ion-option>
-      </ion-select>
-    </ion-item>
+      </ion-select> -->
+    <!-- </ion-item> -->
 
 
-    <ion-item *ngFor="let film of films" class="bg-style">
+    <!-- <ion-item *ngFor="let film of films" class="bg-style">
       <ion-thumbnail item-start>
         <img src={{film.path}}>
       </ion-thumbnail>
-      <h1 class="font">{{film.name}}</h1>
-      <p>{{film.author}}</p>
+      <h1 class="font">{{film.title}}</h1>
+      <p>{{film.language}}</p>
       <p>
-        <ion-icon name="thumbs-up" class="like">{{film.score}}</ion-icon>&nbsp;&nbsp;&nbsp;
-        <ion-icon name="chatboxes" class="like">{{film.comment}}</ion-icon>
+        <ion-icon name="thumbs-up" class="like">{{film.rating}}</ion-icon>&nbsp;&nbsp;&nbsp;
+        <ion-icon name="chatboxes" class="like">{{film.description}}</ion-icon>
       </p>
       <button ion-button clear item-end (click)="viewDetail(film)">View</button>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
 
 

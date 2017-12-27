@@ -17,7 +17,7 @@ export class FilmService {
     }
 
     getFilm(category) {
-        return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/film.php?action=getFilm&category=" + category)
+        return this.http.get("http://101.78.175.101:6780/showFilm?category=" + category)
             .map(res => res.json());
     }
 
