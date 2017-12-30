@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { DetailPage } from '../pages/detail/detail';
 import { BarcodePage } from "../pages/barcode/barcode";
+import { ContentPage } from '../pages/content/content';
 import { SettingPage } from "../pages/setting/setting";
 import { UploadPage } from '../pages/upload/upload';
 import { DiscountPage } from '../pages/discount/discount';
@@ -47,6 +48,7 @@ firebase.initializeApp({
       UploadPage,
       DiscountPage,
       PlaylistPage,
+      ContentPage,
     UserComponent
   ],
   imports: [
@@ -66,6 +68,7 @@ firebase.initializeApp({
       BarcodePage,
       SettingPage,
       UploadPage,
+      ContentPage,
       DiscountPage,
       PlaylistPage
   ],

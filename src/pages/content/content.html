@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ContentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu" style="color:white"></ion-icon>
+      </button>
+    <!-- <ion-title>Film</ion-title> -->
+        <ion-searchbar style="input-text-color:white;
+        color: white;
+        box-shadow: none;" class="bg-style card-background"
+              [(ngModel)]="myInput"
+              [showCancelButton]="shouldShowCancel"
+              (ionCancel)="onCancel($event)">
+      </ion-searchbar>
+  </ion-navbar>
+  <ion-slides pager autoplay="5000" loop="true" speed="3000">
+    <ion-slide *ngFor="let image of ImageArray">
+      <img style="width: 100%; height: 270px;" src="{{image.image}}" /> 
+    </ion-slide>
+  </ion-slides>
+
+</ion-header>
+
+
+<ion-content padding class="bg-style card-background">
+<h6 style="color:#8c8c8c">
+  BEST POPULAR FILMS AND SERIALS
+</h6>
+<ion-scroll scrollX="true" style="white-space:nowrap; height:300px; width:100%" full>
+  <table>
+    <tr>
+      <td>  
+           <ion-item class="bg-style card-background">
+              <img src="../../assets/poster/poster1.jpg" style="width:180px; height:220px; padding-right:10px;" />  
+              <h2 style="color:white">Testing</h2>
+              <p style="padding-top:5px">
+                  <ion-icon name="thumbs-up" class="like" style="width:50%; padding-left:5px">5</ion-icon>&nbsp;&nbsp;&nbsp;
+                  <ion-icon name="chatboxes" class="like" style="width:50%">good</ion-icon>
+              </p>
+            </ion-item>
+      </td>
+  </tr>
+</table>
+</ion-scroll>
+</ion-content>

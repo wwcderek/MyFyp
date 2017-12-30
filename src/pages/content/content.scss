@@ -1,0 +1,55 @@
+page-content {
+      img{
+        display:block !important;
+        margin:auto !important;
+        max-width:100% !important;
+      }
+      
+      .font{
+        color:#fff;
+      }
+      
+      .like{
+        color:#ffcc33;
+      }
+
+      .card-background{
+        ion-card{
+          position: relative;
+          text-align: center;
+        }
+    }
+        .card-title{
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          font-weight: bold;
+        }
+        
+        .item-body {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1  auto;
+              -ms-flex: 1  auto;
+                  flex: 1  auto;
+        }
+        
+        h1{
+          font-size: 2.0em;
+          background-color: rgba(136, 136, 136,.37);
+          color: #fff;
+        }
+
+
+        .searchbar-md .searchbar-input {
+            color: #fff;
+            }
+
+            .searchbar-md .searchbar-input{
+                background: linear-gradient(to bottom right, #262833, #262833);
+              
+              }
+              .searchbar-md .searchbar-input-text-color{
+                background: linear-gradient(to bottom right, #262833, #262833);
+                
+              }
+}
