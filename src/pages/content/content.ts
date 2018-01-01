@@ -16,12 +16,16 @@ import { FilmService } from '../../app/services/film.service';
 export class ContentPage {
   ImageArray: any = [];
   MostPopular: any = [];
+  CategoryArray: any = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public filmService: FilmService) {
     this.filmService.mostPopular().subscribe(response => {
     this.MostPopular = response;
-    console.log(this.MostPopular);
 })
+    this.filmService.specificFilms(1).subscribe(response => {
+      this.CategoryArray = response;
+  })
+
     this.ImageArray = [
       {'image':'http://101.78.175.101:6780/storage/2018-01-01-15-17-45.jpg'},
       {'image':'http://101.78.175.101:6780/storage/2018-01-01-15-18-25.jpg'},
@@ -32,6 +36,12 @@ export class ContentPage {
 
   ionViewDidLoad() {
    
+  }
+
+  filmCategory(category) {
+    this.filmService.specificFilms(category).subscribe(response => {
+      this.CategoryArray = response;
+  })
   }
 
 }

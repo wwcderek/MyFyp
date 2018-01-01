@@ -26,4 +26,9 @@ export class FilmService {
         .map(res => res.json());
     }
 
+    specificFilms(category) {
+        return this.http.get("http://101.78.175.101:6780/specificFilms?category=" + category)
+        .map(res => res.json());
+    }
+
 }
