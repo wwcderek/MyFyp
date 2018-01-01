@@ -21,5 +21,9 @@ export class FilmService {
             .map(res => res.json());
     }
 
+    mostPopular() {
+        return this.http.get("http://101.78.175.101:6780/mostPopular")
+        .map(res => res.json());
+    }
 
 }

@@ -5,14 +5,12 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar transparent>
       <button ion-button icon-only menuToggle>
           <ion-icon name="menu" style="color:white"></ion-icon>
       </button>
     <!-- <ion-title>Film</ion-title> -->
-        <ion-searchbar style="input-text-color:white;
-        color: white;
+        <ion-searchbar style="color: white;
         box-shadow: none;" class="bg-style card-background"
               [(ngModel)]="myInput"
               [showCancelButton]="shouldShowCancel"
@@ -24,28 +22,48 @@
       <img style="width: 100%; height: 270px;" src="{{image.image}}" /> 
     </ion-slide>
   </ion-slides>
-
 </ion-header>
 
 
 <ion-content padding class="bg-style card-background">
-<h6 style="color:#8c8c8c">
-  BEST POPULAR FILMS AND SERIALS
-</h6>
-<ion-scroll scrollX="true" style="white-space:nowrap; height:300px; width:100%" full>
-  <table>
-    <tr>
-      <td>  
-           <ion-item class="bg-style card-background">
-              <img src="../../assets/poster/poster1.jpg" style="width:180px; height:220px; padding-right:10px;" />  
-              <h2 style="color:white">Testing</h2>
-              <p style="padding-top:5px">
-                  <ion-icon name="thumbs-up" class="like" style="width:50%; padding-left:5px">5</ion-icon>&nbsp;&nbsp;&nbsp;
-                  <ion-icon name="chatboxes" class="like" style="width:50%">good</ion-icon>
-              </p>
+  <h6 style="color:#8c8c8c">
+    BEST POPULAR FILMS AND SERIALS
+  </h6>
+  <ion-scroll scrollbar-x="false" scrollbar-y="false" scrollX="true" style="white-space:nowrap; height:230px; width:100%" full>
+    <table>
+      <tr>
+        <td *ngFor="let image of MostPopular">  
+            <ion-item class="bg-style card-background" no-lines>
+                <img src="{{image.path}}" style="width:120px; height:155px;" />  
+                <h4 style="color:white;width:120px;">{{image.title}}</h4>
+                <p style="padding-top:5px">
+                    <ion-icon name="thumbs-up" class="like" style="width:50%; padding-left:5px">&nbsp;5&nbsp;</ion-icon>&nbsp;&nbsp;&nbsp;
+                    <ion-icon name="chatboxes" class="like" style="width:50%">&nbsp;2&nbsp;</ion-icon>
+                </p>
             </ion-item>
-      </td>
-  </tr>
-</table>
-</ion-scroll>
+        </td>
+      </tr>
+    </table>
+  </ion-scroll>
+    <ion-scroll scrollbar-x="false" scrollbar-y="false" scrollX="true" style="white-space:nowrap; height:230px; width:100%" full>
+    <table>
+      <tr>
+          <td>
+              <button ion-button style="color:#8c8c8c" clear>ACTION</button>
+          </td>
+          <td>
+            <button ion-button style="color:#8c8c8c" clear>ANIMATION</button>
+          </td>
+          <td>
+            <button ion-button style="color:#8c8c8c" clear>FICTION</button>
+          </td>
+          <td>
+              <button ion-button style="color:#8c8c8c" clear>DRAMA</button>
+          </td>
+          <td>
+              <button ion-button style="color:#8c8c8c" clear>HORROR</button>
+          </td>
+      </tr>
+    </table>
+  </ion-scroll>      
 </ion-content>
