@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 import { FilmService } from '../../app/services/film.service';
+import { GeneralService } from '../../app/services/general.service';
 /**
  * Generated class for the ContentPage page.
  *
@@ -17,8 +19,9 @@ export class ContentPage {
   ImageArray: any = [];
   MostPopular: any = [];
   CategoryArray: any = [];
+  myInput: String = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public filmService: FilmService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public filmService: FilmService, public generalService: GeneralService) {
     this.filmService.mostPopular().subscribe(response => {
     this.MostPopular = response;
 })
@@ -42,6 +45,21 @@ export class ContentPage {
     this.filmService.specificFilms(category).subscribe(response => {
       this.CategoryArray = response;
   })
+  }
+
+  search() {
+    this.filmService.search(this.myInput).subscribe(response => {
+      if(response){
+      //this.generalService.alertMessage("Message", response[0].title);
+       this.viewDetail(response[0]);
+      }
+  })
+  }
+
+  viewDetail(film) {
+    this.navCtrl.push(DetailPage, {
+      film: film
+    });
   }
 
 }

@@ -1,3 +1,16 @@
 page-detail {
-
+    .container {
+        position: relative;
+    }
+    
+    .bottomright {
+        position: absolute;
+        bottom: 50px;
+        right: 15px;
+        font-size: 50px;
+    }
+    
+    img { 
+        opacity: 0.6;
+    }
 }

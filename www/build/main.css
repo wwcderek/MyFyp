@@ -35222,6 +35222,21 @@ page-content .searchbar-md .searchbar-input-text-color {
   background: linear-gradient(to bottom right, #262833, #262833);
 }
 
+page-detail .container {
+  position: relative;
+}
+
+page-detail .bottomright {
+  position: absolute;
+  bottom: 50px;
+  right: 15px;
+  font-size: 50px;
+}
+
+page-detail img {
+  opacity: 0.6;
+}
+
 page-discount {
   /* Title */
   /* Sign Up */

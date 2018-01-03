@@ -6,40 +6,60 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>{{film.name}}</ion-title>
+  <ion-navbar transparent>
+    <ion-title style="color:white">Film Detail</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-card>
-    <img src={{film.path}}/>
+<ion-content padding class="bg-style card-background">
+  <ion-card class="bg-style card-background">
+<div class="container">
+    <img src={{film.path}} style="width:100%; height:290px"/>
+    <div style="color:#8c8c8c;position: absolute;
+    bottom: 50px;
+    right: 45px;
+    font-size: 20px; ">RATING</div>
+    <div class="bottomright" style="color:white">{{film.rating}}</div>
+    </div>
     <ion-card-content>
-      <ion-card-title>
-        {{film.name}}
+      <ion-card-title style="color:white">
+        {{film.title}}
       </ion-card-title>
-      <ion-list>
-        <ion-item>
+      <ion-list class="bg-style card-background">
+          <ion-item class="bg-style card-background" style="color:#8c8c8c">
+              <ion-icon name="videocam" item-left></ion-icon>
+               Author
+              <ion-note style="color:white" item-right>
+                  Marcus Nispel
+              </ion-note>
+            </ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="person" item-left></ion-icon>
-          Author
-          <ion-note item-right>
-            {{film.author}}
+          <ion-note style="color:white" item-right>
+            {{film.role_name}}
           </ion-note>
         </ion-item>
-        <ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
+          <ion-icon name="document" item-left></ion-icon>
+           Category
+          <ion-note style="color:white" item-right>
+            {{film.type}}
+          </ion-note>
+        </ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="thumbs-up" item-left></ion-icon>
-          Score
-          <ion-note item-right>
-            {{film.score}}
+          Like
+          <ion-note style="color:white" item-right>
+            {{film.rating}}
           </ion-note>
         </ion-item>
-        <ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="chatboxes" item-left></ion-icon>
           Comment
-          <ion-note item-right>
-            {{film.comment}}
+          <ion-note style="color:white" item-right>
+            {{film.description}}
           </ion-note>
         </ion-item>
       </ion-list>
