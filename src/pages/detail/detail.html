@@ -18,27 +18,47 @@
 <div class="container">
     <img src={{film.path}} style="width:100%; height:290px"/>
     <div style="color:#8c8c8c;position: absolute;
-    bottom: 50px;
-    right: 45px;
-    font-size: 20px; ">RATING</div>
-    <div class="bottomright" style="color:white">{{film.rating}}</div>
+    bottom: 80px;
+    right: 70px;
+    font-size: 17px;
+    font-family:American Typewriter, serif">RATING</div>
+    <div style="color:white;position: absolute;
+    bottom: 80px;
+    right: 35px;
+    font-size: 50px;
+    font-family: Apple Chancery, cursive;">{{film.rating}}</div>
     </div>
-    <ion-card-content>
+    <ion-card-content style="font-family:American Typewriter, serif">
       <ion-card-title style="color:white">
         {{film.title}}
       </ion-card-title>
       <ion-list class="bg-style card-background">
-          <ion-item class="bg-style card-background" style="color:#8c8c8c">
+          <ion-item class="bg-style card-background" style="color:#8c8c8c;">
               <ion-icon name="videocam" item-left></ion-icon>
-               Author
+               Director
               <ion-note style="color:white" item-right>
                   Marcus Nispel
               </ion-note>
             </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="person" item-left></ion-icon>
+          Actor
           <ion-note style="color:white" item-right>
             {{film.role_name}}
+          </ion-note>
+        </ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
+          <ion-icon name="closed-captioning" item-left></ion-icon>
+           Language
+          <ion-note style="color:white" item-right>
+            {{film.language}}
+          </ion-note>
+        </ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c">
+          <ion-icon name="time" item-left></ion-icon>
+           Language
+          <ion-note style="color:white" item-right>
+            {{film.running_time}} mins
           </ion-note>
         </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">

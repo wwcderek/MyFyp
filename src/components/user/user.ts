@@ -14,12 +14,14 @@ export class UserComponent {
 
   text: string;
   username: string;
+  displayname: string;
   iconPath: string;
 
   constructor(private event: Events) {
     this.event.subscribe("Info", (data) => {
         this.iconPath = data.iconPath;
         this.username = data.username;
+        this.displayname = data.displayname;
     })
   
   

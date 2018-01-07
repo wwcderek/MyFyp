@@ -5,38 +5,65 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>setting</ion-title>
+  <ion-navbar transparent>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+        </ion-buttons>
+    <ion-title style="text-align:center">User Setting</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list>
-    <ion-item>
-    <button ion-button outline block (click)="takepic()">
+<ion-content class="scroll-content bg-style">     
+      <!-- <form [formGroup]="slideOneForm" #form="ngForm" (ngSubmit)="register(form)" novalidate>           
+        <ion-card style="box-shadow: none">
+         <ion-card-content>
+        <ion-list no-line>
+            <img src={{iconPath}} class="custom-avatar"/>
+            <h2 style="color:white; font-family:American Typewriter, serif;">{{username}}</h2>
+       <ion-item class="bg-style card-background">
+          <ion-label floating  class="label__placeholder" style="font-family:American Typewriter, serif;color:#525058;">Displayname</ion-label>
+          <ion-input type="text"  name="displayname" [(ngModel)]="displayname"  formControlName="displayname" [class.invalid]="!slideOneForm.controls.displayname.valid && (slideOneForm.controls.displayname.dirty || submitAttempt)"></ion-input>
+       </ion-item>
+       <ion-item *ngIf="!slideOneForm.controls.displayname.valid  && (slideOneForm.controls.displayname.dirty || submitAttempt)">
+          <p>Please enter a valid name.</p>
+        </ion-item> 
+      </ion-list>
+      </ion-card-content>
+      </ion-card>
+      </form> -->
+      <button style="background-color:transparent; border:none" (click)="takepic()"><img src={{iconPath}} class="custom-avatar"/></button>
+      <h2 style="color:white; font-family:Apple Chancery, cursive;">{{displayname}}</h2>
+      <form [formGroup]="slideOneForm" #form="ngForm" (ngSubmit)="updateProfile(form)" novalidate> 
+        <ion-card style="box-shadow: none">
+          <ion-card-content>
+            <ion-list no-line>
+                <ion-item style="border-bottom-color: transparent !important;
+                box-shadow: none !important;">
+                    <ion-label floating class="label__placeholder" style="font-family:American Typewriter, serif;color:#525058;">Displayname</ion-label>
+                    <ion-input  type="text"  name="displayname" [(ngModel)]="displayname"  formControlName="displayname" [class.invalid]="!slideOneForm.controls.displayname.valid && (slideOneForm.controls.displayname.dirty || submitAttempt)"></ion-input>
+                </ion-item>     
+                <ion-item *ngIf="!slideOneForm.controls.displayname.valid  && (slideOneForm.controls.displayname.dirty || submitAttempt)">
+                    <p>Please enter a valid name.</p>
+                  </ion-item>  
+                  <ion-item style="border-bottom-color: transparent !important;
+                  box-shadow: none !important;">
+                      <ion-label floating style="font-size: 1.5em" style="font-family:American Typewriter, serif;color:#525058">Email</ion-label>
+                      <ion-input type="text" name="email" [(ngModel)]="email" formControlName="email" [class.invalid]="!slideOneForm.controls.email.valid && (slideOneForm.controls.email.dirty || submitAttempt)"></ion-input>
+                    </ion-item>
+                    <ion-item *ngIf="!slideOneForm.controls.email.valid  && (slideOneForm.controls.email.dirty || submitAttempt)">
+                      <p>Please enter a valid email.</p>
+                    </ion-item>
+                    <button ion-button type="submit" style="background-color:#65BFA6;margin-top:30px">SAVE</button>     
+                    <button ion-button  (click)="resetForm()" style="background-color: red;margin-top:30px">RESET</button>            
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </form>
+
+
+    <!-- <button ion-button outline block (click)="takepic()">
       Take Picture
-    </button>
-  </ion-item>
-  <ion-item>
-    <img src="{{ picurl }}" />
-  </ion-item>
-    <ion-item>
-      <button type="button" ion-button (click)="setKey()">Set</button>
-    </ion-item>
-    <ion-item>
-      <button type="button" ion-button (click)="getKey()">Get</button>
-    </ion-item>
-    <ion-item>
-      <button type="button" ion-button (click)="deletekey()">Delete</button>
-    </ion-item>
-    <ion-item>
-      <button type="button" ion-button (click)="number()">Test</button>
-    </ion-item>
-    <ion-item>
-      <button type="button" ion-button (click)="test()">Test</button>
-    </ion-item>
-  </ion-list>
+    </button> -->
+ 
 </ion-content>

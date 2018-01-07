@@ -5,9 +5,7 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar transparent>
-    
     <ion-buttons end>
       <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
     </ion-buttons>
@@ -41,7 +39,6 @@
                     <ion-item *ngIf="!slideOneForm.controls.confirm.valid  && (slideOneForm.controls.confirm.dirty || submitAttempt)">
                       <p>Please enter a valid password.</p>
                     </ion-item>    
-
                     <button ion-button type="submit" style="background-color:#65BFA6;margin-top:30px">REGISTER</button>     
                     <button ion-button  (click)="resetForm()" style="background-color: red;margin-top:30px">RESET</button>               
           </ion-list>

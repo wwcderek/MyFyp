@@ -18,6 +18,17 @@
     background-color: map-get($colors, light);
 }
 
+.container {
+  position: relative;
+}
+
+.bottomright {
+  position: absolute;
+  top: 70%;
+  left: 43%;
+  font-size: 50px;
+}
+
  .bg-style {
   //background-image: url('../assets/homebackgroud3.jpg');
       background: #262833;

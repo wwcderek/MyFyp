@@ -25,4 +25,15 @@ export class UserService {
         return this.http.post('http://101.78.175.101:6780/uploadIcon', JSON.stringify(body), {headers:this.headers})
     }
 
+    updateProfile(username, displayname, email) {
+        let body = {
+            username: username,
+            displayname: displayname,
+            email: email,
+        };
+        return this.http.post('http://101.78.175.101:6780/updateProfile', JSON.stringify(body), {headers:this.headers})
+        
+    }
+
+
 }

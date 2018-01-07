@@ -28,6 +28,7 @@ export class LoginPage {
   public email: any;
   public iconPath: any;
   public user: UserModel;
+  public fbUserId: any;
   http: any;
   public keyboard: Keyboard;
   constructor(private event: Events, public alertCtrl: AlertController, public modalCtrl: ModalController, public accountService: AccountService, public generalService: GeneralService, public permissionService: PermissionService, public facebook: Facebook, private storage: Storage, public menuCtrl: MenuController, public navCtrl: NavController) {
@@ -65,6 +66,7 @@ export class LoginPage {
 
   storeUserInfo(info) {
     this.storage.set('username', info.username);
+    this.storage.set('displayname', info.displayname)
     this.storage.set('email', info.email);
     this.storage.set('role', info.role);
     this.storage.set('iconPath', info.iconPath);
@@ -76,10 +78,8 @@ export class LoginPage {
     if (user != null) {
         this.username = user.displayName;
         this.email =  user.email;
-        this.iconPath = user.photoURL;
-        // emailVerified = user.emailVerified;
-        // uid = user.uid; 
-    }
+        this.iconPath = "http://101.78.175.101:6780/storage/2018-01-06-15-02-53.png";
+    }    
 }
   
 
@@ -94,18 +94,18 @@ export class LoginPage {
               firebase.auth().signInWithCredential(facebookCredential)
                   .then( success => {
                       this.getInfo();
-                      this.accountService.fbLogin(this.username, this.iconPath).map(res => res.json())
+                      this.accountService.fbLogin(this.username, this.email, this.iconPath).map(res => res.json())
                       .subscribe(result => {
                         this.user = new UserModel(result);
-                        this.storeUserInfo(this.user);
                         this.event.publish('Info', this.user);
+                        this.storeUserInfo(this.user);
                         this.disableAuthenticatedMenu();
                         this.navCtrl.push(HomePage);
                         this.navCtrl.setRoot(HomePage);
                   })
-                      this.disableAuthenticatedMenu();
-                      this.navCtrl.push(HomePage);
-                      this.navCtrl.setRoot(HomePage);
+                      // this.disableAuthenticatedMenu();
+                      // this.navCtrl.push(HomePage);
+                      // this.navCtrl.setRoot(HomePage);
                      
                   });
 

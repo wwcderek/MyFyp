@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Events, Platform, MenuController } from 'ionic-angular';
+import { Nav, Events, Platform, MenuController, ModalController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
@@ -30,10 +30,11 @@ export class MyApp {
   rootPage: any = HomePage;
   loader = true;
   public username: any;
+  public displayname: any;
   public email: any;
   public iconPath: any;
   public role: any;
-    constructor(public platform:Platform, private event: Events, public storage: Storage, public menuCtrl: MenuController, public accountService: AccountService, public generalService: GeneralService) {
+    constructor(public platform:Platform, private event: Events, public storage: Storage, public menuCtrl: MenuController, public accountService: AccountService, public generalService: GeneralService, public modalCtrl: ModalController) {
     this.initializeApp();
               this.loginPages = [
                   {title:'Home', icon:'home', component: HomePage},
@@ -45,6 +46,7 @@ export class MyApp {
               ];
                 this.logoutPages = [
                     {title:'Home', icon:'home', component: HomePage},
+                    {title: 'Film', icon: 'film', component: ContentPage},                    
                     {title:'QR Code', icon:'qr-scanner', component: BarcodePage},
                     {title:'Setting', icon:'settings', component: SettingPage},
                     {title:'Logout', icon:'exit', component: HomePage},
@@ -93,6 +95,10 @@ export class MyApp {
      this.username = val;
       });
 
+      this.storage.get('displayname').then((val) => {
+        this.displayname = val;
+         });
+
       this.storage.get('email').then((val) => {
         this.email = val;
       });
@@ -108,6 +114,7 @@ export class MyApp {
 
    deleteUserInfo(){
     this.storage.remove('username');
+    this.storage.remove('displayname');    
     this.storage.remove('email');
     this.storage.remove('iconPath');
     this.storage.remove('role');
@@ -122,5 +129,10 @@ export class MyApp {
    checkActive(page){
        return page == this.activePage;
    }
+
+   userSetting() {
+    let modal = this.modalCtrl.create(SettingPage);
+    modal.present();
+  }
 }
 
