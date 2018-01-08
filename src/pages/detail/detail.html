@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar transparent>
     <ion-title style="color:white">Film Detail</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -27,6 +25,10 @@
     right: 35px;
     font-size: 50px;
     font-family: Apple Chancery, cursive;">{{film.rating}}</div>
+    <div style="color:white;position: absolute;
+    bottom: 100px;
+    right: 45px;"><rating style="font-size:5px" [leitura]="true" [numStars]="5" [value]="film.rating"></rating>
+  </div>
     </div>
     <ion-card-content style="font-family:American Typewriter, serif">
       <ion-card-title style="color:white">
@@ -82,7 +84,31 @@
             {{film.description}}
           </ion-note>
         </ion-item>
+        <ion-item class="bg-style card-background">
+           <button ion-button class="filmButton" style="text-align:center;font-size:25px;padding:25px;width:95%;border-radius: 50px;"><ion-icon name="text"></ion-icon> FILM REVIEW</button>
+        </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>
+
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col col-6 offset-1> 
+        <button (click)="review(film)" style="background-color:transparent; text-align:center;box-shadow:none !important;" ion-button  icon-left>
+          <ion-icon name="create"></ion-icon>
+          Review
+        </button>
+      </ion-col>
+      <ion-col col-5>
+        <button  style="background-color:transparent; text-align:center; border:none;box-shadow:none !important;" ion-button  icon-left>
+            <ion-icon name="bookmark"></ion-icon>
+            Bookmark
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-footer>

@@ -26,10 +26,9 @@ export class SettingPage {
     public navCtrl: Nav;
     public date: string;
     public imageName: string;
+    public user_id: any;
     public username: string;
     public displayname: string;
-    public password: string;
-    public confirm: string;
     public email: string;
     public iconPath: string;
     public role: string;
@@ -102,6 +101,10 @@ export class SettingPage {
 
 
   getUserInfo() {
+    this.storage.get('user_id').then((val) => {
+        this.user_id = val;
+      });
+
     this.storage.get('username').then((val) => {
         this.username = val;
       });
@@ -124,6 +127,7 @@ export class SettingPage {
   }
 
   storeUserInfo(info) {
+    this.storage.set('user_id', info.user_id);    
     this.storage.set('username', info.username);
     this.storage.set('displayname', info.displayname)
     this.storage.set('email', info.email);

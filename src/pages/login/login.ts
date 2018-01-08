@@ -24,6 +24,7 @@ import { UserModel } from '../../models/user-model';
   providers: [AccountService, GeneralService, PermissionService]
 })
 export class LoginPage {
+  public user_id: any;
   public username: any;
   public email: any;
   public iconPath: any;
@@ -65,6 +66,7 @@ export class LoginPage {
   }
 
   storeUserInfo(info) {
+    this.storage.set('user_id', info.user_id);    
     this.storage.set('username', info.username);
     this.storage.set('displayname', info.displayname)
     this.storage.set('email', info.email);

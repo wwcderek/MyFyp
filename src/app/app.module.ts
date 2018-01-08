@@ -13,6 +13,7 @@ import { ContentPage } from '../pages/content/content';
 import { SettingPage } from "../pages/setting/setting";
 import { UploadPage } from '../pages/upload/upload';
 import { DiscountPage } from '../pages/discount/discount';
+import { ReviewPage } from '../pages/review/review';
 import { RegistrationPage } from '../pages/registration/registration';
 import { PlaylistPage } from '../pages/playlist/playlist';
 import { HttpModule} from '@angular/http';
@@ -25,6 +26,7 @@ import { UserService } from './services/user.service';
 import { GeneralService } from './services/general.service';
 import { UserComponent } from '../components/user/user';
 import { YoutubeProvider } from '../providers/youtube/youtube';
+import { RatingComponent } from '../components/rating/rating';
 
 
 firebase.initializeApp({
@@ -49,7 +51,9 @@ firebase.initializeApp({
       DiscountPage,
       PlaylistPage,
       ContentPage,
-    UserComponent
+      ReviewPage,
+    UserComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +74,8 @@ firebase.initializeApp({
       UploadPage,
       ContentPage,
       DiscountPage,
-      PlaylistPage
+      PlaylistPage,
+      ReviewPage
   ],
   providers: [
     StatusBar,

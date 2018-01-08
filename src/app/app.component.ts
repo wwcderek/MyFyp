@@ -29,6 +29,7 @@ export class MyApp {
   activePage: any;
   rootPage: any = HomePage;
   loader = true;
+  public user_id: any;
   public username: any;
   public displayname: any;
   public email: any;
@@ -91,9 +92,13 @@ export class MyApp {
    }
 
    getUserInfo() {
-    this.storage.get('username').then((val) => {
-     this.username = val;
-      });
+      this.storage.get('user_id').then((val) => {
+        this.user_id = val;
+        });
+
+      this.storage.get('username').then((val) => {
+      this.username = val;
+        });
 
       this.storage.get('displayname').then((val) => {
         this.displayname = val;
@@ -113,6 +118,7 @@ export class MyApp {
    }
 
    deleteUserInfo(){
+    this.storage.remove('user_id')
     this.storage.remove('username');
     this.storage.remove('displayname');    
     this.storage.remove('email');

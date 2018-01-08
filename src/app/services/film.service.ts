@@ -39,4 +39,16 @@ export class FilmService {
         .map(res => res.json());
     }
 
+    writeReview(user_id, film_id, rating, title, review) {
+        let body = {
+            user_id: user_id,
+            film_id: film_id,
+            rating: rating,
+            title: title,
+            review: review
+        };
+        return this.http.post("http://101.78.175.101:6780/review", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
+    }
+
 }
