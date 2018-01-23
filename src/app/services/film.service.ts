@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Component } from '@angular/core';
 import { IonicPage, Nav, NavParams, ModalController, AlertController } from 'ionic-angular';
 import { Http, RequestOptions, Headers } from '@angular/http';
+import { GeneralService } from "../../app/services/general.service";
 import 'rxjs/Rx';
 
 
@@ -10,7 +11,7 @@ export class FilmService {
     http: any;
     headers: any;
     public navCtrl: Nav;
-    constructor(http: Http) {
+    constructor(http: Http,  public generalService: GeneralService) {
         this.http = http;
         this.headers = new Headers();
         this.headers.append('Content-Type', 'application/json');
@@ -49,6 +50,36 @@ export class FilmService {
         };
         return this.http.post("http://101.78.175.101:6780/review", JSON.stringify(body), {headers:this.headers})
         .map(res => res.json());
+    }
+
+    getReview(film_id) {
+        let body = {
+            film_id: film_id,
+        };
+         return this.http.post("http://101.78.175.101:6780/popularReview", JSON.stringify(body), {headers:this.headers})
+         .map(res => res.json());
+    }
+
+    latestReview(film_id) {
+        let body = {
+            film_id: film_id,
+        };
+         return this.http.post("http://101.78.175.101:6780/latestReview", JSON.stringify(body), {headers:this.headers})
+         .map(res => res.json());
+    }
+
+    like(review_id) {
+        let body = {
+            review_id: review_id
+        };
+        this.http.post("http://101.78.175.101:6780/like", JSON.stringify(body), {headers:this.headers})
+    }
+
+    dislike(review_id) {
+        let body = {
+            review_id: review_id
+        };
+        this.http.post("http://101.78.175.101:6780/dislike", JSON.stringify(body), {headers:this.headers})
     }
 
 }

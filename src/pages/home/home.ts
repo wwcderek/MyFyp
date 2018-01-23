@@ -37,9 +37,6 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    // this.filmService.getFilm().subscribe(response => {
-    //   this.films = response;
-    // })
   }
 
   ngOnInit(){
@@ -58,7 +55,6 @@ export class HomePage {
       this.storage.get('name').then((val) => {
         if(val)
           this.name = 'Wellcome '+val.username;
-
       });
   }
 

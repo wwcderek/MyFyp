@@ -1,14 +1,14 @@
 webpackJsonp([3],{
 
-/***/ 916:
+/***/ 918:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__registration__ = __webpack_require__(192);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistrationPageModule", function() { return RegistrationPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__review_list__ = __webpack_require__(193);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewListPageModule", function() { return ReviewListPageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,26 +18,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RegistrationPageModule = (function () {
-    function RegistrationPageModule() {
+var ReviewListPageModule = (function () {
+    function ReviewListPageModule() {
     }
-    return RegistrationPageModule;
+    return ReviewListPageModule;
 }());
-RegistrationPageModule = __decorate([
+ReviewListPageModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__registration__["a" /* RegistrationPage */],
+            __WEBPACK_IMPORTED_MODULE_2__review_list__["a" /* ReviewListPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__registration__["a" /* RegistrationPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__review_list__["a" /* ReviewListPage */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__registration__["a" /* RegistrationPage */]
+            __WEBPACK_IMPORTED_MODULE_2__review_list__["a" /* ReviewListPage */]
         ]
     })
-], RegistrationPageModule);
+], ReviewListPageModule);
 
-//# sourceMappingURL=registration.module.js.map
+//# sourceMappingURL=review-list.module.js.map
 
 /***/ })
 

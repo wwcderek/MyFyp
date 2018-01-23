@@ -14,6 +14,7 @@ import { SettingPage } from "../pages/setting/setting";
 import { UploadPage } from '../pages/upload/upload';
 import { DiscountPage } from '../pages/discount/discount';
 import { ReviewPage } from '../pages/review/review';
+import { ReviewListPage } from '../pages/review-list/review-list';
 import { RegistrationPage } from '../pages/registration/registration';
 import { PlaylistPage } from '../pages/playlist/playlist';
 import { HttpModule} from '@angular/http';
@@ -52,6 +53,7 @@ firebase.initializeApp({
       PlaylistPage,
       ContentPage,
       ReviewPage,
+      ReviewListPage,
     UserComponent,
     RatingComponent
   ],
@@ -75,7 +77,8 @@ firebase.initializeApp({
       ContentPage,
       DiscountPage,
       PlaylistPage,
-      ReviewPage
+      ReviewPage,
+      ReviewListPage
   ],
   providers: [
     StatusBar,

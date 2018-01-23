@@ -24,7 +24,8 @@
     <ion-row>
         <ion-col class="review" col-3 offset-1>Title:</ion-col>
         <ion-col col-8> 
-            <ion-input type="text" name="title" [(ngModel)]="title"  formControlName="title" [class.invalid]="!slideOneForm.controls.title.valid && (slideOneForm.controls.title.dirty || submitAttempt)" style="border:none;color:white;font-size:22px"></ion-input>            
+            <ion-input type="text" name="title" [(ngModel)]="title"  formControlName="title" [class.invalid]="!slideOneForm.controls.title.valid && (slideOneForm.controls.title.dirty || submitAttempt)" style="border:none;color:#8c8c8c;font-size:22px;
+            "></ion-input>            
         </ion-col>
     </ion-row>
     <ion-item  *ngIf="!slideOneForm.controls.title.valid  && (slideOneForm.controls.title.dirty || submitAttempt)">
@@ -32,9 +33,13 @@
       </ion-item> 
     <ion-row>
         <ion-col class="review" col-3 offset-1>Review:</ion-col>
+        <ion-card class="bg-style card-background" style="background-color:#2c2e3a">
         <ion-col col-8> 
-            <ion-textarea type="text" name="review" [(ngModel)]="review"  formControlName="review" [class.invalid]="!slideOneForm.controls.review.valid && (slideOneForm.controls.review.dirty || submitAttempt)" rows="4" maxLength="200" style="border:none;color:white;font-size:22px"></ion-textarea>            
+            <ion-textarea type="text" name="review" [(ngModel)]="review"  formControlName="review" [class.invalid]="!slideOneForm.controls.review.valid && (slideOneForm.controls.review.dirty || submitAttempt)" rows="6" maxLength="200" style="border:none;color:#8c8c8c;font-size:22px;background-color:#2c2e3a
+            ;border-radius: 4px;"></ion-textarea>            
         </ion-col>
+    </ion-card>
+    
     </ion-row>
     <ion-item  *ngIf="!slideOneForm.controls.review.valid  && (slideOneForm.controls.review.dirty || submitAttempt)">
         <p>Please enter a valid review.</p>

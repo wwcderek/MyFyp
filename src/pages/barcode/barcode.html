@@ -5,7 +5,7 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar color="gray">
+  <ion-navbar transparent>
     <button ion-button icon-only menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -14,18 +14,20 @@
 </ion-header>
 
 
-<ion-content padding class="bg-style">
-  <ion-item *ngFor="let film of films" class="bg-style">
-    <ion-thumbnail item-start>
-      <img src={{film.path}}>
-    </ion-thumbnail>
-
-  </ion-item>
+<ion-content padding class="bg-style card-background scroll-content">
   <ion-item class="bg-style">
-    <ion-input type="text" placeholder="Please input value" [(ngModel)]="qrData"></ion-input>
+    <ion-input type="text" placeholder="Ticket Number" [(ngModel)]="qrData" style="border:none;border-radius: 4px;" clearInput></ion-input>
   </ion-item>
-<button ion-button full icon-left (click) ="createCode()"><ion-icon name="barcode"></ion-icon>Create Code</button>
-<button ion-button full icon-left (click) ="getCode()"><ion-icon name="barcode"></ion-icon>Get Existing Code</button>
+  <ion-row>
+    <ion-col offset-1>
+<button ion-button  icon-left style="border-radius: 18px;background-color:red;margin-top:20px;width:370px" (click) ="createCode()"><ion-icon name="barcode"></ion-icon>Create Code</button>
+    </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col offset-1>
+<button ion-button  icon-left style="border-radius: 18px;background-color:#65BFA6;margin-top:10px;width:370px" (click) ="getCode()"><ion-icon name="barcode"></ion-icon>Get Existing Code</button>
+</ion-col>
+</ion-row>
   <!--<button ion-button full icon-left (click) ="scanCode()"><ion-icon name="barcode"></ion-icon>Scan Code</button>-->
   <ion-item class="bg-style">
     <img src={{createdCode}} />

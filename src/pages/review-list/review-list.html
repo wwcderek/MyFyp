@@ -6,13 +6,15 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>reviewList</ion-title>
+  <ion-navbar transparent>
+    <ion-title>Review List</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding class="bg-style card-background">
+    <ion-tabs>
+        <ion-tab (ionSelect)="test()" tabTitle="Show Modal"></ion-tab>
+      </ion-tabs>
 </ion-content>

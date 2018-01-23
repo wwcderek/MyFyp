@@ -84,12 +84,53 @@
             {{film.description}}
           </ion-note>
         </ion-item>
-        <ion-item class="bg-style card-background">
-           <button ion-button class="filmButton" style="text-align:center;font-size:25px;padding:25px;width:95%;border-radius: 50px;"><ion-icon name="text"></ion-icon> FILM REVIEW</button>
-        </ion-item>
+        <!-- <ion-item class="bg-style card-background">
+           <button ion-button (click)="reviewList()" class="filmButton" style="text-align:center;font-size:25px;padding:25px;width:95%;border-radius: 50px;"><ion-icon name="text"></ion-icon> FILM REVIEW</button>
+        </ion-item> -->
       </ion-list>
     </ion-card-content>
   </ion-card>
+  <ion-segment [(ngModel)]="relationship" color="golden">
+      <ion-segment-button style="font-family:American Typewriter, serif" value="1" (click)="popularReview()">
+        MOST POPULAR
+      </ion-segment-button>
+      <ion-segment-button style="font-family:American Typewriter, serif" value="2" (click)="latestReview()">
+        THE LATEST
+      </ion-segment-button>
+    </ion-segment>
+    <div *ngFor="let review of reviews">
+    <ion-row>
+      <ion-col col-3>
+          <img src="{{review.icon_path}}" class="custom-avatar"/>    
+      </ion-col>
+      <ion-col style="font-size:15px;color:white;font-family:American Typewriter, serif;padding-top:20px;padding-left:1px;" col-9>
+        {{review.displayname}}<br><h6 style="color:#8c8c8c">{{review.created_at}}</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:13px;padding-top:2px" col-6>
+          {{review.title}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-6>
+              <rating style="font-size:2px" [leitura]="true" [numStars]="5" [value]="review.rating"></rating>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-12>
+              {{review.description}}
+            </ion-col>
+          </ion-row>
+          <ion-row style="border-bottom: 1px solid #8c8c8c">
+              <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
+                  <button ion-button  style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="like(review)" icon-only><ion-icon name="thumbs-up" class="like" color="{{iconColor}}" style="width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.favorite}}&nbsp;</ion-icon></button>                  
+              </ion-col>
+              <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
+                  <button ion-button id="2" [disabled]="disabledButtonId == '2'" style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="dislike(review)" icon-only><ion-icon name="thumbs-down" class="like" style="color:white; width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.dislike}}&nbsp;</ion-icon></button>                  
+              </ion-col>
+            </ion-row>
+        </div>
 </ion-content>
 
 
@@ -98,13 +139,13 @@
   <ion-toolbar>
     <ion-row>
       <ion-col col-6 offset-1> 
-        <button (click)="review(film)" style="background-color:transparent; text-align:center;box-shadow:none !important;" ion-button  icon-left>
+        <button (click)="review(film)" style="background-color:transparent; text-align:center;box-shadow:none !important;font-family:American Typewriter, serif" ion-button  icon-left>
           <ion-icon name="create"></ion-icon>
           Review
         </button>
       </ion-col>
       <ion-col col-5>
-        <button  style="background-color:transparent; text-align:center; border:none;box-shadow:none !important;" ion-button  icon-left>
+        <button  style="background-color:transparent; text-align:center; border:none;box-shadow:none !important;font-family:American Typewriter, serif" ion-button  icon-left>
             <ion-icon name="bookmark"></ion-icon>
             Bookmark
           </button>

@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ReviewListPage {
 
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -21,4 +22,8 @@ export class ReviewListPage {
     console.log('ionViewDidLoad ReviewListPage');
   }
 
+
+  test() {
+    
+  }
 }
