@@ -15,8 +15,8 @@ export class BarcodeService {
         let options = new RequestOptions({ headers: headers });
     }
 
-    createBarcode(data, id) {
-        return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=create&data="+ data + "&id=" + id);
+    createBarcode(data, user_id) {
+        return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=create&data="+ data + "&id=" + user_id);
     }
 
     showBarcode(data) {

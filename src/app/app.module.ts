@@ -11,12 +11,12 @@ import { DetailPage } from '../pages/detail/detail';
 import { BarcodePage } from "../pages/barcode/barcode";
 import { ContentPage } from '../pages/content/content';
 import { SettingPage } from "../pages/setting/setting";
-import { UploadPage } from '../pages/upload/upload';
 import { DiscountPage } from '../pages/discount/discount';
 import { ReviewPage } from '../pages/review/review';
 import { ReviewListPage } from '../pages/review-list/review-list';
 import { RegistrationPage } from '../pages/registration/registration';
 import { PlaylistPage } from '../pages/playlist/playlist';
+import { ScanPage } from '../pages/scan/scan';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
 import firebase from 'firebase';
@@ -48,12 +48,12 @@ firebase.initializeApp({
     DetailPage,
       BarcodePage,
       SettingPage,
-      UploadPage,
       DiscountPage,
       PlaylistPage,
       ContentPage,
       ReviewPage,
       ReviewListPage,
+      ScanPage,
     UserComponent,
     RatingComponent
   ],
@@ -73,12 +73,12 @@ firebase.initializeApp({
     DetailPage,
       BarcodePage,
       SettingPage,
-      UploadPage,
       ContentPage,
       DiscountPage,
       PlaylistPage,
       ReviewPage,
-      ReviewListPage
+      ReviewListPage,
+      ScanPage
   ],
   providers: [
     StatusBar,

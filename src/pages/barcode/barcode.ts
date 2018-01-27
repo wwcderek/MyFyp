@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, Nav, NavParams } from 'ionic-angular';
+import { UserModel } from '../../models/user-model';
 // import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 import { BarcodeService } from "../../app/services/barcode.service";
 import { Storage } from '@ionic/storage';
@@ -21,8 +22,16 @@ export class BarcodePage
  createdCode: any;
  scannedCode = null;
  paths:any;
+ public user_id: any;
+ public username: string;
+ public displayname: string;
+ public email: string;
+ public iconPath: string;
+ public role: string;
+ public user: UserModel;
  public navCtrl: Nav;
   constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage) {
+    this.getUserInfo();    
   }
 
   ionViewDidLoad()
@@ -32,15 +41,12 @@ export class BarcodePage
 
   createCode()
   {
-      this.storage.get('name').then((val) => {
-    this.barcodeService.createBarcode(this.qrData, val.accountID).subscribe(response => {
+    this.barcodeService.createBarcode(this.qrData, this.user_id).subscribe(response => {
      console.log("run success");
      this.showCode(this.qrData);
     }, error => {
         console.log(error);
     });
-      });
-
   }
 
   getCode()
@@ -63,6 +69,32 @@ export class BarcodePage
          console.log(response.path);
          this.createdCode = response.path;
      })
+  }
+
+  getUserInfo() {
+    this.storage.get('user_id').then((val) => {
+        this.user_id = val;
+      });
+
+    this.storage.get('username').then((val) => {
+        this.username = val;
+      });
+
+      this.storage.get('displayname').then((val) => {
+        this.displayname = val;
+      });
+
+      this.storage.get('email').then((val) => {
+        this.email = val;
+      });
+
+      this.storage.get('iconPath').then((val) => {
+        this.iconPath = val;
+      });
+      
+      this.storage.get('role').then((val) => {
+        this.role = val;
+      });
   }
 
 //   scanCode()
