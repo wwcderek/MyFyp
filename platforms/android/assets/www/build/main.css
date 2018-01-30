@@ -45248,6 +45248,19 @@ page-barcode input, page-barcode select, page-barcode textarea {
   border-radius: 4px;
 }
 
+page-barcode .button1 {
+  border-radius: 18px;
+  width: 280px;
+  text-align: center;
+}
+
+page-barcode .qrCode {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-top: 50px;
+}
+
 page-content img {
   display: block !important;
   margin: auto !important;

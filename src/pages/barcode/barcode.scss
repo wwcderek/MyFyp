@@ -12,4 +12,16 @@ page-barcode {
     width: 280px;
     text-align: center;
   }
+
+  .qrCode{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .fontStyle{
+    color:#8c8c8c;
+    font-family:American Typewriter, serif;
+  }
 }

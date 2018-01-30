@@ -31,6 +31,7 @@ export class BarcodePage
  public iconPath: string;
  public role: string;
  public user: UserModel;
+ public qrCode: any;
  public navCtrl: Nav;
   constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage, public generalService: GeneralService) {
     this.getUserInfo();    
@@ -45,6 +46,7 @@ export class BarcodePage
   {
     this.barcodeService.createCode(this.qrData, this.user_id).subscribe(response => {
     if(response){
+      this.qrCode = response;
       this.generalService.alertMessage("MSG", "Create successfully!");
     }else{
       this.generalService.alertMessage("MSG", "Record not exist!!");

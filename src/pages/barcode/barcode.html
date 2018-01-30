@@ -28,6 +28,18 @@
       <button ion-button  icon-left class="button1" style="background-color:#65BFA6;border-radius: 18px;" (click) ="getCode()"><ion-icon name="barcode"></ion-icon>Get Existing Code</button>
     </ion-col>
     </ion-row>
+    <ion-row>
+        <div *ngIf="qrCode" >
+        <ion-col offset-1>
+          <img class="qrCode" src={{qrCode.path}} />
+        </ion-col>
+        <ion-col offset-1>
+          <h4 class="fontStyle">
+            {{qrCode.expired_time}}
+          </h4>
+        </ion-col>
+      </div>
+    </ion-row>
   <!--<button ion-button full icon-left (click) ="scanCode()"><ion-icon name="barcode"></ion-icon>Scan Code</button>-->
   <!-- <ion-item class="bg-style">
     <img src={{createdCode}} />

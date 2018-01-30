@@ -27,7 +27,7 @@
 
 
 <ion-content padding class="bg-style card-background">
-  <h6 style="color:#8c8c8c">
+  <h6 class="fontStyle">
     BEST POPULAR FILMS AND SERIALS
   </h6>
   <ion-scroll scrollbar-x="false" scrollbar-y="false" scrollX="true" style="white-space:nowrap; height:230px; width:100%" full>
@@ -35,8 +35,8 @@
       <tr>
         <td *ngFor="let image of MostPopular">  
             <ion-item class="bg-style card-background" no-lines>
-                <img src="{{image.path}}" style="width:120px; height:155px;" (click)="viewDetail(image)"/>  
-                <h4 style="color:white;width:120px;">{{image.title}}</h4>
+                <img src="{{image.path}}" class="imageStyle" (click)="viewDetail(image)" />  
+                <h4 style="color:white;width:120px;font-family:American Typewriter, serif;">{{image.title}}</h4>
                 <p style="padding-top:5px">
                     <ion-icon name="thumbs-up" class="like" style="width:50%; padding-left:5px">&nbsp;5&nbsp;</ion-icon>&nbsp;&nbsp;&nbsp;
                     <ion-icon name="chatboxes" class="like" style="width:50%">&nbsp;2&nbsp;</ion-icon>
@@ -47,22 +47,22 @@
     </table>
   </ion-scroll>
     <ion-scroll scrollbar-x="false" scrollbar-y="false" scrollX="true" style="white-space:nowrap; height:80px; width:100%" full>
-    <table>
+    <table class="fontStyle">
       <tr>
           <td>
-              <button ion-button style="color:#8c8c8c" (click)="filmCategory(1)" clear>ACTION</button>
+              <button ion-button class="fontStyle" (click)="filmCategory(1)" clear>ACTION</button>
           </td>
           <td>
-            <button ion-button style="color:#8c8c8c" (click)="filmCategory(7)" clear>ANIMATION</button>
+            <button ion-button class="fontStyle" (click)="filmCategory(7)" clear>ANIMATION</button>
           </td>
           <td>
-            <button ion-button style="color:#8c8c8c" (click)="filmCategory(4)" clear>FICTION</button>
+            <button ion-button class="fontStyle" (click)="filmCategory(4)" clear>FICTION</button>
           </td>
           <td>
-              <button ion-button style="color:#8c8c8c" (click)="filmCategory(3)" clear>DRAMA</button>
+              <button ion-button  class="fontStyle" (click)="filmCategory(3)" clear>DRAMA</button>
           </td>
           <td>
-              <button ion-button style="color:#8c8c8c" (click)="filmCategory(2)" clear>HORROR</button>
+              <button ion-button  class="fontStyle" (click)="filmCategory(2)" clear>HORROR</button>
           </td>
       </tr>
     </table>
@@ -73,7 +73,7 @@
           <td *ngFor="let image of CategoryArray">  
               <ion-item class="bg-style card-background" no-lines>
                   <img src="{{image.path}}" style="width:120px; height:155px;" (click)="viewDetail(image)" />  
-                  <h4 style="color:white;width:120px;">{{image.title}}</h4>
+                  <h4 style="color:white;width:120px;font-family:American Typewriter, serif;">{{image.title}}</h4>
                   <p style="padding-top:5px">
                       <ion-icon name="thumbs-up" class="like" style="width:50%; padding-left:5px">&nbsp;5&nbsp;</ion-icon>&nbsp;&nbsp;&nbsp;
                       <ion-icon name="chatboxes" class="like" style="width:50%">&nbsp;2&nbsp;</ion-icon>
