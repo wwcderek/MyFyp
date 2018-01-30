@@ -42,6 +42,7 @@ export class MyApp {
                   {title: 'Film', icon: 'film', component: ContentPage},
                   {title:'Login', icon:'contact', component: LoginPage},
                   {title:'Setting', icon:'settings', component: SettingPage},
+                  {title:'QR Code', icon:'qr-scanner', component: BarcodePage},
                   {title:'Scan', icon:'settings', component: ScanPage},                  
                   {title:'Discount', icon:'settings', component: DiscountPage}
               ];
