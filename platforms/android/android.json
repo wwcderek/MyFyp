@@ -83,6 +83,10 @@
             {
               "xml": "<preference name=\"android-minSdkVersion\" value=\"15\" />",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"QRScanner\"><param name=\"android-package\" value=\"com.bitpay.cordova.qrscanner.QRScanner\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -112,6 +116,18 @@
           "/*": [
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" android:required=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.camera.front\" android:required=\"false\" />",
               "count": 1
             }
           ]
@@ -179,6 +195,9 @@
     "cordova-plugin-facebook4": {
       "APP_ID": "1920863824834000",
       "APP_NAME": "ionicfbapp",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-qrscanner": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -311,6 +330,14 @@
       "clobbers": [
         "facebookConnectPlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -328,6 +355,7 @@
     "cordova-sqlite-storage": "2.0.4",
     "cordova-plugin-camera": "2.4.1",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-facebook4": "1.7.4"
+    "cordova-plugin-facebook4": "1.7.4",
+    "cordova-plugin-qrscanner": "2.5.0"
   }
 }

@@ -14,6 +14,18 @@ page-detail {
         opacity: 0.8;
     }
 
+    .img {
+        position: relative;
+        .gradient {
+            position: absolute;
+            top: 0;
+            background: linear-gradient(to top, rgba(38,40,51,1) 0%, rgba(255,255,255,0) 90%);
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+
     .toolbar-background {
         background-color: transparent;
       }

@@ -54,6 +54,7 @@
 		D2B18FB1121B4A9BA7A25AC6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1F99EBD08046EBB0EA40AB /* FBSDKCoreKit.framework */; };
 		7625CAA290ED426B846FD72A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C1FDAD0576416BBC0C73B7 /* FBSDKLoginKit.framework */; };
 		6CE24AD760AC408FA5DE8274 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4779156F124E40BE91F28B /* FBSDKShareKit.framework */; };
+		9382D238B2B745E18209F968 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5255454E83434275B104AA57 /* QRScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +161,7 @@
 		6D1F99EBD08046EBB0EA40AB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; name = "FBSDKCoreKit.framework"; path = "MyApp/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		30C1FDAD0576416BBC0C73B7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; name = "FBSDKLoginKit.framework"; path = "MyApp/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		FF4779156F124E40BE91F28B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; name = "FBSDKShareKit.framework"; path = "MyApp/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5255454E83434275B104AA57 /* QRScanner.swift */ = {isa = PBXFileReference; name = "QRScanner.swift"; path = "cordova-plugin-qrscanner/QRScanner.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,7 @@
 				C4357E0C931D476289342F28 /* IonicKeyboard.h */,
 				9A9C8A91D997424F91A0338B /* FacebookConnectPlugin.m */,
 				B1C71F1247E14FBFBE71B448 /* FacebookConnectPlugin.h */,
+				5255454E83434275B104AA57 /* QRScanner.swift */,
 			);
 			name = Plugins;
 			path = "MyApp/Plugins";
@@ -479,6 +482,7 @@
 				2A91B536A478483BAC80B17D /* NSBundle+CULPlugin.m in Sources */,
 				E6476B01FB154E46ABAF9B1E /* IonicKeyboard.m in Sources */,
 				B9FEDA39246A4B85A1FF273A /* FacebookConnectPlugin.m in Sources */,
+				9382D238B2B745E18209F968 /* QRScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

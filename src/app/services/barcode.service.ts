@@ -7,19 +7,24 @@ import 'rxjs/Rx';
 @Injectable()
 export class BarcodeService {
     http: any;
+    headers: any;
     public navCtrl: Nav;
     constructor(http: Http) {
         this.http = http;
-        var headers = new Headers();
-        headers.append('Content-Type', 'application/x-www-form-urlencoded');
-        let options = new RequestOptions({ headers: headers });
+        this.headers = new Headers();
+        this.headers.append('Content-Type', 'application/json');
     }
 
-    createBarcode(data, user_id) {
-        return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=create&data="+ data + "&id=" + user_id);
+    createCode(data, user_id) {
+        let body = {
+            data: data,
+            user_id: user_id
+        };
+        return this.http.post("http://101.78.175.101:6780/createCode", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
     }
 
-    showBarcode(data) {
+    showCode(data) {
         return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=getCode&data="+ data)
         .map(res => res.json());
     }
@@ -28,6 +33,10 @@ export class BarcodeService {
         console.log("hey there");
         return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=getOneCode&id="+ id)
             .map(res => res.json());
+    }
+
+    scanBarcode() {
+
     }
 
 }

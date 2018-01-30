@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { GeneralService } from "../../app/services/general.service";
+import { BarcodeService } from "../../app/services/barcode.service";
 
 /**
  * Generated class for the ScanPage page.
@@ -13,11 +14,11 @@ import { GeneralService } from "../../app/services/general.service";
 @Component({
   selector: 'page-scan',
   templateUrl: 'scan.html',
-  providers: [QRScanner]
+  providers: [QRScanner, BarcodeService, GeneralService]
 })
 export class ScanPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public qrScanner: QRScanner, public generalService: GeneralService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public qrScanner: QRScanner, public generalService: GeneralService, public barcodeService: BarcodeService) {
     this.qrscanner();
   }
 
@@ -35,6 +36,7 @@ export class ScanPage {
           // start scanning
           let scanSub = this.qrScanner.scan().subscribe((text: string) => {
           this.generalService.alertMessage('MSG',text);
+          // this.barcodeService.scanBarcode
             this.qrScanner.hide(); // hide camera preview
             scanSub.unsubscribe(); // stop scanning
             this.navCtrl.pop();

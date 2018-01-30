@@ -55,7 +55,14 @@
       "APP_ID": "1920863824834000",
       "APP_NAME": "ionicfbapp",
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-swift-support": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    }
+  }
 }

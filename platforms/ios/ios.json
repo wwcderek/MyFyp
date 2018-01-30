@@ -95,6 +95,10 @@
             {
               "xml": "<access origin=\"https://*.akamaihd.net\" />",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"QRScanner\"><param name=\"ios-package\" value=\"QRScanner\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -104,6 +108,10 @@
           "NSCameraUsageDescription": [
             {
               "xml": "<string> </string>",
+              "count": 1
+            },
+            {
+              "xml": "<string>The camera is used to scan QR codes.</string>",
               "count": 1
             }
           ],
@@ -201,6 +209,12 @@
     "cordova-plugin-facebook4": {
       "APP_ID": "1920863824834000",
       "APP_NAME": "ionicfbapp",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-swift-support": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-qrscanner": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -349,6 +363,14 @@
       "clobbers": [
         "facebookConnectPlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-qrscanner.QRScanner",
+      "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+      "pluginId": "cordova-plugin-qrscanner",
+      "clobbers": [
+        "QRScanner"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -366,6 +388,8 @@
     "cordova-sqlite-storage": "2.0.4",
     "cordova-universal-links-plugin": "1.2.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-facebook4": "1.7.4"
+    "cordova-plugin-facebook4": "1.7.4",
+    "cordova-plugin-swift-support": "3.1.1",
+    "cordova-plugin-qrscanner": "2.5.0"
   }
 }

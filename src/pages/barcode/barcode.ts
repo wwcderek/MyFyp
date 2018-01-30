@@ -4,6 +4,8 @@ import { UserModel } from '../../models/user-model';
 // import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 import { BarcodeService } from "../../app/services/barcode.service";
 import { Storage } from '@ionic/storage';
+import { GeneralService } from "../../app/services/general.service";
+
 /**
  * Generated class for the BarcodePage page.
  *
@@ -30,7 +32,7 @@ export class BarcodePage
  public role: string;
  public user: UserModel;
  public navCtrl: Nav;
-  constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage) {
+  constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage, public generalService: GeneralService) {
     this.getUserInfo();    
   }
 
@@ -41,9 +43,14 @@ export class BarcodePage
 
   createCode()
   {
-    this.barcodeService.createBarcode(this.qrData, this.user_id).subscribe(response => {
-     console.log("run success");
-     this.showCode(this.qrData);
+    this.barcodeService.createCode(this.qrData, this.user_id).subscribe(response => {
+    if(response){
+      this.generalService.alertMessage("MSG", "Create successfully!");
+    }else{
+      this.generalService.alertMessage("MSG", "Record not exist!!");
+    }
+  
+      //  this.showCode(this.qrData);
     }, error => {
         console.log(error);
     });
@@ -65,7 +72,7 @@ export class BarcodePage
 
   showCode(data)
   {
-     this.barcodeService.showBarcode(data).subscribe(response => {
+     this.barcodeService.showCode(data).subscribe(response => {
          console.log(response.path);
          this.createdCode = response.path;
      })

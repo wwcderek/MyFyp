@@ -45244,6 +45244,8 @@ user .container {
 
 page-barcode input, page-barcode select, page-barcode textarea {
   color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
 }
 
 page-content img {
@@ -45309,6 +45311,18 @@ page-detail .bottomright {
 
 page-detail img {
   opacity: 0.8;
+}
+
+page-detail .img {
+  position: relative;
+}
+
+page-detail .img .gradient {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to top, #262833 0%, rgba(255, 255, 255, 0) 90%);
+  height: 100%;
+  width: 100%;
 }
 
 page-detail .toolbar-background {
@@ -45686,7 +45700,7 @@ page-registration h1 {
 page-review .review {
   font-family: American Typewriter, serif;
   font-size: 22px;
-  color: #8c8c8c;
+  color: white;
 }
 
 page-review .button {

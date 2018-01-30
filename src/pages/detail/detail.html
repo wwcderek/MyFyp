@@ -11,25 +11,28 @@
 </ion-header>
 
 
-<ion-content padding class="bg-style card-background">
-  <ion-card class="bg-style card-background">
-<div class="container">
-    <img src={{film.path}} style="width:100%; height:290px"/>
-    <div style="color:#8c8c8c;position: absolute;
-    bottom: 80px;
-    right: 70px;
-    font-size: 17px;
-    font-family:American Typewriter, serif">RATING</div>
-    <div style="color:white;position: absolute;
-    bottom: 80px;
-    right: 35px;
-    font-size: 50px;
-    font-family: Apple Chancery, cursive;">{{film.rating}}</div>
-    <div style="color:white;position: absolute;
-    bottom: 100px;
-    right: 45px;"><rating style="font-size:5px" [leitura]="true" [numStars]="5" [value]="film.rating"></rating>
-  </div>
+<ion-content class="bg-style card-background">
+    <div class="container">
+      <div class="img">
+        <img src={{film.path}} style="width:100%; height:290px"/>
+        <div class="gradient"></div>
+      </div>
+        <div style="color:#8c8c8c;position: absolute;
+          bottom: 80px;
+          right: 70px;
+          font-size: 17px;
+          font-family:American Typewriter, serif">RATING</div>
+          <div style="color:white;position: absolute;
+          bottom: 80px;
+          right: 35px;
+          font-size: 50px;
+          font-family: Apple Chancery, cursive;">{{film.rating}}</div>
+          <div style="color:white;position: absolute;
+          bottom: 100px;
+          right: 45px;"><rating style="font-size:5px" [leitura]="true" [numStars]="5" [value]="film.rating"></rating>
+        </div>
     </div>
+  <ion-card class="bg-style card-background">
     <ion-card-content style="font-family:American Typewriter, serif">
       <ion-card-title style="color:white">
         {{film.title}}

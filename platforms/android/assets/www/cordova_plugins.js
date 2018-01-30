@@ -127,6 +127,14 @@ module.exports = [
         "clobbers": [
             "facebookConnectPlugin"
         ]
+    },
+    {
+        "id": "cordova-plugin-qrscanner.QRScanner",
+        "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+        "pluginId": "cordova-plugin-qrscanner",
+        "clobbers": [
+            "QRScanner"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -146,7 +154,8 @@ module.exports.metadata =
     "cordova-sqlite-storage": "2.0.4",
     "cordova-plugin-camera": "2.4.1",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-facebook4": "1.7.4"
+    "cordova-plugin-facebook4": "1.7.4",
+    "cordova-plugin-qrscanner": "2.5.0"
 };
 // BOTTOM OF METADATA
 });
