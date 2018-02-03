@@ -45252,13 +45252,30 @@ page-barcode .button1 {
   border-radius: 18px;
   width: 280px;
   text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 page-barcode .qrCode {
   width: 300px;
   height: 300px;
+  margin-: 20px;
   text-align: center;
-  margin-top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-barcode .qrCode2 {
+  width: 110px;
+  height: 110px;
+  text-align: center;
+}
+
+page-barcode .fontStyle2 {
+  color: white;
+  font-family: American Typewriter, serif;
 }
 
 page-barcode .fontStyle {
@@ -45634,6 +45651,41 @@ page-login .bottom {
 page-playlist .bg-style {
   background: #262833;
   color: white;
+}
+
+page-qrcode .imageStyle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+page-qrcode .fontStyle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-family: American Typewriter, serif;
+}
+
+page-qrcode .fontStyle2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-family: American Typewriter, serif;
+  margin-top: 10px;
 }
 
 page-registration .bar-buttons,

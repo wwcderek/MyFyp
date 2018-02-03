@@ -19,32 +19,40 @@
     <ion-input type="text" placeholder="Please Input Number" [(ngModel)]="qrData" style="border:none;border-radius: 4px;" clearInput></ion-input>
   </ion-item>
   <ion-row>
-      <ion-col offset-1>
+      <ion-col class="button1" style="margin-top:20px">
       <button ion-button  icon-left class="button1" style="background-color:red;border-radius:18px;margin-top:5px" (click) ="createCode()"><ion-icon name="barcode"></ion-icon>Create Code</button>
     </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col offset-1>
+        <ion-col class="button1">
       <button ion-button  icon-left class="button1" style="background-color:#65BFA6;border-radius: 18px;" (click) ="getCode()"><ion-icon name="barcode"></ion-icon>Get Existing Code</button>
     </ion-col>
     </ion-row>
     <ion-row>
-        <div *ngIf="qrCode" >
-        <ion-col offset-1>
+      <div *ngIf="qrCode" class="qrCode">
+        <ion-col class="qrCode">
           <img class="qrCode" src={{qrCode.path}} />
         </ion-col>
-        <ion-col offset-1>
-          <h4 class="fontStyle">
-            {{qrCode.expired_time}}
+        <ion-col>
+          <h4 class="fontStyle" style="text-align:center"> 
+           <h4>Expired Time: </h4>{{qrCode.expired_time}}
           </h4>
         </ion-col>
       </div>
     </ion-row>
-  <!--<button ion-button full icon-left (click) ="scanCode()"><ion-icon name="barcode"></ion-icon>Scan Code</button>-->
-  <!-- <ion-item class="bg-style">
-    <img src={{createdCode}} />
-  </ion-item>
-  <ion-item *ngFor="let path of paths" class="bg-style">
-    <img src={{path.path}}>
-  </ion-item> -->
+    <ion-list *ngIf="codeList" style="margin-top:40px">
+        <ion-item  class="bg-style" *ngFor="let code of codeList">
+            <ion-thumbnail (click)="showCode(code)" item-start>
+            <img  class="qrCode2" src={{code.path}} />
+            </ion-thumbnail>
+            <table>
+              <tr>
+                <h2 class="fontStyle2">Expired Time:</h2>
+              </tr>
+              <tr style="margin-top:10px">
+                <h2 style="margin-top:10px" class="fontStyle2">{{code.expired_time}}</h2>
+              </tr>
+            </table>
+          </ion-item>
+    </ion-list>
 </ion-content>

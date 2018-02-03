@@ -1,0 +1,34 @@
+page-qrcode {
+    .imageStyle{
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:40%;
+        transform:translateY(-50%); 
+    }
+    
+    .fontStyle{
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:80%;
+        transform:translateY(-50%); 
+        color: white;
+        font-family:American Typewriter, serif;
+    }
+
+    .fontStyle2{
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:90%;
+        transform:translateY(-50%); 
+        color: white;
+        font-family:American Typewriter, serif;
+        margin-top: 10px;
+    }
+
+}

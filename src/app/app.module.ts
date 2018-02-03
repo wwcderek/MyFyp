@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { DetailPage } from '../pages/detail/detail';
 import { BarcodePage } from "../pages/barcode/barcode";
+import { QrcodePage } from "../pages/qrcode/qrcode";
 import { ContentPage } from '../pages/content/content';
 import { SettingPage } from "../pages/setting/setting";
 import { DiscountPage } from '../pages/discount/discount';
@@ -47,6 +48,7 @@ firebase.initializeApp({
     RegistrationPage,
     DetailPage,
       BarcodePage,
+      QrcodePage,
       SettingPage,
       DiscountPage,
       PlaylistPage,
@@ -72,6 +74,7 @@ firebase.initializeApp({
     RegistrationPage,
     DetailPage,
       BarcodePage,
+      QrcodePage,
       SettingPage,
       ContentPage,
       DiscountPage,

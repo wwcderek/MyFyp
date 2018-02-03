@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, Nav, NavParams } from 'ionic-angular';
+import { IonicPage, Nav, NavParams, ModalController } from 'ionic-angular';
 import { UserModel } from '../../models/user-model';
-// import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 import { BarcodeService } from "../../app/services/barcode.service";
 import { Storage } from '@ionic/storage';
 import { GeneralService } from "../../app/services/general.service";
-
+import { QrcodePage } from "../qrcode/qrcode"; 
 /**
  * Generated class for the BarcodePage page.
  *
@@ -21,9 +20,6 @@ import { GeneralService } from "../../app/services/general.service";
 export class BarcodePage
 {
  qrData = null;
- createdCode: any;
- scannedCode = null;
- paths:any;
  public user_id: any;
  public username: string;
  public displayname: string;
@@ -33,7 +29,8 @@ export class BarcodePage
  public user: UserModel;
  public qrCode: any;
  public navCtrl: Nav;
-  constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage, public generalService: GeneralService) {
+ public codeList: any;
+  constructor(public navParams: NavParams, public barcodeService: BarcodeService, private storage: Storage, public generalService: GeneralService, public modalCtrl: ModalController) {
     this.getUserInfo();    
   }
 
@@ -46,38 +43,29 @@ export class BarcodePage
   {
     this.barcodeService.createCode(this.qrData, this.user_id).subscribe(response => {
     if(response){
+      this.codeList = null;
       this.qrCode = response;
       this.generalService.alertMessage("MSG", "Create successfully!");
     }else{
       this.generalService.alertMessage("MSG", "Record not exist!!");
-    }
-  
-      //  this.showCode(this.qrData);
-    }, error => {
-        console.log(error);
+    }  
+  }, error => {
+      console.log(error);
     });
   }
 
   getCode()
   {
-      console.log(123);
-      this.storage.get('name').then((val) => {
-          this.barcodeService.getBarcode(val.accountID).subscribe(response => {
-              console.log(response);
-              this.paths = response;
-              this.createdCode = null;
-             // this.createdCode = response.path;
+          this.barcodeService.getBarcode(this.user_id).subscribe(response => {
+            this.qrCode = null;
+              this.codeList = response;
           })
-      });
-
   }
 
-  showCode(data)
-  {
-     this.barcodeService.showCode(data).subscribe(response => {
-         console.log(response.path);
-         this.createdCode = response.path;
-     })
+
+  showCode(code) {
+    let modal = this.modalCtrl.create(QrcodePage, {code: code});
+    modal.present();
   }
 
   getUserInfo() {
@@ -106,10 +94,5 @@ export class BarcodePage
       });
   }
 
-//   scanCode()
-//   {
-//     this.barcodeScanner.scan().then(barcodeData => {
-//       this.scannedCode = barcodeData.text;
-//     })
-//   }
+
 }

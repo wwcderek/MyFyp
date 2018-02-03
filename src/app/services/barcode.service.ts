@@ -29,14 +29,17 @@ export class BarcodeService {
         .map(res => res.json());
     }
 
-    getBarcode(id) {
-        console.log("hey there");
-        return this.http.get("http://localhost:8100/ionic3_project/ComeAndWatch/src/php/barcode.php?action=getOneCode&id="+ id)
+    getBarcode(user_id) {
+        return this.http.get("http://101.78.175.101:6780/getCode?user_id="+ user_id)
             .map(res => res.json());
     }
 
-    scanBarcode() {
-
+    scanBarcode(data, user_id) {
+        let body = {
+            data: data,
+            user_id: user_id
+        };
+        return this.http.post("http://101.78.175.101:6780/scanCode", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
     }
-
 }
