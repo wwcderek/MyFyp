@@ -21,4 +21,9 @@ export class DiscountPage {
     console.log('ionViewDidLoad DiscountPage');
   }
 
+
+  getDiscount() {
+
+  }
+  
 }

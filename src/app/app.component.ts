@@ -41,16 +41,14 @@ export class MyApp {
                   {title:'Home', icon:'home', component: HomePage},
                   {title: 'Film', icon: 'film', component: ContentPage},
                   {title:'Login', icon:'contact', component: LoginPage},
-                  {title:'Setting', icon:'settings', component: SettingPage},
                   {title:'QR Code', icon:'qr-scanner', component: BarcodePage},
-                  {title:'Scan', icon:'settings', component: ScanPage},                  
                   {title:'Discount', icon:'settings', component: DiscountPage}
               ];
                 this.logoutPages = [
                     {title:'Home', icon:'home', component: HomePage},
                     {title: 'Film', icon: 'film', component: ContentPage},                    
                     {title:'QR Code', icon:'qr-scanner', component: BarcodePage},
-                    {title:'Setting', icon:'settings', component: SettingPage},
+                    {title:'Scan', icon:'settings', component: ScanPage},                  
                     {title:'Logout', icon:'exit', component: HomePage},
                     {title:'Discount', icon:'settings', component: DiscountPage}
                 ];

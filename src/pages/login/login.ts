@@ -57,11 +57,11 @@ export class LoginPage {
             this.navCtrl.push(HomePage);
             this.navCtrl.setRoot(HomePage);
         } else if (!form.value || !response) {
-          this.generalService.alertMessage("Error","Username or password is incorrected");
+          this.generalService.alertMessage("Error","Username or Password Is Incorrected");
         }
       })
     } else {
-      this.generalService.alertMessage("Try Again","Please fill in all necessary information");
+      this.generalService.alertMessage("Try Again","Please Fill In All Necessary Information");
     }
   }
 
