@@ -17,8 +17,11 @@ export class DiscountService {
     }
 
 
-    getDiscount() {
-        return this.http.get("http://101.78.175.101:6780/getCode?user_id=")
+    getDiscount(user_id) {
+        let body = {
+            user_id: user_id
+        };
+        return this.http.post("http://101.78.175.101:6780/getDiscount", JSON.stringify(body), {headers:this.headers})
             .map(res => res.json());
     }
 

@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar transparent>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu" style="color:white"></ion-icon>
+      </button>
     <ion-title text-center>Discount</ion-title>
   </ion-navbar>
 
@@ -14,9 +17,24 @@
 
 
 <ion-content class="bg-style scroll-content">
-    <ion-list>
-<ion-item class="bg-style">
-  
+  <ion-row>
+    <ion-col class="button1">
+    <button ion-button  icon-left  (click) ="getDiscount()" class="button1" style="background-color:#65BFA6;" full><ion-icon name="cash"></ion-icon>Existing Discount</button>
+  </ion-col>
+  </ion-row>
+    <ion-list *ngIf="discounts">
+<ion-item class="bg-style" *ngFor="let discount of discounts">
+  <ion-thumbnail item-start style="margin-top:20px">
+    <img  class="image" src={{discount.path}} />
+    </ion-thumbnail>
+    <table>
+      <tr>
+        <h2 class="fontStyle2">Category: {{discount.type}}</h2>
+      </tr>
+      <tr style="margin-top:10px">
+        <h2 style="margin-top:10px" class="fontStyle2">Expired Time: {{discount.expired_time}}</h2>
+      </tr>
+    </table>
 </ion-item>
     </ion-list>
 </ion-content>
