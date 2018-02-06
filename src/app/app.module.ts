@@ -29,6 +29,8 @@ import { GeneralService } from './services/general.service';
 import { UserComponent } from '../components/user/user';
 import { YoutubeProvider } from '../providers/youtube/youtube';
 import { RatingComponent } from '../components/rating/rating';
+import { FCM } from '@ionic-native/fcm';
+
 
 
 firebase.initializeApp({
@@ -92,7 +94,8 @@ firebase.initializeApp({
       UserService,
       GeneralService,
       Nav,
-    YoutubeProvider
+    YoutubeProvider,
+    FCM
   ]
 })
 @Component({

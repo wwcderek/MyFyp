@@ -12,6 +12,8 @@ import { ContentPage } from '../pages/content/content';
 import { AccountService } from './services/account.service';
 import { GeneralService } from './services/general.service';
 import { Storage } from '@ionic/storage';
+import { FCM } from '@ionic-native/fcm';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -35,7 +37,7 @@ export class MyApp {
   public email: any;
   public iconPath: any;
   public role: any;
-    constructor(public platform:Platform, private event: Events, public storage: Storage, public menuCtrl: MenuController, public accountService: AccountService, public generalService: GeneralService, public modalCtrl: ModalController) {
+    constructor(public platform:Platform, private event: Events, public storage: Storage, public menuCtrl: MenuController, public accountService: AccountService, public generalService: GeneralService, public modalCtrl: ModalController, public statusBar: StatusBar, public splashScreen: SplashScreen, private fcm: FCM) {
     this.initializeApp();
               this.loginPages = [
                   {title:'Home', icon:'home', component: HomePage},
@@ -67,6 +69,23 @@ export class MyApp {
 
    initializeApp(){
      this.platform.ready().then(() => {
+      this.fcm.subscribeToTopic('all');
+      this.fcm.getToken().then(token=>{
+          console.log(token);
+      })
+      this.fcm.onNotification().subscribe(data=>{
+        if(data.wasTapped){
+          console.log("Received in background");
+        } else {
+          console.log("Received in foreground");
+        };
+      })
+      this.fcm.onTokenRefresh().subscribe(token=>{
+        console.log(token);
+      });
+      //end notifications.
+       this.statusBar.styleDefault();
+       this.splashScreen.hide();
      });
    }
 

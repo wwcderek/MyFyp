@@ -53,6 +53,7 @@ export class ScanPage {
                     this.generalService.alertMessage("MSG", "Invalid QR Code");
                     break;
               case 1:
+                    this.generalService.sendNotification();
                     this.generalService.alertMessage("MSG", "Discount Is Given");
                     break;
               case 2:

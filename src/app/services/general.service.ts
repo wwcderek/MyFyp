@@ -26,35 +26,42 @@ public navCtrl: Nav;
         alert.present();
     }
 
-    testing() {
-        // console.log("hi you");
-        let data: any;
-        data = ['one', 'me','you','she','they'];
-        return this.http.get("http://127.0.0.1:8000/wong/"+ data)
-            .map(res => res.json());
-        // var amount = 100;
-       // console.log("can you see");
+    sendNotification() {
+        let body = {
+            "notification":{
+              "title":"New Notification",
+              "body":"New Discount Is Received",
+              "sound":"default",
+              "click_action":"FCM_PLUGIN_ACTIVITY",
+              "icon":"fcm_push_icon"
+            },
+            "data":{
+              "param1":"value1",
+              "param2":"value2"
+            },
+              "to":"/topics/all",
+              "priority":"high",
+              "restricted_package_name":""
+          }
+          let headers = new Headers();
+          headers.append('Content-Type', 'application/json');
+          headers.append('Authorization', 'key=AAAADIVSg6Q:APA91bFG2lFHoIz6JWhDyxeT0Ifd3aWBSKL7TCuc5YheFLID6JDdipn77c8lcIfSLHZRvP7S_3WUAe54to_pBiW4r3r4VdTCojLQr6YdceUkiXf0f0BuYCEXmzsmmIXhS7sKHgOBHMCP');
+          this.http.post("https://fcm.googleapis.com/fcm/send", JSON.stringify(body), {headers:headers})
+          .subscribe(response => {
+            console.log(response)
+          }, error => {
+              console.log(error);
+            });
 
-        // let postParams = {
-        //     user_name: "username",
-        //     password: "password"
-        // }
-        // var headers = new Headers();
-        // headers.append("Accept", 'application/json');
-        // headers.append('Content-Type', 'application/json');
-        // let options = new RequestOptions({headers: headers});
-        //
-        // return this.http.post('http://127.0.0.1:8000/', postParams, options)
-        //     .map((res: Response) => res.json());
-
-
+          
     }
-
 
     testing2() {
         console.log("can you see");
          let headers = new Headers();
          headers.append('Content-Type', 'application/json');
+         headers.append('Authorization', 'key=AAAADIVSg6Q:APA91bFG2lFHoIz6JWhDyxeT0Ifd3aWBSKL7TCuc5YheFLID6JDdipn77c8lcIfSLHZRvP7S_3WUAe54to_pBiW4r3r4VdTCojLQr6YdceUkiXf0f0BuYCEXmzsmmIXhS7sKHgOBHMCP');
+
 
          let body = {
              message: "DO you hear me?",

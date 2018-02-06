@@ -90,6 +90,7 @@ ext {
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "cordova-plugin-browsertab/starter-BrowserTab.gradle"
 apply from: "cordova-plugin-qrscanner/starter-qrscanner.gradle"
+apply from: "cordova-plugin-fcm/starter-FCMPlugin.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -254,6 +255,8 @@ dependencies {
     compile "com.android.support:customtabs:23.3.0"
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.facebook.android:facebook-android-sdk:4.14.+"
+    compile "com.google.firebase:firebase-core:+"
+    compile "com.google.firebase:firebase-messaging:+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

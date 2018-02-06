@@ -135,6 +135,14 @@ module.exports = [
         "clobbers": [
             "QRScanner"
         ]
+    },
+    {
+        "id": "cordova-plugin-fcm.FCMPlugin",
+        "file": "plugins/cordova-plugin-fcm/www/FCMPlugin.js",
+        "pluginId": "cordova-plugin-fcm",
+        "clobbers": [
+            "FCMPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -155,7 +163,8 @@ module.exports.metadata =
     "cordova-plugin-camera": "2.4.1",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-facebook4": "1.7.4",
-    "cordova-plugin-qrscanner": "2.5.0"
+    "cordova-plugin-qrscanner": "2.5.0",
+    "cordova-plugin-fcm": "2.1.2"
 };
 // BOTTOM OF METADATA
 });
