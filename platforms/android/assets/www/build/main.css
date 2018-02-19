@@ -45343,6 +45343,88 @@ page-content .searchbar-md .searchbar-input-text-color {
   background: linear-gradient(to bottom right, #262833, #262833);
 }
 
+page-createevent .inputStyle {
+  width: 300px;
+  height: 55px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: American Typewriter, serif;
+  background-color: #2c2e3a;
+  border-radius: 10px;
+}
+
+page-createevent .cardStyle {
+  width: 300px;
+  height: 55px;
+  background-color: #2c2e3a;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+page-createevent .cardStyle2 {
+  width: 300px;
+  height: 240px;
+  background-color: #2c2e3a;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+page-createevent .textArea {
+  border: none;
+  color: white;
+  font-size: 22px;
+  background-color: #2c2e3a;
+  border-radius: 4px;
+}
+
+page-createevent .spaceStyle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 300px;
+  height: 55px;
+  color: white;
+  border-width: 300px;
+}
+
+page-createevent .buttonStyle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 130px;
+  border-radius: 4px;
+  background-color: #65BFA6;
+}
+
+page-createevent .buttonStyle2 {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-left: 10px;
+  width: 130px;
+  border-radius: 4px;
+  background-color: red;
+}
+
+page-createevent .item-inner {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+page-createevent .invalid {
+  border: 1px solid #ea6153;
+}
+
 page-detail .container {
   position: relative;
 }
@@ -45404,6 +45486,15 @@ page-detail .custom-avatar {
   margin-right: auto;
 }
 
+page-detail .cardStyle {
+  width: 380px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
 page-discount .imageStyle {
   width: 110px;
   height: 110px;
@@ -45421,6 +45512,243 @@ page-discount .button1 {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+page-event .iconStyle {
+  color: white;
+  height: 100px;
+  font-size: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-event .buttonStyle {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: none;
+  width: 180px;
+  height: 120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-event .center {
+  padding: 0px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+page-event .fontStyle {
+  color: white;
+  font-family: American Typewriter, serif;
+}
+
+page-event .spaceStyle {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+page-event .tableStyle {
+  margin-top: 40px;
+}
+
+page-event-detail .container {
+  position: relative;
+}
+
+page-event-detail .img {
+  position: relative;
+}
+
+page-event-detail .img .gradient {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to top, #262833 0%, rgba(255, 255, 255, 0) 90%);
+  height: 100%;
+  width: 100%;
+}
+
+page-event-detail img {
+  opacity: 0.8;
+}
+
+page-event-detail .fontStyle {
+  color: white;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+page-event-detail .dateStyle {
+  color: #8c8c8c;
+  font-size: 15px;
+}
+
+page-event-detail .descriptionStyle {
+  color: #8c8c8c;
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+page-event-detail .cardStyle {
+  width: 390px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-radius: 15px;
+  font-family: American Typewriter, serif;
+}
+
+page-event-detail .button {
+  width: 160px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+page-event-detail .redStyle {
+  background-color: red;
+}
+
+page-event-detail .darkStyle {
+  background-color: #3b3d47;
+}
+
+page-event-detail .spaceStyle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: American Typewriter, serif;
+}
+
+page-event-detail .tableStyle {
+  width: 330px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-event-detail .paddingStyle {
+  padding-left: 40px;
+}
+
+page-event-detail .tdStyle {
+  height: 100px;
+  width: 50%;
+}
+
+page-event-detail .specialStyle {
+  color: #3399ff;
+}
+
+page-event-detail .subStyle {
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #8c8c8c;
+  font-size: 15px;
+}
+
+page-event-detail .subStyle2 {
+  margin: 0 auto;
+  margin-top: 0px;
+  color: #8c8c8c;
+  font-size: 15px;
+}
+
+page-event-detail td {
+  padding-left: 5px;
+}
+
+page-event-detail .contentStyle {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: white;
+  font-size: 18px;
+}
+
+page-event-detail .eventStyle {
+  margin: 0 auto;
+  padding: 0 auto;
+  color: white;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+page-event-detail .custom-image {
+  height: 15vw;
+  width: 15vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+page-event-detail .userIcon {
+  padding-left: 30px;
+  margin-top: 15px;
+}
+
+page-eventlist .cardStyle {
+  width: 380px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+page-eventlist .custom-avatar2 {
+  height: 30vw;
+  width: 30vw;
+  border: 1px solid #262833;
+  border-radius: 10%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+page-eventlist .spaceStyle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-eventlist .titleStyle {
+  font-family: American Typewriter, serif;
+  color: white;
+  font-size: 25px;
+}
+
+page-eventlist .contentStyle {
+  color: #8c8c8c;
+  margin-top: 13px;
+  font-family: American Typewriter, serif;
+  font-size: 15px;
+}
+
+page-eventlist .testStyle {
+  height: 100px;
 }
 
 page-home .background {
@@ -45467,6 +45795,14 @@ page-home .font {
 
 page-home .like {
   color: #ffcc33;
+}
+
+page-home .cardStyle {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
 }
 
 page-login .background {

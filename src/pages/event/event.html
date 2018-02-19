@@ -1,0 +1,75 @@
+<!--
+  Generated template for the EventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu" style="color:white"></ion-icon>
+      </button>
+    <ion-title text-center>Event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-style">
+  <table class="center tableStyle">
+    <tr class="buttonStyle" style="margin-top:20px">
+      <td class="buttonStyle">
+        <ion-row>
+          <button ion-button class="buttonStyle" (click)="viewList()" icon-only>
+            <ion-icon name="contacts" class="iconStyle"></ion-icon>
+          </button>
+        </ion-row>
+        <ion-row>
+          <ion-col class="spaceStyle">
+            <h3 class="fontStyle">Existing Event</h3>
+          </ion-col>
+        </ion-row>
+      </td>
+      <td class="buttonStyle">
+        <ion-row>
+          <button ion-button class="buttonStyle" (click)="viewPage()" icon-only>
+            <ion-icon name="add-circle" class="iconStyle"></ion-icon>
+          </button>
+        </ion-row>
+        <ion-row>
+          <ion-col class="spaceStyle">
+            <h3 class="fontStyle">Create Event</h3>
+          </ion-col>
+        </ion-row>
+      </td>
+    </tr>
+    <tr style="height:30px"></tr>
+    <tr class="buttonStyle" style="margin-top:20px">
+        <td class="buttonStyle">
+            <ion-row>
+                <button ion-button class="buttonStyle" icon-only>
+                  <ion-icon name="calendar" class="iconStyle"></ion-icon>
+                </button>
+              </ion-row>
+              <ion-row>
+                <ion-col class="spaceStyle">
+                  <h3 class="fontStyle">Agenda</h3>
+                </ion-col>
+              </ion-row>
+          </td>
+          <td class="buttonStyle">
+            <ion-row>
+              <button ion-button class="buttonStyle" icon-only>
+                <ion-icon name="alert" class="iconStyle"></ion-icon>
+              </button>
+            </ion-row>
+            <ion-row>
+              <ion-col class="spaceStyle">
+                <h3 class="fontStyle">Notice</h3>
+              </ion-col>
+            </ion-row>
+          </td>
+    </tr>
+  </table>
+</ion-content>

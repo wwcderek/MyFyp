@@ -5,46 +5,44 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar transparent>
-    <ion-title style="color:white">Film Detail</ion-title>
-  </ion-navbar>
 </ion-header>
 
 
 <ion-content class="bg-style card-background">
-    <div class="container">
-      <div class="img">
-        <img src={{film.path}} style="width:100%; height:290px"/>
-        <div class="gradient"></div>
-      </div>
-        <div style="color:#8c8c8c;position: absolute;
+  <div class="container">
+    <div class="img">
+      <img src={{film.path}} style="width:100%; height:290px" />
+      <div class="gradient"></div>
+    </div>
+    <div style="color:#8c8c8c;position: absolute;
           bottom: 80px;
           right: 70px;
           font-size: 17px;
           font-family:American Typewriter, serif">RATING</div>
-          <div style="color:white;position: absolute;
+    <div style="color:white;position: absolute;
           bottom: 80px;
           right: 35px;
           font-size: 50px;
           font-family: Apple Chancery, cursive;">{{film.rating}}</div>
-          <div style="color:white;position: absolute;
+    <div style="color:white;position: absolute;
           bottom: 100px;
-          right: 45px;"><rating style="font-size:5px" [leitura]="true" [numStars]="5" [value]="film.rating"></rating>
-        </div>
+          right: 45px;">
+      <rating style="font-size:5px" [leitura]="true" [numStars]="5" [value]="film.rating"></rating>
     </div>
+  </div>
   <ion-card class="bg-style card-background">
     <ion-card-content style="font-family:American Typewriter, serif">
       <ion-card-title style="color:white">
         {{film.title}}
       </ion-card-title>
       <ion-list class="bg-style card-background">
-          <ion-item class="bg-style card-background" style="color:#8c8c8c;">
-              <ion-icon name="videocam" item-left></ion-icon>
-               Director
-              <ion-note style="color:white" item-right>
-                  Marcus Nispel
-              </ion-note>
-            </ion-item>
+        <ion-item class="bg-style card-background" style="color:#8c8c8c;">
+          <ion-icon name="videocam" item-left></ion-icon>
+          Director
+          <ion-note style="color:white" item-right>
+            Marcus Nispel
+          </ion-note>
+        </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="person" item-left></ion-icon>
           Actor
@@ -54,21 +52,21 @@
         </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="closed-captioning" item-left></ion-icon>
-           Language
+          Language
           <ion-note style="color:white" item-right>
             {{film.language}}
           </ion-note>
         </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="time" item-left></ion-icon>
-           Running Time
+          Running Time
           <ion-note style="color:white" item-right>
             {{film.running_time}} mins
           </ion-note>
         </ion-item>
         <ion-item class="bg-style card-background" style="color:#8c8c8c">
           <ion-icon name="document" item-left></ion-icon>
-           Category
+          Category
           <ion-note style="color:white" item-right>
             {{film.type}}
           </ion-note>
@@ -94,46 +92,54 @@
     </ion-card-content>
   </ion-card>
   <ion-segment [(ngModel)]="relationship" color="golden">
-      <ion-segment-button style="font-family:American Typewriter, serif" value="1" (click)="popularReview()">
-        MOST POPULAR
-      </ion-segment-button>
-      <ion-segment-button style="font-family:American Typewriter, serif" value="2" (click)="latestReview()">
-        THE LATEST
-      </ion-segment-button>
-    </ion-segment>
-    <div *ngFor="let review of reviews">
+    <ion-segment-button style="font-family:American Typewriter, serif" value="1" (click)="popularReview()">
+      MOST POPULAR
+    </ion-segment-button>
+    <ion-segment-button style="font-family:American Typewriter, serif" value="2" (click)="latestReview()">
+      THE LATEST
+    </ion-segment-button>
+  </ion-segment>
+  <ion-card class="bg-style cardStyle" *ngFor="let review of reviews">
     <ion-row>
       <ion-col col-3>
-          <img src="{{review.icon_path}}" class="custom-avatar"/>    
+        <img src="{{review.icon_path}}" class="custom-avatar" />
       </ion-col>
       <ion-col style="font-size:15px;color:white;font-family:American Typewriter, serif;padding-top:20px;padding-left:1px;" col-9>
-        {{review.displayname}}<br><h6 style="color:#8c8c8c">{{review.created_at}}</h6>
+        {{review.displayname}}
+        <br>
+        <h6 style="color:#8c8c8c">{{review.created_at}}</h6>
       </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:13px;padding-top:2px" col-6>
-          {{review.title}}
-        </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col col-6>
-              <rating style="font-size:2px" [leitura]="true" [numStars]="5" [value]="review.rating"></rating>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-12>
-              {{review.description}}
-            </ion-col>
-          </ion-row>
-          <ion-row style="border-bottom: 1px solid #8c8c8c">
-              <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
-                  <button ion-button  style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="like(review)" icon-only><ion-icon name="thumbs-up" class="like" color="{{iconColor}}" style="width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.favorite}}&nbsp;</ion-icon></button>                  
-              </ion-col>
-              <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
-                  <button ion-button id="2" [disabled]="disabledButtonId == '2'" style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="dislike(review)" icon-only><ion-icon name="thumbs-down" class="like" style="color:white; width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.dislike}}&nbsp;</ion-icon></button>                  
-              </ion-col>
-            </ion-row>
-        </div>
+      <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:13px;padding-top:2px" col-6>
+        {{review.title}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <rating style="font-size:2px" [leitura]="true" [numStars]="5" [value]="review.rating"></rating>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-12>
+        {{review.description}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
+        <button ion-button style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="like(review)"
+          icon-only>
+          <ion-icon name="thumbs-up" class="like" color="{{iconColor}}" style="width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.favorite}}&nbsp;</ion-icon>
+        </button>
+      </ion-col>
+      <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
+        <button ion-button id="2" [disabled]="disabledButtonId == '2'" style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none"
+          (click)="dislike(review)" icon-only>
+          <ion-icon name="thumbs-down" class="like" style="color:white; width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.dislike}}&nbsp;</ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>
 
 
@@ -141,18 +147,20 @@
 <ion-footer>
   <ion-toolbar>
     <ion-row>
-      <ion-col col-6 offset-1> 
-        <button (click)="review(film)" style="background-color:transparent; text-align:center;box-shadow:none !important;font-family:American Typewriter, serif" ion-button  icon-left>
+      <ion-col col-6 offset-1>
+        <button (click)="review(film)" style="background-color:transparent; text-align:center;box-shadow:none !important;font-family:American Typewriter, serif"
+          ion-button icon-left>
           <ion-icon name="create"></ion-icon>
           Review
         </button>
       </ion-col>
       <ion-col col-5>
-        <button  style="background-color:transparent; text-align:center; border:none;box-shadow:none !important;font-family:American Typewriter, serif" ion-button  icon-left>
-            <ion-icon name="bookmark"></ion-icon>
-            Bookmark
-          </button>
-        </ion-col>
-      </ion-row>
+        <button style="background-color:transparent; text-align:center; border:none;box-shadow:none !important;font-family:American Typewriter, serif"
+          ion-button icon-left>
+          <ion-icon name="bookmark"></ion-icon>
+          Bookmark
+        </button>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-footer>

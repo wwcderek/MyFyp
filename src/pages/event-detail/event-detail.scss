@@ -1,0 +1,156 @@
+page-event-detail {
+    .container {
+        position: relative;
+    }
+
+    .img {
+        position: relative;
+        .gradient {
+            position: absolute;
+            top: 0;
+            background: linear-gradient(to top, rgba(38,40,51,1) 0%, rgba(255,255,255,0) 90%);
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    img { 
+        opacity: 0.8;
+    }
+
+    .fontStyle {
+        color: white;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .dateStyle {
+        color: #8c8c8c;
+        font-size: 15px;
+    }
+
+    .descriptionStyle {
+        color: #8c8c8c;
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    .cardStyle {
+        width: 390px;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        margin-top: 0px;
+        border-radius: 15px;
+        font-family:American Typewriter, serif;
+    }
+
+    .button {
+        width: 160px;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .redStyle {
+        background-color: red;
+    }
+
+    .darkStyle {
+        background-color: #3b3d47;
+    }
+
+    .spaceStyle {
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        margin-top: 20px;
+        font-family:American Typewriter, serif;
+    }
+
+    .tableStyle {
+        width: 330px;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+    }
+
+    .paddingStyle {
+        padding-left: 40px;
+    }
+
+    .trStyle {
+        // border-bottom: 1px solid #8c8c8c;
+        // border-top: 1px solid #8c8c8c;
+    }
+
+    .tdStyle {
+        height: 100px;
+        width: 50%;
+    }
+
+    .specialStyle {
+        color: #3399ff;
+    }
+
+    .subStyle {
+        margin: 0 auto;
+        margin-top: 10px;
+        color: #8c8c8c;
+        font-size: 15px;
+    }
+
+    .subStyle2 {
+        margin: 0 auto;
+        margin-top: 0px;
+        color: #8c8c8c;
+        font-size: 15px;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+    .contentStyle {
+        margin: 0 auto;
+        padding: 0 auto;
+        color:white;
+        font-size: 18px;
+    }
+
+    .eventStyle {
+        margin: 0 auto;
+        padding: 0 auto;
+        color:white;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    .custom-image {
+        height: 15vw;
+        width: 15vw;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+
+      .userIcon {
+          padding-left: 30px;
+          margin-top: 15px;
+      }
+
+      
+}

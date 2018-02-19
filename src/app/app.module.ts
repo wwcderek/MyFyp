@@ -18,6 +18,10 @@ import { ReviewListPage } from '../pages/review-list/review-list';
 import { RegistrationPage } from '../pages/registration/registration';
 import { PlaylistPage } from '../pages/playlist/playlist';
 import { ScanPage } from '../pages/scan/scan';
+import { EventDetailPage } from '../pages/event-detail/event-detail';
+import { EventPage } from '../pages/event/event';
+import { EventlistPage } from '../pages/eventlist/eventlist';
+import { CreateeventPage } from '../pages/createevent/createevent';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
 import firebase from 'firebase';
@@ -58,6 +62,10 @@ firebase.initializeApp({
       ReviewPage,
       ReviewListPage,
       ScanPage,
+      EventPage,
+      EventlistPage,
+      CreateeventPage,
+      EventDetailPage,
     UserComponent,
     RatingComponent
   ],
@@ -83,7 +91,11 @@ firebase.initializeApp({
       PlaylistPage,
       ReviewPage,
       ReviewListPage,
-      ScanPage
+      ScanPage,
+      EventPage,
+      EventlistPage,
+      CreateeventPage,
+      EventDetailPage
   ],
   providers: [
     StatusBar,

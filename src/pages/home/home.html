@@ -9,13 +9,13 @@
         <button ion-button icon-only menuToggle>
             <ion-icon name="menu" style="color:white"></ion-icon>
         </button>
-        <ion-title class="bg-style" style="color:white">TRAILER</ion-title>
+        <ion-title class="bg-style" style="color:white" text-center>TRAILER</ion-title>
     </ion-navbar>
 </ion-header>
 
 
-<ion-content padding class="bg-style card-background">
-        <ion-card *ngFor="let data of datas">
+<ion-content  class="bg-style card-background">
+        <ion-card *ngFor="let data of datas" class="cardStyle">
             <img style="width: 100% !important; max-width:100% !important;" src="{{data.snippet.thumbnails.medium.url}}"/>
                 <div class="card-title" (click)="openPlaylist(data.id)">
                 <h1 style="font-family: Times New Roman, Times, serif;">{{data.snippet.title}}</h1>

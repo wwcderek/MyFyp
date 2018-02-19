@@ -1,0 +1,72 @@
+<!--
+  Generated template for the EventDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+
+<ion-content class="bg-style">
+  <div class="container">
+    <div class="img">
+      <img src={{event.path}} style="width:100%; height:290px" />
+      <div class="gradient"></div>
+    </div>
+  </div>
+  <ion-card class="bg-style cardStyle">
+    <ion-row style="padding:10px">
+      <ion-col class="fontStyle" col-5>
+        {{event.eventTitle}}
+        <p *ngIf="detail" class="subStyle2">By {{detail.creator}}</p>
+      </ion-col>
+      <ion-col *ngIf="status==2" class="paddingStyle" col-7>
+        <button ion-button class="button redStyle" (click)="joinEvent()" text-right>
+          <ion-icon name="checkmark-circle" style="margin-right:10px"></ion-icon>JOIN EVENT</button>
+      </ion-col>
+      <ion-col *ngIf="status==1" class="paddingStyle" col-7>
+        <button ion-button class="button darkStyle" (click)="leaveEvent()" text-right>
+          <ion-icon name="remove-circle" style="margin-right:10px"></ion-icon>LEAVE EVENT</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="descriptionStyle">
+        <table class="tableStyle">
+          <tr class="trStyle">
+            <td class="tdStyle">
+              <p class="subStyle">DATE</p>
+              <p *ngIf="detail" class="contentStyle">{{detail.eventDate}}</p>
+              <p *ngIf="detail" style="margin-bottom:10px" class="subStyle2">{{detail.weekDay}}</p>
+            </td>
+            <td class="tdStyle">
+              <p class="subStyle">TIME</p>
+              <p *ngIf="detail" class="contentStyle">{{detail.time}}</p>
+              <p style="margin-bottom:10px" class="subStyle2">{{event.running_time}} mins</p>
+            </td>
+          </tr>
+          <tr class="trStyle">
+            <td class="tdStyle">
+              <p class="subStyle">FILM TITLE</p>
+              <p class="contentStyle">{{event.filmTitle}}</p>
+            </td>
+            <td class="tdStyle">
+              <p class="subStyle">REMAINING QUORA</p>
+              <p class="contentStyle">{{event.quota}}</p>
+            </td>
+          </tr>
+        </table>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="eventStyle">{{event.description}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="userlist" class="userIcon">
+      <ion-col *ngFor="let user of userlist" col-3>
+        <img src="{{user.icon_path}}" class="custom-image"/>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

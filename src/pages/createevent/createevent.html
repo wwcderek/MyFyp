@@ -1,0 +1,92 @@
+<!--
+  Generated template for the CreateeventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+    <ion-title>New Event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-style">
+  <form [formGroup]="myGroup" #form="ngForm" (ngSubmit)="createEvent(form)" novalidate>
+    <ion-row>
+      <ion-col>
+        <ion-card class="cardStyle">
+          <ion-input type="text" placeholder="Title" class="inputStyle" name="title" [(ngModel)]="title" formControlName="title" [class.invalid]="!myGroup.controls.title.valid && (myGroup.controls.title.dirty || submitAttempt)"
+            text-center></ion-input>
+        </ion-card>
+      </ion-col>
+      <ion-item class="bg-style" *ngIf="!myGroup.controls.title.valid  && (myGroup.controls.title.dirty || submitAttempt)">
+        <p>Please Enter a Valid Title</p>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="cardStyle">
+          <ion-datetime class="inputStyle" displayFormat="MM/DD/YYYY" name="myDate" [(ngModel)]="myDate" formControlName="myDate" [class.invalid]="!myGroup.controls.myDate.valid && (myGroup.controls.myDate.dirty || submitAttempt)"
+            placeholder="Start Date" text-center></ion-datetime>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="myDate">
+      <ion-col>
+        <ion-card class="cardStyle">
+          <ion-datetime class="inputStyle" displayFormat="HH:mm A" [(ngModel)]="myTime" name="myTime" formControlName="myTime" placeholder="Time"
+            text-center></ion-datetime>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="cardStyle">
+          <ion-select name="category" style="max-width: 100% !important;" [(ngModel)]="category" class="inputStyle" #C (ionChange)="getFilm(C.value)"
+            formControlName="category" [class.invalid]="!myGroup.controls.category.valid && (myGroup.controls.category.dirty || submitAttempt)"
+            placeholder="Category" text-center>
+            <ion-option value="1" class="inputStyle" text-center>ACTION</ion-option>
+            <ion-option value="2" class="inputStyle" text-center>ANIMATION</ion-option>
+            <ion-option value="4" class="inputStyle" text-center>FICTION</ion-option>
+            <ion-option value="3" class="inputStyle" text-center>DRAMA</ion-option>
+            <ion-option value="2" class="inputStyle" text-center>HORROR</ion-option>
+          </ion-select>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="category">
+      <ion-col>
+        <ion-card class="cardStyle">
+          <ion-select name="filmName" style="max-width: 100% !important;" [(ngModel)]="filmName" class="spaceStyle" formControlName="filmName"
+            [class.invalid]="!myGroup.controls.filmName.valid && (myGroup.controls.filmName.dirty || submitAttempt)" placeholder="Film Name"
+            text-center>
+            <ion-option class="spaceStyle" *ngFor="let category of CategoryArray" [value]="category.film_id">{{category.title}}</ion-option>
+          </ion-select>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-card class="cardStyle2">
+        <ion-col>
+          <ion-textarea type="text" name="description" style="max-width: 100% !important;" [(ngModel)]="description" formControlName="description"
+            [class.invalid]="!myGroup.controls.description.valid && (myGroup.controls.description.dirty || submitAttempt)"
+            rows="9" maxLength="200" class="textArea"></ion-textarea>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+    <ion-item class="bg-style" *ngIf="!myGroup.controls.description.valid  && (myGroup.controls.description.dirty || submitAttempt)">
+      <p>Please Enter a Valid Description.</p>
+    </ion-item>
+    <ion-row class="spaceStyle">
+      <ion-col col-6>
+        <button ion-button type="submit" class="buttonStyle">SEND</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button (click)="resetForm()" class="buttonStyle2">RESET</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
