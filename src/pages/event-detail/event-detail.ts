@@ -4,7 +4,7 @@ import { GeneralService } from '../../app/services/general.service';
 import { EventService } from '../../app/services/event.service';
 import { UserModel } from '../../models/user-model';
 import { Storage } from '@ionic/storage';
-
+import { ChatPage } from '../chat/chat';
 /**
  * Generated class for the EventDetailPage page.
  *
@@ -65,7 +65,7 @@ export class EventDetailPage {
         if (data) {
           this.generalService.alertMessage('MSG', 'JOIN EVENT SUCCESSFULLY !');
           this.status = 1;
-          this.getDetail();
+          this.eventUser();
         } else {
           this.generalService.alertMessage('MSG', 'JOIN EVENT FAILED !');
         }
@@ -79,7 +79,7 @@ export class EventDetailPage {
       .subscribe(data => {
         if (data) {
           this.status = 2;
-          this.getDetail();
+          this.eventUser();
         } else {
           this.generalService.alertMessage('MSG', 'Error Occur!');
         }
@@ -103,6 +103,17 @@ export class EventDetailPage {
     this.storage.get('user_id').then((val) => {
       this.getUserStatus(val);
       this.user_id = val;
+    });
+
+    this.storage.get('displayname').then((val) => {
+      this.displayname = val;
+    });
+  }
+
+  chat() {
+    this.navCtrl.push(ChatPage, {
+      event_id: this.event.event_id,
+      username: this.displayname
     });
   }
 

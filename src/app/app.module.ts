@@ -21,6 +21,7 @@ import { ScanPage } from '../pages/scan/scan';
 import { EventDetailPage } from '../pages/event-detail/event-detail';
 import { EventPage } from '../pages/event/event';
 import { EventlistPage } from '../pages/eventlist/eventlist';
+import { ChatPage } from '../pages/chat/chat';
 import { CreateeventPage } from '../pages/createevent/createevent';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
@@ -34,8 +35,18 @@ import { UserComponent } from '../components/user/user';
 import { YoutubeProvider } from '../providers/youtube/youtube';
 import { RatingComponent } from '../components/rating/rating';
 import { FCM } from '@ionic-native/fcm';
+import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { AngularFireModule } from 'angularfire2';
 
 
+var config = {
+  apiKey: "AIzaSyBHl0ZfTGnsRUemk530tRTCaMfGz6jSHZg",
+  authDomain: "facebooklogin-67539.firebaseapp.com",
+  databaseURL: "https://facebooklogin-67539.firebaseio.com",
+  projectId: "facebooklogin-67539",
+  storageBucket: "facebooklogin-67539.appspot.com",
+  messagingSenderId: "53776384932"
+};
 
 firebase.initializeApp({
     apiKey: "AIzaSyBHl0ZfTGnsRUemk530tRTCaMfGz6jSHZg",
@@ -66,15 +77,18 @@ firebase.initializeApp({
       EventlistPage,
       CreateeventPage,
       EventDetailPage,
+      ChatPage,
     UserComponent,
-    RatingComponent
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
       IonicStorageModule.forRoot(),
     HttpModule,
-      NgxQRCodeModule
+      NgxQRCodeModule,
+      AngularFireDatabaseModule,
+      AngularFireModule.initializeApp(config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -95,7 +109,8 @@ firebase.initializeApp({
       EventPage,
       EventlistPage,
       CreateeventPage,
-      EventDetailPage
+      EventDetailPage,
+      ChatPage
   ],
   providers: [
     StatusBar,
@@ -107,7 +122,7 @@ firebase.initializeApp({
       GeneralService,
       Nav,
     YoutubeProvider,
-    FCM
+    FCM,
   ]
 })
 @Component({

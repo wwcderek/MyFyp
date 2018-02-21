@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { SettingPage } from "../pages/setting/setting";
 import { BarcodePage } from '../pages/barcode/barcode';
 import { DiscountPage } from '../pages/discount/discount';
+import { ChatPage } from '../pages/chat/chat';
 import { ScanPage } from '../pages/scan/scan';
 import { EventPage } from '../pages/event/event';
 import { ContentPage } from '../pages/content/content';
@@ -43,7 +44,9 @@ export class MyApp {
     this.loginPages = [
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
-      { title: 'Login', icon: 'contact', component: LoginPage }
+      { title: 'Login', icon: 'contact', component: LoginPage },
+      { title: 'Event', icon: 'calendar', component: EventPage },
+      { title: 'Chat', icon: 'calendar', component: ChatPage },
     ];
     this.logoutPages = [
       { title: 'Home', icon: 'home', component: HomePage },

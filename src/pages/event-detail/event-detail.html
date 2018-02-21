@@ -26,8 +26,14 @@
           <ion-icon name="checkmark-circle" style="margin-right:10px"></ion-icon>JOIN EVENT</button>
       </ion-col>
       <ion-col *ngIf="status==1" class="paddingStyle" col-7>
+        <ion-row>
         <button ion-button class="button darkStyle" (click)="leaveEvent()" text-right>
           <ion-icon name="remove-circle" style="margin-right:10px"></ion-icon>LEAVE EVENT</button>
+        </ion-row>
+        <ion-row>
+            <button ion-button class="button darkStyle" (click)="chat()" text-right>
+                <ion-icon name="chatboxes" style="margin-right:10px"></ion-icon>CHAT ROOM</button>
+        </ion-row>
       </ion-col>
     </ion-row>
     <ion-row>
