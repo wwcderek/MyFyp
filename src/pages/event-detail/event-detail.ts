@@ -66,6 +66,7 @@ export class EventDetailPage {
           this.generalService.alertMessage('MSG', 'JOIN EVENT SUCCESSFULLY !');
           this.status = 1;
           this.eventUser();
+          this.getDetail();
         } else {
           this.generalService.alertMessage('MSG', 'JOIN EVENT FAILED !');
         }
@@ -80,6 +81,7 @@ export class EventDetailPage {
         if (data) {
           this.status = 2;
           this.eventUser();
+          this.getDetail();
         } else {
           this.generalService.alertMessage('MSG', 'Error Occur!');
         }
@@ -91,7 +93,6 @@ export class EventDetailPage {
   eventUser() {
     this.eventService.eventUser(this.event.event_id)
       .subscribe(data => {
-        console.log(data);
         if (data)
           this.userlist = data;
       }, error => {

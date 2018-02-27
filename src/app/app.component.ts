@@ -45,15 +45,13 @@ export class MyApp {
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
       { title: 'Login', icon: 'contact', component: LoginPage },
-      { title: 'Event', icon: 'calendar', component: EventPage },
-      { title: 'Chat', icon: 'calendar', component: ChatPage },
     ];
     this.logoutPages = [
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
-      { title: 'QR Code', icon: 'qr-scanner', component: BarcodePage },
-      { title: 'Scan', icon: 'settings', component: ScanPage },
-      { title: 'Discount', icon: 'settings', component: DiscountPage },
+      { title: 'QR Code', icon: 'barcode', component: BarcodePage },
+      { title: 'Scan', icon: 'qr-scanner', component: ScanPage },
+      { title: 'Discount', icon: 'cash', component: DiscountPage },
       { title: 'Event', icon: 'calendar', component: EventPage },
       { title: 'Logout', icon: 'exit', component: HomePage }
     ];

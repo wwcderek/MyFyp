@@ -85,9 +85,6 @@
             {{film.description}}
           </ion-note>
         </ion-item>
-        <!-- <ion-item class="bg-style card-background">
-           <button ion-button (click)="reviewList()" class="filmButton" style="text-align:center;font-size:25px;padding:25px;width:95%;border-radius: 50px;"><ion-icon name="text"></ion-icon> FILM REVIEW</button>
-        </ion-item> -->
       </ion-list>
     </ion-card-content>
   </ion-card>
@@ -129,7 +126,7 @@
       <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>
         <button ion-button style="background-color:transparent;border:none;padding:0px;margin:0px;box-shadow: none" (click)="like(review)"
           icon-only>
-          <ion-icon name="thumbs-up" class="like" color="{{iconColor}}" style="width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.favorite}}&nbsp;</ion-icon>
+          <ion-icon id="{{review.review_id}}" name="thumbs-up" class="like" color="{{iconColor}}" style="width:50%; padding-left:5px">&nbsp;&nbsp;&nbsp;{{review.favorite}}&nbsp;</ion-icon>
         </button>
       </ion-col>
       <ion-col style="color:#8c8c8c;font-size:15px;font-family:American Typewriter, serif;padding-left:10px;padding-top:2px" col-3>

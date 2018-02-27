@@ -21,7 +21,7 @@ export class ChatPage {
   public messages: object[] = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public db: AngularFireDatabase) {
     this.username = navParams.get('username');
-    this.path = '/' + navParams.get('event_id');
+    this.path = '/' + navParams.get('event_id') + '-' + String(new Date().getDay()) + '-' + String(new Date().getMonth()+1) + '-' + String(new Date().getFullYear());
     this._chatSubscription = this.db.list(this.path).valueChanges().subscribe(data => {
       this.messages = data;
       // data.map(elem => {

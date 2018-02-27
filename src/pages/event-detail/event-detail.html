@@ -17,7 +17,7 @@
   </div>
   <ion-card class="bg-style cardStyle">
     <ion-row style="padding:10px">
-      <ion-col class="fontStyle" col-5>
+      <ion-col class="fontStyle">
         {{event.eventTitle}}
         <p *ngIf="detail" class="subStyle2">By {{detail.creator}}</p>
       </ion-col>
@@ -34,6 +34,10 @@
             <button ion-button class="button darkStyle" (click)="chat()" text-right>
                 <ion-icon name="chatboxes" style="margin-right:10px"></ion-icon>CHAT ROOM</button>
         </ion-row>
+      </ion-col>
+      <ion-col *ngIf="status==0" class="paddingStyle" col-7>
+        <button ion-button class="button darkStyle" (click)="chat()" text-right>
+          <ion-icon name="chatboxes" style="margin-right:10px"></ion-icon>CHAT ROOM</button>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -58,7 +62,7 @@
             </td>
             <td class="tdStyle">
               <p class="subStyle">REMAINING QUORA</p>
-              <p class="contentStyle">{{event.quota}}</p>
+              <p class="contentStyle" *ngIf="detail">{{detail.quota}}</p>
             </td>
           </tr>
         </table>

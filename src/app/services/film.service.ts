@@ -68,18 +68,22 @@ export class FilmService {
          .map(res => res.json());
     }
 
-    like(review_id) {
+    like(review_id, user_id) {
         let body = {
-            review_id: review_id
+            review_id: review_id,
+            user_id: user_id
         };
-        this.http.post("http://101.78.175.101:6780/like", JSON.stringify(body), {headers:this.headers})
+        return this.http.post("http://101.78.175.101:6780/like", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
     }
 
-    dislike(review_id) {
+    dislike(review_id, user_id) {
         let body = {
-            review_id: review_id
+            review_id: review_id,
+            user_id: user_id
         };
-        this.http.post("http://101.78.175.101:6780/dislike", JSON.stringify(body), {headers:this.headers})
+       return this.http.post("http://101.78.175.101:6780/dislike", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
     }
 
 }

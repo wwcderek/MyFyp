@@ -45818,7 +45818,7 @@ page-event-detail .custom-image {
   border: 1px solid #fff;
   border-radius: 50%;
   display: inline-block;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   margin-bottom: 10px;
 }
