@@ -45242,6 +45242,10 @@ user .container {
   position: relative;
 }
 
+page-analysis .bg-color {
+  background-color: red;
+}
+
 page-barcode input, page-barcode select, page-barcode textarea {
   color: #FFFFFF;
   border: none;

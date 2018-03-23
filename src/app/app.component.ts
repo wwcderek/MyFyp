@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { SettingPage } from "../pages/setting/setting";
 import { BarcodePage } from '../pages/barcode/barcode';
 import { DiscountPage } from '../pages/discount/discount';
+import { AnalysisPage } from '../pages/analysis/analysis';
 import { ChatPage } from '../pages/chat/chat';
 import { ScanPage } from '../pages/scan/scan';
 import { EventPage } from '../pages/event/event';
@@ -45,6 +46,8 @@ export class MyApp {
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
       { title: 'Login', icon: 'contact', component: LoginPage },
+      { title: 'Login', icon: 'contact', component: AnalysisPage },
+
     ];
     this.logoutPages = [
       { title: 'Home', icon: 'home', component: HomePage },

@@ -23,6 +23,7 @@ import { EventPage } from '../pages/event/event';
 import { EventlistPage } from '../pages/eventlist/eventlist';
 import { ChatPage } from '../pages/chat/chat';
 import { CreateeventPage } from '../pages/createevent/createevent';
+import { AnalysisPage } from '../pages/analysis/analysis';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
 import firebase from 'firebase';
@@ -37,6 +38,7 @@ import { RatingComponent } from '../components/rating/rating';
 import { FCM } from '@ionic-native/fcm';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { AngularFireModule } from 'angularfire2';
+import { ChartsModule } from 'ng2-charts';
 
 
 var config = {
@@ -78,6 +80,7 @@ firebase.initializeApp({
       CreateeventPage,
       EventDetailPage,
       ChatPage,
+      AnalysisPage,
     UserComponent,
     RatingComponent,
   ],
@@ -87,6 +90,7 @@ firebase.initializeApp({
       IonicStorageModule.forRoot(),
     HttpModule,
       NgxQRCodeModule,
+      ChartsModule,
       AngularFireDatabaseModule,
       AngularFireModule.initializeApp(config)
   ],
@@ -110,7 +114,8 @@ firebase.initializeApp({
       EventlistPage,
       CreateeventPage,
       EventDetailPage,
-      ChatPage
+      ChatPage,
+      AnalysisPage
   ],
   providers: [
     StatusBar,

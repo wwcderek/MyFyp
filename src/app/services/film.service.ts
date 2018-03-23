@@ -86,4 +86,9 @@ export class FilmService {
         .map(res => res.json());
     }
 
+    getChart() {
+        return this.http.get("http://101.78.175.101:6780/getChart")
+        .map(res => res.json());
+    }
+
 }
