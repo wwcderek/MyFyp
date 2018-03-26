@@ -30,6 +30,7 @@ export class MyApp {
   //@ViewChild('myNav') nav: NavController
   loginPages: Array<{ title: string, icon: string, component: any }>;
   logoutPages: Array<{ title: string, icon: string, component: any }>;
+  staffPages: Array<{ title: string, icon: string, component: any }>;
   icon: any;
   activePage: any;
   rootPage: any = HomePage;
@@ -46,16 +47,20 @@ export class MyApp {
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
       { title: 'Login', icon: 'contact', component: LoginPage },
-      { title: 'Login', icon: 'contact', component: AnalysisPage },
-
     ];
     this.logoutPages = [
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
       { title: 'QR Code', icon: 'barcode', component: BarcodePage },
-      { title: 'Scan', icon: 'qr-scanner', component: ScanPage },
       { title: 'Discount', icon: 'cash', component: DiscountPage },
       { title: 'Event', icon: 'calendar', component: EventPage },
+      { title: 'Logout', icon: 'exit', component: HomePage }
+    ];
+    this.staffPages = [
+      { title: 'Home', icon: 'home', component: HomePage },
+      { title: 'Film', icon: 'film', component: ContentPage },
+      { title: 'Scan', icon: 'qr-scanner', component: ScanPage },
+      { title: 'Data Analysis', icon: 'podium', component: AnalysisPage },
       { title: 'Logout', icon: 'exit', component: HomePage }
     ];
     this.icon = [
@@ -97,6 +102,7 @@ export class MyApp {
   enableAuthenticatedMenu() {
     this.menuCtrl.enable(true, 'authenticated');
     this.menuCtrl.enable(false, 'unauthenticated');
+    this.menuCtrl.enable(false, 'staff');
   }
 
   openPage(page) {

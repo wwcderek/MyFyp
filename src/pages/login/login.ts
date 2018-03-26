@@ -41,8 +41,14 @@ export class LoginPage {
 
 
     disableAuthenticatedMenu() {
-        this.menuCtrl.enable(false, 'authenticated');
-        this.menuCtrl.enable(true, 'unauthenticated');
+      this.menuCtrl.enable(false, 'authenticated');
+      if(this.user.role=='staff') {
+      this.menuCtrl.enable(true, 'staff');
+      this.menuCtrl.enable(false, 'unauthenticated');
+      } else {
+      this.menuCtrl.enable(false, 'staff');
+      this.menuCtrl.enable(true, 'unauthenticated');
+      }
     }
 
   loginClick(form) {

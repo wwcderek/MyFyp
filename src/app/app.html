@@ -34,12 +34,41 @@
               </ion-header>
     <ion-content padding class="menu-css">
         <ion-list class="menu-css">
-            <button menuClose ion-item *ngFor="let p of logoutPages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" class="menu-css">
+            <button menuClose ion-item  *ngFor="let p of logoutPages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" class="menu-css">
                 <ion-icon name={{p.icon}}></ion-icon>&nbsp;&nbsp;
                 {{p.title}}
             </button>
-        </ion-list>
+            </ion-list>
     </ion-content>
 </ion-menu>
+
+<ion-menu id="staff" side="left" [content]="content">
+        <ion-header class="bar-dark" style="background-image: url('assets/header3.jpeg');">
+            <div class="container">
+            <ion-card text-center class="hide-card" style="background-color: transparent !important;">
+                <user></user>
+                    <hr>
+                </ion-card>
+                <div style="color:#8c8c8c;position: absolute;
+                bottom: 0.5px;
+                right: 15px;
+                font-size: 17px;">
+                <button (click)="userSetting()" ion-button icon-only style="background-color:transparent; border:none">
+                    <ion-icon name="settings"></ion-icon>
+                  </button>
+                  </div>
+                </div>
+              </ion-header>
+    <ion-content padding class="menu-css">
+        <ion-list class="menu-css">       
+                <button menuClose ion-item *ngFor="let p of staffPages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)" class="menu-css">
+                    <ion-icon name={{p.icon}}></ion-icon>&nbsp;&nbsp;
+                    {{p.title}}
+                </button>
+            </ion-list>
+    </ion-content>
+</ion-menu>
+
+
 
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
