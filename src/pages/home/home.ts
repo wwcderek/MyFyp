@@ -22,12 +22,7 @@ export class HomePage {
   channel = 'UClgRkhTL3_hImCAmdLfDE4g';
   datas: any;
   nextPageToken: any;
-  films: any;
-  category: any;
-  name: any;
-  myInput: string = '';
   constructor( public navParams: NavParams, public accountService: AccountService, public filmService: FilmService, private storage: Storage, private yt: YoutubeProvider, public navCtrl: NavController) {
-      this.getDefault();
       yt.playlist(this.channel).subscribe(data => {
         this.datas = data.json().items;
         if(data.json().nextPageToken){
@@ -36,41 +31,8 @@ export class HomePage {
         });
   }
 
-  ionViewDidLoad() {
-  }
-
-  ngOnInit(){
-    this.getFilm(this.category);
-  }
-
-
-  getFilm(category){
-    this.filmService.getFilm(category).subscribe(response => {
-      this.films = response;
-    })
-  }
-
-  getDefault(){
-    this.category='action';
-      this.storage.get('name').then((val) => {
-        if(val)
-          this.name = 'Wellcome '+val.username;
-      });
-  }
-
-
-  viewDetail(film) {
-    this.navCtrl.push(DetailPage, {
-      film: film
-    });
-  }
-
-  changeCategory(){
-     this.getFilm(this.myInput);
-  }
-
   openPlaylist(id) {
-this.navCtrl.push(PlaylistPage, {id:id});
+    this.navCtrl.push(PlaylistPage, {id:id});
   }
 
   infiniteScroll(ev) {

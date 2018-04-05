@@ -1,0 +1,58 @@
+page-recommendation {
+    .title_center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 90px 1px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color:#65BFA6;
+    }
+
+    .cardStyle {
+        width: 380px;
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        margin-top:20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .custom-avatar2 {
+        height: 40vw;
+        width: 40vw;
+        border: 1px solid #262833;
+        border-radius: 10%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .spaceStyle {
+        left: 0;
+        right: 0;
+        margin:0 auto;
+      }
+
+      .titleStyle {
+          font-family:American Typewriter, serif;
+          color: white;
+          font-size: 25px;
+      }
+
+      .contentStyle {
+          color:#8c8c8c;
+          margin-top:13px;
+          font-family:American Typewriter, serif;
+          font-size: 15px;
+        //   white-space: nowrap;
+        //   overflow: hidden;
+        //   text-overflow: ellipsis;
+      }
+
+      .testStyle {
+          height: 100px;
+      }
+}

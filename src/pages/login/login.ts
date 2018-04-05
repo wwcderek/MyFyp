@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, Nav, Events, ModalController, AlertController, Platform, MenuController, NavController} from 'ionic-angular';
+import { IonicPage, Nav, Events, ModalController, AlertController, Platform, MenuController, NavController, LoadingController} from 'ionic-angular';
 import { RegistrationPage } from '../registration/registration';
+import { RecommendationPage } from '../recommendation/recommendation';
 import { HomePage } from '../home/home';
 import { AccountService } from '../../app/services/account.service';
 import { GeneralService } from "../../app/services/general.service";
@@ -32,7 +33,7 @@ export class LoginPage {
   public fbUserId: any;
   http: any;
   public keyboard: Keyboard;
-  constructor(private event: Events, public alertCtrl: AlertController, public modalCtrl: ModalController, public accountService: AccountService, public generalService: GeneralService, public permissionService: PermissionService, public facebook: Facebook, private storage: Storage, public menuCtrl: MenuController, public navCtrl: NavController) {
+  constructor(private event: Events, public alertCtrl: AlertController, public modalCtrl: ModalController, public accountService: AccountService, public generalService: GeneralService, public permissionService: PermissionService, public facebook: Facebook, private storage: Storage, public menuCtrl: MenuController, public navCtrl: NavController, public loadingCtrl: LoadingController) {
     Keyboard.disableScroll(true);
   }
 
@@ -56,12 +57,14 @@ export class LoginPage {
       this.accountService.login(form.value.username, form.value.password).map(res => res.json())
           .subscribe(response => {
          if (response!=false) {
+            this.presentLoading();
             this.user = new UserModel(response);
             this.event.publish('Info', this.user);
             this.storeUserInfo(this.user);
             this.disableAuthenticatedMenu();
             this.navCtrl.push(HomePage);
             this.navCtrl.setRoot(HomePage);
+            this.recommendation();
         } else if (!form.value || !response) {
           this.generalService.alertMessage("Error","Username or Password Is Incorrected");
         }
@@ -104,12 +107,14 @@ export class LoginPage {
                       this.getInfo();
                       this.accountService.fbLogin(this.username, this.email, this.iconPath).map(res => res.json())
                       .subscribe(result => {
+                        this.presentLoading();
                         this.user = new UserModel(result);
                         this.event.publish('Info', this.user);
                         this.storeUserInfo(this.user);
                         this.disableAuthenticatedMenu();
                         this.navCtrl.push(HomePage);
                         this.navCtrl.setRoot(HomePage);
+                        this.recommendation();
                   })
                       // this.disableAuthenticatedMenu();
                       // this.navCtrl.push(HomePage);
@@ -125,6 +130,18 @@ export class LoginPage {
     modal.present();
   }
 
+  recommendation() {
+    let modal = this.modalCtrl.create(RecommendationPage);
+    modal.present();
+  }
+
+  presentLoading() {
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 1000
+    });
+    loader.present();
+  }
     /**
      * For website
      */

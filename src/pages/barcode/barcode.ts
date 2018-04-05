@@ -36,7 +36,6 @@ export class BarcodePage
 
   ionViewDidLoad()
   {
-    console.log('ionViewDidLoad BarcodePage');
   }
 
   createCode()

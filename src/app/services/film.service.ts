@@ -91,4 +91,12 @@ export class FilmService {
         .map(res => res.json());
     }
 
+    getRecommendation(user_id) {
+        let body = {
+            user_id: user_id
+        };
+        return this.http.post("http://101.78.175.101:6780/getRecommendation", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
+    }
+
 }

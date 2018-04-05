@@ -57,7 +57,7 @@
         <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>MyApp</name>
+    <name>CAW</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <universal-links>

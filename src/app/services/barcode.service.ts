@@ -42,4 +42,13 @@ export class BarcodeService {
         return this.http.post("http://101.78.175.101:6780/scanCode", JSON.stringify(body), {headers:this.headers})
         .map(res => res.json());
     }
+
+    checkCode(film_id, data) {
+        let body = {
+            film_id: film_id,
+            user_id: data
+        };
+        return this.http.post("http://101.78.175.101:6780/checkCode", JSON.stringify(body), {headers:this.headers})
+        .map(res => res.json());
+    }
 }

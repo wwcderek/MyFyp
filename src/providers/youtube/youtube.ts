@@ -12,7 +12,6 @@ import 'rxjs/add/operator/map';
 export class YoutubeProvider {
   key = 'AIzaSyCqzJG7KlthJqqCgRge0jWHCHZl3NSF9z4';
   constructor(public http: Http) {
-    console.log('Hello YoutubeProvider Provider');
   }
 
   playlist(channel){

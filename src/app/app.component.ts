@@ -10,6 +10,7 @@ import { DiscountPage } from '../pages/discount/discount';
 import { AnalysisPage } from '../pages/analysis/analysis';
 import { ChatPage } from '../pages/chat/chat';
 import { ScanPage } from '../pages/scan/scan';
+import { RecommendationPage } from '../pages/recommendation/recommendation';
 import { EventPage } from '../pages/event/event';
 import { ContentPage } from '../pages/content/content';
 import { AccountService } from './services/account.service';
@@ -46,7 +47,7 @@ export class MyApp {
     this.loginPages = [
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'Film', icon: 'film', component: ContentPage },
-      { title: 'Login', icon: 'contact', component: LoginPage },
+      { title: 'Login', icon: 'contact', component: LoginPage }
     ];
     this.logoutPages = [
       { title: 'Home', icon: 'home', component: HomePage },
@@ -78,7 +79,7 @@ export class MyApp {
   initializeApp() {
     if (!this.platform.is('core') && !this.platform.is('mobileweb')) {
       this.platform.ready().then(() => {
-        this.fcm.subscribeToTopic('all');
+        this.fcm.subscribeToTopic('receive');
         this.fcm.getToken().then(token => {
           console.log(token);
         })

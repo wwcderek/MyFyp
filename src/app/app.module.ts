@@ -24,6 +24,7 @@ import { EventlistPage } from '../pages/eventlist/eventlist';
 import { ChatPage } from '../pages/chat/chat';
 import { CreateeventPage } from '../pages/createevent/createevent';
 import { AnalysisPage } from '../pages/analysis/analysis';
+import { RecommendationPage } from '../pages/recommendation/recommendation';
 import { HttpModule} from '@angular/http';
 import { NgxQRCodeModule } from "ngx-qrcode2";
 import firebase from 'firebase';
@@ -81,6 +82,7 @@ firebase.initializeApp({
       EventDetailPage,
       ChatPage,
       AnalysisPage,
+      RecommendationPage,
     UserComponent,
     RatingComponent,
   ],
@@ -115,7 +117,8 @@ firebase.initializeApp({
       CreateeventPage,
       EventDetailPage,
       ChatPage,
-      AnalysisPage
+      AnalysisPage,
+      RecommendationPage
   ],
   providers: [
     StatusBar,

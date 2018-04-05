@@ -1,14 +1,14 @@
 webpackJsonp([12],{
 
-/***/ 1136:
+/***/ 1138:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__discount__ = __webpack_require__(212);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiscountPageModule", function() { return DiscountPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_detail__ = __webpack_require__(214);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventDetailPageModule", function() { return EventDetailPageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,26 +18,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DiscountPageModule = (function () {
-    function DiscountPageModule() {
+var EventDetailPageModule = (function () {
+    function EventDetailPageModule() {
     }
-    return DiscountPageModule;
+    return EventDetailPageModule;
 }());
-DiscountPageModule = __decorate([
+EventDetailPageModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__discount__["a" /* DiscountPage */],
+            __WEBPACK_IMPORTED_MODULE_2__event_detail__["a" /* EventDetailPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__discount__["a" /* DiscountPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__event_detail__["a" /* EventDetailPage */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__discount__["a" /* DiscountPage */]
+            __WEBPACK_IMPORTED_MODULE_2__event_detail__["a" /* EventDetailPage */]
         ]
     })
-], DiscountPageModule);
+], EventDetailPageModule);
 
-//# sourceMappingURL=discount.module.js.map
+//# sourceMappingURL=event-detail.module.js.map
 
 /***/ })
 

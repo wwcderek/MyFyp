@@ -7,6 +7,8 @@ import { Storage } from '@ionic/storage';
 import { UserModel } from '../../models/user-model';
 import { LoginPage } from '../login/login';
 import { ReviewListPage } from '../review-list/review-list';
+import { BarcodeService } from "../../app/services/barcode.service";
+
 /**
  * Generated class for the DetailPage page.
  *
@@ -17,7 +19,7 @@ import { ReviewListPage } from '../review-list/review-list';
 @Component({
   selector: 'page-detail',
   templateUrl: 'detail.html',
-  providers: [GeneralService, FilmService]
+  providers: [GeneralService, FilmService, BarcodeService]
 
 })
 export class DetailPage {
@@ -30,21 +32,25 @@ export class DetailPage {
   public user_id: any;
   public iconColor = 'white';
   disabledButtonId: string;
-  constructor(public nav: Nav, public navParams: NavParams, public generalService: GeneralService, private storage: Storage, public filmService: FilmService) {
+  constructor(public nav: Nav, public navParams: NavParams, public generalService: GeneralService, private storage: Storage, public filmService: FilmService, public barcodeService: BarcodeService) {
     this.film = navParams.get('film');
     this.getUserInfo();
   }
 
   review(film) {
-    this.storage.get('username').then(data => {
-      if (data) {
-        this.nav.push(ReviewPage, {
-          film: film
-        });
-      } else {
-        this.nav.push(LoginPage, {
-        });
-      }
+    this.storage.get('user_id').then(data => {
+      this.barcodeService.checkCode(film.film_id, data).subscribe(response => {
+        if (data&&response) {
+          this.nav.push(ReviewPage, {
+            film: film
+          });
+        } else if(!data) {
+          this.nav.push(LoginPage, {
+          });
+        } else {
+          this.generalService.alertMessage("Error", "Not Allowed!");
+        }
+      })
     })
   }
 

@@ -50,7 +50,6 @@ export class ContentPage {
   search() {
     this.filmService.search(this.myInput).subscribe(response => {
       if(response){
-      //this.generalService.alertMessage("Message", response[0].title);
        this.viewDetail(response[0]);
       }
   })

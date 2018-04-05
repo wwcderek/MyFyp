@@ -45636,6 +45636,7 @@ page-discount .button1 {
   left: 0;
   right: 0;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 page-event .iconStyle {
@@ -45879,6 +45880,17 @@ page-home .background {
   background-image: url("../assets/homebackground.jpg");
 }
 
+page-home .title_center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #65BFA6;
+}
+
 page-home .card-background ion-card {
   position: relative;
   text-align: center;
@@ -46061,6 +46073,60 @@ page-qrcode .fontStyle2 {
   color: white;
   font-family: American Typewriter, serif;
   margin-top: 10px;
+}
+
+page-recommendation .title_center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #65BFA6;
+}
+
+page-recommendation .cardStyle {
+  width: 380px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+page-recommendation .custom-avatar2 {
+  height: 40vw;
+  width: 40vw;
+  border: 1px solid #262833;
+  border-radius: 10%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+page-recommendation .spaceStyle {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+page-recommendation .titleStyle {
+  font-family: American Typewriter, serif;
+  color: white;
+  font-size: 25px;
+}
+
+page-recommendation .contentStyle {
+  color: #8c8c8c;
+  margin-top: 13px;
+  font-family: American Typewriter, serif;
+  font-size: 15px;
+}
+
+page-recommendation .testStyle {
+  height: 100px;
 }
 
 page-registration .bar-buttons,
